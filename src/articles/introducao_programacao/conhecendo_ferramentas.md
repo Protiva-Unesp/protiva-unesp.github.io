@@ -89,3 +89,4 @@ tutoriais disponíveis online. Aqui estão alguns links úteis:
 - [Documentação do GCC para C](https://gcc.gnu.org/)
 - [Extensão Python para VSCode](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Extensão C/C++ para VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+

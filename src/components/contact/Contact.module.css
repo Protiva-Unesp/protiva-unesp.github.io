@@ -1,0 +1,76 @@
+.contact {
+  background: linear-gradient(90.21deg, #8DC8E8 -5.91%, #001e62 111.58%);
+  padding: 90px 0 120px 0;
+}
+
+.contactContainer {
+  display: flex; /* Enable flex layout */
+  flex-direction: row; /* Arrange children in a row */
+  justify-content: space-between; /* Space out children */
+  align-items: flex-start; /* Align items to the start of the cross-axis (top) */
+  gap: 20px; /* Add space between the image and FAQ sections */
+}
+
+.imgCol {
+  flex: 1; /* Take up one part of the available space */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.contact img {
+  max-width: 100%; 
+  height: auto; 
+  max-height: 300px; 
+}
+
+.h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: -8px;
+}
+
+.h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin: 10px 0;
+  cursor: pointer;
+  overflow: hidden; 
+}
+
+.faq-question {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #121212;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  overflow: hidden;
+  width: 80%;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; 
+  opacity: 1;
+  padding: 10px;
+}
+
+.faqSection {
+  flex: 2; /* Take up twice the space of the image column */
+}
