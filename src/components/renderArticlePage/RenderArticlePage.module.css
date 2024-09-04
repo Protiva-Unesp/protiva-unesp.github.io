@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 56px; /* Same height as the navbar */
+    min-height: calc(100vh - 56px); /* Use the full height */
+    padding: 0; /* Removes any padding */
+    margin: 0; /* Removes any margin */
+}
+
+.main {
+    display: flex; /* Arrange sidebar and content side by side */
+    flex: 1; /* Allows main content to take the remaining space */
+    margin: 0; /* Ensures no extra margins around main */
+    padding: 0; /* Ensures no extra padding around main */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+.sidebar {
+    width: 18%; /* Sidebar width */
+    padding: 20px 20px 20px 20px; /* Add padding around the sidebar */
+    padding-top: 76px; /* Extra padding to offset navbar height (20px default padding + 56px navbar height) */
+    background-color: #8DC8E8;
+    overflow-y: auto; /* Scroll if content overflows */
+    font-size: 20px;
+    margin: 0; /* Remove any margin */
+}
+
+.sidebar ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.sidebar a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Ensures link text is white */
+}
+
+.sidebar a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.content {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+    margin: 0; /* Ensures no extra margin around content */
+}
+
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navButtons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navButtons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

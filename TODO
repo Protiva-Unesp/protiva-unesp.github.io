@@ -1,0 +1,5 @@
+- Renomear "RenderArticlePage" para MarkdownNavigator
+- Guardar "category" ao recarregar a página do CardContainer
+- Renomear pastas e colocar iniciais minusculas
+- Adicionar variáveis globais
+com ela

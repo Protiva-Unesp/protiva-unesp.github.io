@@ -1,0 +1,2 @@
+# 3 - Exercícios
+Vivamus dignissim tellus sed urna convallis iaculis. Fusce fermentum sodales porta. Sed congue ligula et tempor pulvinar. Suspendisse quis nunc orci. Sed consequat sit amet leo eget malesuada. Curabitur diam arcu, commodo quis interdum ut, feugiat non augue. Sed purus dolor, dignissim id vehicula at, ultrices pellentesque tortor. In a enim a ipsum feugiat rhoncus. In vitae feugiat purus. Mauris eget nulla et orci bibendum ultricies a sit amet lacus. Nullam sollicitudin felis in enim mattis tincidunt. Proin in tristique libero.

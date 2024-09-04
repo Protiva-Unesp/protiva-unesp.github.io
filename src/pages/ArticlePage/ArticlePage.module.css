@@ -1,0 +1,15 @@
+.content {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.title {
+    margin-top: 120px;
+    font-size: 30px;
+    text-align: center;
+}
