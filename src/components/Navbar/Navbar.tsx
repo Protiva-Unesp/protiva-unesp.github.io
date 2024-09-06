@@ -34,9 +34,7 @@ function Navbar() {
             <Link to="/"><img className={styles.logoStyle} src={logo} alt="Icon" /></Link>
             <ul className={styles.topnav}>
                 <li>
-                    <Link
-
-to="/">Início</Link>
+                    <Link to="/">Início</Link>
                 </li>
                 <li>
                     <Dropdown />

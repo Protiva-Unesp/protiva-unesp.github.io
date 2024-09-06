@@ -6,3 +6,28 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .cardsContainer {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    .cardsContainer {
+        gap: 8px;
+        margin-bottom: 15px;
+        /* Optional: Adjust alignment and item sizing */
+    }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 1440px) {
+    .cardsContainer {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+}

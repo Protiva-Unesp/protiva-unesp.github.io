@@ -11,6 +11,28 @@
   box-sizing: border-box;
 }
 
+.banner h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.banner p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: none;
+}
+
+.banner button {
+  border: 0;
+  background-color: transparent;
+}
+
 .banner .content {
   flex: 1; 
   text-align: center; 
@@ -72,24 +94,6 @@
   margin-left: 25px;
 }
 
-.banner img {
-    /*animation: updown 3s linear infinite;*/
-}
-
-/*
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
-*/
-
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -106,4 +110,103 @@
 .banner button {
   border: 0;
   background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 150px 0 50px 0; 
+  }
+
+  .banner h1 {
+    font-size: 40px; 
+    margin-left: 20px; 
+  }
+
+  .banner .tagline {
+    font-size: 16px; 
+    margin-left: 20px; 
+  }
+
+  .banner p {
+    font-size: 16px; 
+    margin-left: 20px; 
+    width: 100%; 
+  }
+
+  .banner button {
+    font-size: 18px; 
+    margin-top: 40px; 
+    margin-left: 20px; 
+  }
+
+  .headerImg {
+    max-width: 80%; 
+    position: relative; 
+    transform: none; 
+    right: 0; 
+    top: auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 100px 0 30px 0; 
+  }
+
+  .banner h1 {
+    font-size: 30px; 
+    margin-left: 10px; 
+  }
+
+  .banner .tagline {
+    font-size: 14px; 
+    margin-left: 10px; 
+  }
+
+  .banner p {
+    font-size: 14px; 
+    margin-left: 10px; 
+  }
+
+  .banner button {
+    font-size: 16px; 
+    margin-top: 30px; 
+    margin-left: 10px; 
+  }
+
+  .headerImg {
+    max-width: 90%; 
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    padding: 300px 0 150px 0; 
+    background-size: contain; 
+  }
+
+  .banner h1 {
+    font-size: 80px; 
+    margin-left: 100px; 
+  }
+
+  .banner .tagline {
+    font-size: 24px; 
+    margin-left: 100px; 
+  }
+
+  .banner p {
+    font-size: 22px; 
+    margin-left: 100px; 
+  }
+
+  .banner button {
+    font-size: 24px; 
+    margin-top: 80px; 
+    margin-left: 100px; 
+  }
+
+  .headerImg {
+    max-width: 30%; 
+  }
 }

@@ -105,3 +105,119 @@
 .logoStyle {
     width: 100px;
 }
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 10px; 
+    }
+
+    .topnav {
+        position: static; 
+        transform: none; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 13px !important; 
+    }
+
+    .topnav li {
+        display: inline;
+    }
+
+    .topnav li a {
+        padding: 10px 12px; 
+    }
+
+    .socialRow {
+        margin-right: 10px; 
+    }
+
+    .socialIcon a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .socialIcon a::before {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logoStyle {
+        width: 80px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 5px; 
+    }
+
+    .topnav {
+        flex-direction: row;
+        margin-top: 5px;
+        font-size: 13px !important;
+    }
+
+    .topnav li{
+        display: inline;
+    }
+
+    .topnav li a {
+        padding: 8px 10px; 
+    }
+
+    .socialRow {
+        margin-right: 5px; 
+    }
+
+    .socialIcon a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .socialIcon a::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logoStyle {
+        width: 60px; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar-container {
+        padding: 0 40px; 
+    }
+
+    .topnav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .topnav li a {
+        padding: 16px 20px; 
+    }
+
+    .socialRow {
+        margin-right: 40px; 
+    }
+
+    .socialIcon a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .socialIcon a::before {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logoStyle {
+        width: 120px; 
+    }
+}

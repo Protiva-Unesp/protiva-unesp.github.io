@@ -8,7 +8,6 @@
     flex: 0 0 30%;
     display: flex;
     flex-direction: column;
-    //background-color: #00aeef;
     background: linear-gradient(#00aeef, #001e62);
 }
 
@@ -26,4 +25,53 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 40%;
+        flex: 0 0 45%;
+        padding: 50px;
+        margin: 10px; 
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    .center {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; 
+        flex: 0 0 90%;
+        padding: 20px; 
+        margin: 8px auto; 
+    }
+    
+    .container {
+        padding: 8px; 
+    }
+    
+    .center {
+        width: 80%; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+    
+    .container {
+        padding: 20px 32px;
+    }
+    
+    .center {
+        width: 40%;
+    }
 }
