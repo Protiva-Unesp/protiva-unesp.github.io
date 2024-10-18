@@ -1,0 +1,21 @@
+.container {
+    max-width: 100%; /* Allow full width for the container */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 100px; /* Apply padding to create space within the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.content {
+    margin: 90px auto 50px auto; /* Add top and bottom margins */
+    max-width: calc(100% - 260px); /* Limit content to be within 130px left and right margins */
+    font-size: 20px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.title {
+    margin-top: 90px;
+    font-size: 60px;
+    text-align: justify;
+}
+

@@ -16,7 +16,7 @@
 }
 
 .sidebar {
-    width: 18%; 
+    width: 15%; 
     padding: 20px 20px 20px 20px; 
     padding-top: 76px; 
     background-color: #8DC8E8;
@@ -27,11 +27,12 @@
 
 .sidebar ul {
     list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    padding: 20; 
+    margin-top: 30px
 }
 
 .sidebar li {
+    padding: 5px;
     margin-bottom: 10px; 
 }
 
@@ -47,7 +48,12 @@
 .content {
     flex: 1; 
     padding: 20px;
-    margin: 0; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content :is(h1, h2, h3, h4, h5, h6, p){
+    color: black;
 }
 
 .navButtons {

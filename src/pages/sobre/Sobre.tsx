@@ -3,13 +3,14 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 
 function Sobre() {
-  return (
-    <div>
-      <Navbar />
-      <Content />
-      <Footer />
-    </div>
-  );
+    window.scrollTo(0, 0);
+    return (
+        <div>
+            <Navbar />
+            <Content />
+            <Footer />
+        </div>
+    );
 }
 
 export default Sobre;

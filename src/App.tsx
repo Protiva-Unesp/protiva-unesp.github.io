@@ -1,16 +1,18 @@
 import './App.css'
-import Home from './pages/Home/Home';
-import Sobre from './pages/Sobre/Sobre'
+import Home from './pages/home/Home';
+import Sobre from './pages/sobre/Sobre'
 import './styles/global.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Eda from './pages/Eda/Eda';
-import Obi from './pages/Obi/Obi';
-import Intro from './pages/Intro/Intro';
+import Eda from './pages/eda/Eda';
+import Obi from './pages/obi/Obi';
+import Intro from './pages/intro/Intro';
 import MarkdownNavigator from './components/renderArticlePage/RenderArticlePage';
+import ScrollToTop from './components/scrollToTop/scrollToTop';
 
 function App() {
   return (
       <Router>
+        <ScrollToTop />
         <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/sobre" element={<Sobre />} /> 

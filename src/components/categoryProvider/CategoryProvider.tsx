@@ -5,7 +5,8 @@ interface CategoryContextProps {
     setSelectedCategory: (category: string) => void;
 }
 
-const CategoryContext = createContext<CategoryContextProps | undefined>(undefined);
+const CategoryContext = createContext<CategoryContextProps 
+    | undefined>(undefined);
 
 export const useCategory = () => {
     const context = useContext(CategoryContext);
@@ -15,11 +16,13 @@ export const useCategory = () => {
     return context;
 };
 
-export const CategoryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const CategoryProvider: React.FC<{ 
+    children: React.ReactNode }> = ({ children }) => {
     const [selectedCategory, setSelectedCategory] = useState('');
 
     return (
-        <CategoryContext.Provider value={{ selectedCategory, setSelectedCategory }}>
+        <CategoryContext.Provider value=
+            {{ selectedCategory, setSelectedCategory }}>
             {children}
         </CategoryContext.Provider>
     );

@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import MarkdownRenderer from '../MarkdownRenderer/MarkdownRenderer';
+import MarkdownRenderer from '../markdownRenderer/MarkdownRenderer';
 import useMarkdownFiles from '../../hooks/useMarkdownFiles';
 import { useParams, useNavigate } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 import styles from './RenderArticlePage.module.css';
 
 const RenderArticlePage = () => {
@@ -18,9 +18,11 @@ const RenderArticlePage = () => {
     useEffect(() => {
         if (files.length > 0) {
             const fileName = encodeURIComponent(
-                files[currentIndex].path.split('/').pop()?.replace('.md', '') || ''
+                files[currentIndex].path.split('/').pop()?.replace('.md', '') 
+                    || ''
             );
-            navigate(`/estude/${category}/${title}/${fileName}`, { replace: true });
+            navigate(`/estude/${category}/${title}/${fileName}`, 
+                     { replace: true });
         }
     }, [currentIndex, files, navigate, title]);
 
@@ -30,7 +32,8 @@ const RenderArticlePage = () => {
     };
 
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, files.length - 1));
+        setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, 
+                                                files.length - 1));
         window.scrollTo(0, 0);
     };
 
@@ -75,12 +78,16 @@ const RenderArticlePage = () => {
             </div>
             <div className={styles.container}>
                 <div className={styles.main}>
-                    <div ref={sidebarRef} className={`${styles.sidebar} ${sidebarOpen ? styles.open : ''}`}>
+                    <div ref={sidebarRef} className={`${styles.sidebar} 
+                        ${sidebarOpen ? styles.open : ''}`}>
                         <ul>
                             {files.map((file, index) => (
                                 <li key={index}>
-                                    <a href="#" onClick={() => setCurrentIndex(index)}>
-                                        {file.path.split('/').pop()?.replace('.md', '').replace(/_/g, ' ')}
+                                    <a href="#" onClick={() => 
+                                        setCurrentIndex(index)}>
+                                        {file.path.split('/').pop()?.
+                                            replace('.md', '').
+                                            replace(/_/g, ' ')}
                                     </a>
                                 </li>
                             ))}
@@ -89,12 +96,15 @@ const RenderArticlePage = () => {
                     <div className={styles.content}>
                         {currentFile ? (
                             <>
-                                <MarkdownRenderer content={currentFile.content} />
+                                <MarkdownRenderer content={
+                                    currentFile.content} />
                                 <div className={styles.navButtons}>
-                                    <button onClick={handlePrevious} disabled={currentIndex === 0}>
+                                    <button onClick={handlePrevious} 
+                                    disabled={currentIndex === 0}>
                                         Voltar
                                     </button>
-                                    <button onClick={handleNext} disabled={currentIndex === files.length - 1}>
+                                    <button onClick={handleNext} disabled={
+                                        currentIndex === files.length - 1}>
                                         Avançar
                                     </button>
                                 </div>
