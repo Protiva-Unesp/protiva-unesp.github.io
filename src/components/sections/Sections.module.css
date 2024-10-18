@@ -52,19 +52,19 @@
 }
 
 .sectionWelcome {
-    background-color: orange;
+    background-color: #FFA500;
 }
 
 .sectionEda {
-    background-color: red;
+    background-color: #d10202;
 }
 
 .sectionObi {
-    background-color: blue;
+    background-color: #0000a3;
 }
 
 .sectionIntro {
-    background-color: green;
+    background-color: #22c722;
 }
 
 @media (max-width: 768px) {

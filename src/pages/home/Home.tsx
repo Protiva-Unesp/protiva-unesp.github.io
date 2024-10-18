@@ -14,9 +14,9 @@ function Home() {
             <Navbar />
             <Banner />
             {/* <Content />*/}
-            <Carousel />
             {/*<Projects />*/}
             <Sections />
+            <Carousel />
             <Socials />
             <Faq />
             <Footer />
