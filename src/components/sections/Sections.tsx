@@ -25,7 +25,13 @@ function Section() {
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Estruturas de Dados e Algoritmos</h3>
-                        <p>Teste texto Teste texto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Vivamus dictum tempor diam, quis consectetur mi 
+                        pulvinar vel. Integer id felis diam. Quisque aliquet, 
+                        justo quis scelerisque viverra, nunc justo cursus 
+                        tortor, vel ultricies urna eros in elit. Pellentesque 
+                        magna tellus, convallis sit amet rhoncus sit amet, 
+                        pulvinar sed odio.</p>
                         <Link to="/estude/eda">
                             <button>Aprender ED&A</button>
                         </Link>
@@ -39,7 +45,13 @@ function Section() {
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>OBI - Respostas comentadas</h3>
-                        <p>Teste texto Teste texto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Vivamus dictum tempor diam, quis consectetur mi 
+                        pulvinar vel. Integer id felis diam. Quisque aliquet, 
+                        justo quis scelerisque viverra, nunc justo cursus 
+                        tortor, vel ultricies urna eros in elit. Pellentesque 
+                        magna tellus, convallis sit amet rhoncus sit amet, 
+                        pulvinar sed odio.</p>
                         <Link to="/estude/obi">
                             <button>Estudar Respostas</button>
                         </Link>
@@ -53,7 +65,13 @@ function Section() {
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Introdução à Programação</h3>
-                        <p>Teste texto Teste texto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Vivamus dictum tempor diam, quis consectetur mi 
+                        pulvinar vel. Integer id felis diam. Quisque aliquet, 
+                        justo quis scelerisque viverra, nunc justo cursus 
+                        tortor, vel ultricies urna eros in elit. Pellentesque 
+                        magna tellus, convallis sit amet rhoncus sit amet, 
+                        pulvinar sed odio.</p>
                         <Link to="/estude/intro">
                             <button>Iniciar</button>
                         </Link>

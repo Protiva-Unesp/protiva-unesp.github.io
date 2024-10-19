@@ -2,9 +2,9 @@
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import Banner from "../../components/banner/Banner";
-import Faq from "../../components/faq/Faq";
+//import Faq from "../../components/faq/Faq";
 //import Projects from "../../components/projects/Projects";
-import Carousel from "../../components/carousel/Carousel";
+//import Carousel from "../../components/carousel/Carousel";
 import Sections from "../../components/sections/Sections";
 import Socials from "../../components/socials/Socials";
 
@@ -16,9 +16,9 @@ function Home() {
             {/* <Content />*/}
             {/*<Projects />*/}
             <Sections />
-            <Carousel />
+            {/*<Carousel />*/}
             <Socials />
-            <Faq />
+            {/*<Faq />*/}
             <Footer />
         </div>
     );

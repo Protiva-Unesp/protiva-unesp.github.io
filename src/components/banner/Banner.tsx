@@ -63,10 +63,10 @@ const Banner = () => {
                     <p>Aprenda sobre estruturas de dados e algoritmos para Programação Competitiva!</p>
                 </div>
                 <div className={styles.squareContainer}>
-                    <div className={styles.squareFig1}></div>
-                    <div className={styles.squareFig2}></div>
-                    <div className={styles.squareFig3}></div>
-                    <div className={styles.squareFig4}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig1}`}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig2}`}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig3}`}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig4}`}></div>
                 </div>
             </div>
         </section>

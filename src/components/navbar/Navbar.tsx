@@ -30,8 +30,9 @@ function Navbar() {
         <div className={`${styles['navbar-container']} ${hidden ? 
             styles['navbar-hidden'] : ''}`}>
             <div className={styles.container}>
-                <Link to="/"><img className={styles.logoStyle} 
-                src={logo} alt="Logo" /></Link>
+                <Link to="/">
+                    <div className={styles.logoText}>Protiva</div>
+                </Link>
                 <ul className={styles.topnav}>
                     <li>
                         <Link to="/">Início</Link>

@@ -9,10 +9,10 @@
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 26px;
     border: none;
     outline: none;
-    color: white;
+    color: #33FF00;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -20,7 +20,8 @@
 }
 
 .dropbtn:hover {
-    background-color: #00aeef;
+    color: #d600d6;
+    cursor: pointer;
 }
 
 .dropdown-content button {
@@ -35,8 +36,7 @@
 }
 
 .dropdown-content button:hover {
-    background-color: #00aeef; 
-    color: white; 
+    color: #d600d6;
 }
 
 .dropdown:hover .dropdown-content {

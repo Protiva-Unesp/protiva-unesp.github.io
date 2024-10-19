@@ -23,8 +23,14 @@ const Card: React.FC<CardProps> = ({ title, description, category }) => {
         window.scrollTo(0, 0);
     };
 
+    const cardClass = `${styles.card} ${
+        category === 'eda' ? styles.cardEda :
+        category === 'obi' ? styles.cardObi :
+        category === 'intro' ? styles.cardIntro : ''
+    }`;
+
     return (
-        <div className={styles.card} onClick={handleButtonClick}>
+        <div className={cardClass} onClick={handleButtonClick}>
             <div className={styles.container}>
                 <h4>
                     <b>{title}</b>

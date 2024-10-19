@@ -133,32 +133,36 @@
     margin-top: 100px;
 }
 
-.squareFig1 {
+.squareFig {
     width: 50px;         
     height: 50px;        
-    background-color: red; 
     border-radius: 30%;   
+    position: relative;
+    box-sizing: border-box;
+}
+
+.squareFig1 {
+    background-color: #d10202; 
+    border: 3px solid #a10000;
+    box-shadow: inset -2px -2px 0 0 #ff4d4d, inset 2px 2px 0 0 #750000; 
 }
 
 .squareFig2 {
-    width: 50px;         
-    height: 50px;        
-    background-color: green; 
-    border-radius: 30%;   
+    background-color: #22c722; 
+    border: 3px solid #006400;
+    box-shadow: inset -2px -2px 0 0 #66ff66, inset 2px 2px 0 0 #003200;
 }
 
 .squareFig3 {
-    width: 50px;         
-    height: 50px;        
-    background-color: blue; 
-    border-radius: 30%;   
+    background-color: #0000a3; 
+    border: 3px solid #00008b; 
+    box-shadow: inset -2px -2px 0 0 #4d4dff, inset 2px 2px 0 0 #00004b;
 }
 
 .squareFig4 {
-    width: 50px;         
-    height: 50px;        
-    background-color: yellow; 
-    border-radius: 30%;   
+    background-color: #FFA500; 
+    border: 3px solid #b8860b;
+    box-shadow: inset -2px -2px 0 0 #ffff99, inset 2px 2px 0 0 #8b6508;
 }
 
 /*

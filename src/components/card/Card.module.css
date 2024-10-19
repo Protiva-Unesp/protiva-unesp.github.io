@@ -6,11 +6,26 @@
     border-radius: 5px;
     margin: 0;
     padding: 30px;
-    background: linear-gradient(#00aeef, #001e62);
+    font-family: 'VT323', sans-serif;
+    font-size: 22px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.cardEda {
+    background-color: #22c722;
+}
+
+.cardObi {
+    background-color: #0000a3;
+}
+
+.cardIntro {
+    background-color: #d10202;
 }
 
 .container {
