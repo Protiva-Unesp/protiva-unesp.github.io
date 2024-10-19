@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import Dropdown from '../dropdown/Dropdown';
-import logo from '../../assets/img/logo.svg';
+//import logo from '../../assets/img/logo.svg';
 
 function Navbar() {
     const [hidden, setHidden] = useState(false);
