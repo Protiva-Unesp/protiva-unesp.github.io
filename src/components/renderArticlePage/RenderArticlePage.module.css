@@ -86,12 +86,19 @@
     color: #33FF00;
     text-align: center;
     font-size: 28px;
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
 .navButtons button:hover {
     cursor: pointer;
-    transform: translateY(-8px);
+}
+
+.navButtons button:hover.left {
+    transform: translateX(-10px); 
+}
+
+.navButtons button:hover.right{
+    transform: translateX(10px); 
 }
 
 .navButtons button:disabled {

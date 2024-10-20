@@ -21,10 +21,10 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div id="sectionEda" className={styles.sectionEda}>
+            <div className={styles.sectionEda}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
-                        <h3>Estruturas de Dados e Algoritmos</h3>
+                        <h3 id="sectionEda">Estruturas de Dados e Algoritmos</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Vivamus dictum tempor diam, quis consectetur mi 
                         pulvinar vel. Integer id felis diam. Quisque aliquet, 
@@ -41,10 +41,10 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div id="sectionObi" className={styles.sectionObi}>
+            <div className={styles.sectionObi}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
-                        <h3>OBI - Respostas comentadas</h3>
+                        <h3 id="sectionObi">OBI - Respostas comentadas</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Vivamus dictum tempor diam, quis consectetur mi 
                         pulvinar vel. Integer id felis diam. Quisque aliquet, 
@@ -61,10 +61,10 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div id="sectionIntro" className={styles.sectionIntro}>
+            <div className={styles.sectionIntro}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
-                        <h3>Introdução à Programação</h3>
+                        <h3 id="sectionIntro">Introdução à Programação</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
                         elit. Vivamus dictum tempor diam, quis consectetur mi 
                         pulvinar vel. Integer id felis diam. Quisque aliquet, 

@@ -11,14 +11,14 @@
     font-size: 26px;
 }
 
-.logoText:hover {
-    color: #d600d6;
-}
-
 .logoText {
     font-size: 40px;
     color: #33FF00;
     text-decoration: underline;
+}
+
+.logoText:hover {
+    color: #d600d6;
 }
 
 .navbar-hidden {

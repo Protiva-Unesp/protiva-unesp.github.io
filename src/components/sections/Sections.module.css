@@ -35,6 +35,7 @@
     color: #33FF00;
     text-align: center;
     font-size: 28px;
+    transition: transform 0.25s ease;
 }
 
 .sectionContent .textContent button:hover{

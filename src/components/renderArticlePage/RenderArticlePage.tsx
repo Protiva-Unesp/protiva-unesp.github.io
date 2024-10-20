@@ -99,11 +99,11 @@ const RenderArticlePage = () => {
                                 <MarkdownRenderer content={
                                     currentFile.content} />
                                 <div className={styles.navButtons}>
-                                    <button onClick={handlePrevious} 
+                                    <button className={styles.left} onClick={handlePrevious} 
                                     disabled={currentIndex === 0}>
                                         Voltar
                                     </button>
-                                    <button onClick={handleNext} disabled={
+                                    <button className={styles.right} onClick={handleNext} disabled={
                                         currentIndex === files.length - 1}>
                                         Avançar
                                     </button>
