@@ -6,7 +6,7 @@ import styles from "./Socials.module.css";
 function Section() {
     return (
         <div className={styles.section}>
-            <h1>NOS SIGA NAS REDES SOCIAIS</h1>
+            <h1>NOS SIGA NAS REDES SOCIAIS!</h1>
             <p>Acesse nosso canal do Youtube para conferir video-aulas.<br/> 
             Confira as nossas redes para saber mais sobre Programação 
             Competitiva.</p>

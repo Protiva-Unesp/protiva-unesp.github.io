@@ -9,6 +9,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'VT323', sans-serif;
+    font-weight: normal;
 }
 
 .footer img {
@@ -16,9 +18,9 @@ footer {
 }
 
 .footer p {
-    font-weight: 400;
-    font-size: 14px;
-    color: #B8B8B8;
+    font-size: 28px;
+    color: #00FF00;
+    font-weight: normal;
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
@@ -45,6 +47,8 @@ footer {
 }
 
 .footer-column li {
+    color: #33FF00;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -58,12 +62,13 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #33FF00;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #d600d6;
 }
 
 .socialRow {

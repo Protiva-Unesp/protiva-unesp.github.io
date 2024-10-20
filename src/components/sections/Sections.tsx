@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Section() {
     return (
         <div className={styles.sectionContainer}>
-            <div className={styles.sectionWelcome}>
+            <div id="sectionWelcome" className={styles.sectionWelcome}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Sobre a Protiva</h3>
@@ -21,7 +21,7 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div className={styles.sectionEda}>
+            <div id="sectionEda" className={styles.sectionEda}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Estruturas de Dados e Algoritmos</h3>
@@ -41,7 +41,7 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div className={styles.sectionObi}>
+            <div id="sectionObi" className={styles.sectionObi}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>OBI - Respostas comentadas</h3>
@@ -61,7 +61,7 @@ function Section() {
                     </div>
                 </div>
             </div>
-            <div className={styles.sectionIntro}>
+            <div id="sectionIntro" className={styles.sectionIntro}>
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Introdução à Programação</h3>

@@ -7,7 +7,7 @@ const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 10);
     const [isBlinking, setIsBlinking] = useState(false); 
-    const toRotate = ["Programação Competitiva"];
+    const toRotate = ["PROgramação CompetiTIVA"];
     const delayBeforeDelete = 6000; 
 
     useEffect(() => {
@@ -63,10 +63,18 @@ const Banner = () => {
                     <p>Aprenda sobre estruturas de dados e algoritmos para Programação Competitiva!</p>
                 </div>
                 <div className={styles.squareContainer}>
-                    <div className={`${styles.squareFig} ${styles.squareFig1}`}></div>
-                    <div className={`${styles.squareFig} ${styles.squareFig2}`}></div>
-                    <div className={`${styles.squareFig} ${styles.squareFig3}`}></div>
-                    <div className={`${styles.squareFig} ${styles.squareFig4}`}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig1}`}
+                    onClick={() => document.getElementById('sectionWelcome')
+                        ?.scrollIntoView({ behavior: 'smooth'})}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig2}`}
+                    onClick={() => document.getElementById('sectionEda')
+                        ?.scrollIntoView({ behavior: 'smooth'})}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig3}`}
+                    onClick={() => document.getElementById('sectionObi')
+                        ?.scrollIntoView({ behavior: 'smooth'})}></div>
+                    <div className={`${styles.squareFig} ${styles.squareFig4}`}
+                    onClick={() => document.getElementById('sectionIntro')
+                        ?.scrollIntoView({ behavior: 'smooth'})}></div>
                 </div>
             </div>
         </section>

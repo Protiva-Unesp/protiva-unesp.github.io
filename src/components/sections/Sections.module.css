@@ -35,12 +35,11 @@
     color: #33FF00;
     text-align: center;
     font-size: 28px;
-    transition: transform 0.3s ease;
 }
 
 .sectionContent .textContent button:hover{
     cursor: pointer;
-    transform: translateX(12px);
+    transform: translateY(-8px);
 }
 
 .sectionContent .imgContent {

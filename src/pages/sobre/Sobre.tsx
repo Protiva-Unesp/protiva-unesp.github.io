@@ -1,13 +1,14 @@
-import Content from "../../components/content/Content";
+import Faq from "../../components/faq/Faq";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
+import Carousel from "../../components/carousel/Carousel";
 
 function Sobre() {
-    window.scrollTo(0, 0);
     return (
         <div>
             <Navbar />
-            <Content />
+            <Carousel />
+            <Faq /> 
             <Footer />
         </div>
     );

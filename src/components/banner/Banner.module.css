@@ -129,40 +129,56 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 5px;
+    gap: 10px;
     margin-top: 100px;
 }
 
 .squareFig {
     width: 50px;         
     height: 50px;        
-    border-radius: 30%;   
     position: relative;
     box-sizing: border-box;
+    transition: 0.1s ease;
+}
+
+.squareFig:hover {
+    cursor: pointer;
 }
 
 .squareFig1 {
     background-color: #d10202; 
     border: 3px solid #a10000;
-    box-shadow: inset -2px -2px 0 0 #ff4d4d, inset 2px 2px 0 0 #750000; 
+}
+
+.squareFig1:hover {
+    box-shadow: inset -2px -2px 0 0 #ff4242, inset 2px 2px 0 0 #6b0000;
 }
 
 .squareFig2 {
     background-color: #22c722; 
     border: 3px solid #006400;
+}
+
+.squareFig2:hover {
     box-shadow: inset -2px -2px 0 0 #66ff66, inset 2px 2px 0 0 #003200;
 }
 
 .squareFig3 {
     background-color: #0000a3; 
     border: 3px solid #00008b; 
-    box-shadow: inset -2px -2px 0 0 #4d4dff, inset 2px 2px 0 0 #00004b;
+}
+
+.squareFig3:hover {
+    box-shadow: inset -2px -2px 0 0 #4d4dff, inset 2px 2px 0 0 #00002b;
 }
 
 .squareFig4 {
     background-color: #FFA500; 
     border: 3px solid #b8860b;
-    box-shadow: inset -2px -2px 0 0 #ffff99, inset 2px 2px 0 0 #8b6508;
+}
+
+.squareFig4:hover {
+    box-shadow: inset -2px -2px 0 0 #f5c05d, inset 2px 2px 0 0 #bf7c00;
 }
 
 /*
