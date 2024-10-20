@@ -8,6 +8,7 @@ import Obi from './pages/obi/Obi';
 import Intro from './pages/intro/Intro';
 import MarkdownNavigator from './components/renderArticlePage/RenderArticlePage';
 import ScrollToTop from './components/scrollToTop/scrollToTop';
+import QuemSomos from './pages/quem-somos/QuemSomos'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/sobre" element={<Sobre />} /> 
+            <Route path="/quemsomos" element={<QuemSomos />} /> 
             <Route path="/estude/eda" element={<Eda />} /> 
             <Route path="/estude/obi" element={<Obi />} /> 
             <Route path="/estude/intro" element={<Intro />} /> 

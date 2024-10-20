@@ -1,13 +1,15 @@
+import Content from "../../components/content/Content";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 
-function Sobre() {
+function QuemSomos() {
     return (
         <div>
-        <Navbar />
-        <Footer />
+            <Navbar />
+            <Content />
+            <Footer />
         </div>
     );
 }
 
-export default Sobre;
+export default QuemSomos;

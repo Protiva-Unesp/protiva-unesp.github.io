@@ -35,13 +35,13 @@ function Navbar() {
                 </Link>
                 <ul className={styles.topnav}>
                     <li>
-                        <Link to="/">Início</Link>
-                    </li>
-                    <li>
                         <Dropdown />
                     </li>
                     <li>
                         <Link to="/sobre">Sobre</Link>
+                    </li>
+                    <li>
+                        <Link to="/quemsomos">Quem somos</Link>
                     </li>
                 </ul>
             </div>
