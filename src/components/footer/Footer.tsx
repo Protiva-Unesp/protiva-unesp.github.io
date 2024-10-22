@@ -1,25 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.css';
-//import navIcon1 from "../../assets/img/nav-icon1.svg";
-//import navIcon2 from "../../assets/img/nav-icon2.svg";
-//import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
-            {/*<div className={styles.socialRow}>
-                <div className={styles.socialIcon}> 
-                    <a href="https://www.youtube.com/@protiva_unesp">
-                        <img src={navIcon3} alt="Icon" /></a>
-                    <a href="https://www.instagram.com/protiva_unesp">
-                        <img src={navIcon1} alt="Icon" /></a>
-                    <a href="https://www.facebook.com/protivaunesp">
-                        <img src={navIcon2} alt="Icon" /></a>
-                </div>
-            </div>*/}
             <div className={styles['footer-row']}>
                 <div className={styles['footer-column']}>
-                    <p className={styles['footer-title']}>FUNDAÇÕES</p>
+                    <h2>FUNDAÇÕES</h2>
                     <ul>
                         <li><a href="https://www.editoraunesp.com.br/">Editora Unesp</a></li>
                         <li><a href="https://www.fundunesp.org.br/">Fundunesp</a></li>
@@ -27,7 +14,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div className={styles['footer-column']}>
-                    <p className={styles['footer-title']}>GOVERNO</p>
+                    <h2>GOVERNO</h2>
                     <ul>
                         <li><a href="https://www.saopaulo.sp.gov.br/">Governo de São Paulo</a></li>
                         <li><a href="https://www.cruesp.sp.gov.br/">Conselhos de Reitores</a></li>
@@ -35,7 +22,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div className={styles['footer-column']}>
-                    <p className={styles['footer-title']}>SISTEMAS</p>
+                    <h2>SISTEMAS</h2>
                     <ul>
                         <li><a href="https://sistemas.unesp.br/">Sistemas Online</a></li>
                         <li><a href="https://www2.unesp.br/eduroam">EDUROAM</a></li>
@@ -45,7 +32,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div className={styles['footer-column']}>
-                    <p className={styles['footer-title']}>SAÚDE</p>
+                    <h2>SAÚDE</h2>
                     <ul>
                         <li><a href="https://www.unesp.br/unespsaude/">Unesp Saúde</a></li>
                         <li><a href="https://www.ecaresentinela.com.br/">e-Care Sentinela</a></li>
@@ -53,7 +40,7 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div className={styles['footer-column']}>
-                    <p className={styles['footer-title']}>INFORMAÇÕES</p>
+                    <h2>INFORMAÇÕES</h2>
                     <ul>
                         <li><a href="https://www2.unesp.br/secgeral/manuais/legislacao-unesp/">Legislação Unesp</a></li>
                         <li><a href="https://www2.unesp.br/secgeral/diplomas/revalidacao/">Revalidação de Diplomas</a></li>
@@ -65,7 +52,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className={styles['footer-copy']}>
-                <p>2024 Protiva</p>
+                <p>{new Date().getFullYear()} Protiva</p>
             </div>
         </footer>
     );

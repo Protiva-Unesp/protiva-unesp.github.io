@@ -28,9 +28,8 @@ const useMarkdownFiles = ({ title }: { title: string }) => {
                 markdownFiles = import.meta.glob('/src/articles/obi/2022/*.md', { eager: true });
                 break;
             default:
-                console.log("Error - no file loaded")
+                {/*console.error("Error - no file loaded")*/}
         }
-
 
         const loadedFiles: MarkdownFile[] = Object.entries(markdownFiles).map(([path, module]) => {
             const content = module.markdown || "Content not found";

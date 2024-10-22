@@ -1,50 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import Dropdown from '../dropdown/Dropdown';
-//import logo from '../../assets/img/logo.svg';
 
 function Navbar() {
-    const [hidden, setHidden] = useState(false);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const onScroll = () => {
-            const currentScrollY = window.scrollY;
-
-            if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                setHidden(true);  
-            } else if (currentScrollY < lastScrollY) {
-                setHidden(false);  
-            }
-
-            setLastScrollY(currentScrollY);
-        };
-
-        window.addEventListener("scroll", onScroll);
-
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [lastScrollY]);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
 
     return (
-        <div className={`${styles['navbar-container']} ${hidden ? 
-            styles['navbar-hidden'] : ''}`}>
-            <div className={styles.container}>
-                <Link to="/">
-                    <div className={styles.logoText}>Protiva</div>
-                </Link>
-                <ul className={styles.topnav}>
-                    <li>
-                        <Dropdown />
-                    </li>
-                    <li>
-                        <Link to="/sobre">Sobre</Link>
-                    </li>
-                    <li>
-                        <Link to="/quemsomos">Quem somos</Link>
-                    </li>
-                </ul>
+        <div className={`${styles.container}`}>
+            <Link to="/">
+                <div className={styles.logoText}>Protiva</div>
+            </Link>
+            <div className={styles.burger} onClick={toggleMenu}>
+                &#9776;
             </div>
+            <ul className={`${styles.topnav} ${menuOpen ? styles.active : ''}`}>
+                <li>
+                    <Dropdown />
+                </li>
+                <li>
+                    <Link to="/sobre">Sobre</Link>
+                </li>
+                <li>
+                    <Link to="/quemsomos">Quem somos</Link>
+                </li>
+            </ul>
         </div>
     );
 }

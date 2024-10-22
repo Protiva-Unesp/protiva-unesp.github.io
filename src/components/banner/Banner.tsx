@@ -51,18 +51,18 @@ const Banner = () => {
     return (
         <section className={styles.banner} id="home">
             <div className={styles.container}>
-                <div className={styles.content}>
-                    <div className= "animate__animated animate__fadeIn">
-                        <h1>Protiva:<br /> 
-                            <span className={styles['txt-rotate']}>
-                                <span className={`${styles.wrap} ${isBlinking ? styles.blink : 
-                                styles.solid}`}>{text}</span>
-                            </span>
-                        </h1>
-                    </div>
-                    <p>Aprenda sobre estruturas de dados e algoritmos para Programação Competitiva!</p>
+                <div className= "animate__animated animate__fadeIn">
+                    <h1>Protiva:<br /> 
+                        <span className={styles['txt-rotate']}>
+                            <span className={`${styles.wrap} ${isBlinking ? styles.blink : 
+                            styles.solid}`}>{text}</span>
+                        </span>
+                    </h1>
                 </div>
-                <div className={styles.squareContainer}>
+                <p>Aprenda sobre estruturas de dados e algoritmos para Programação Competitiva!</p>
+            </div>
+                {/*
+                <div className={styles.squareFigContainer}>
                     <div className={`${styles.squareFig} ${styles.squareFig1}`}
                     onClick={() => document.getElementById('sectionWelcome')
                         ?.scrollIntoView({ behavior: 'smooth'})}></div>
@@ -76,7 +76,7 @@ const Banner = () => {
                     onClick={() => document.getElementById('sectionIntro')
                         ?.scrollIntoView({ behavior: 'smooth'})}></div>
                 </div>
-            </div>
+                */}
         </section>
     );
 }

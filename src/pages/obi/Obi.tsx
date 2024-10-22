@@ -2,7 +2,7 @@ import CardsContainer from "../../components/cardsContainer/CardsContainer";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import obiData from "../../data/obiData";
-import styles from "./Obi.module.css";
+import styles from "../styles/Topics.module.css";
 
 function Obi() {
     return (

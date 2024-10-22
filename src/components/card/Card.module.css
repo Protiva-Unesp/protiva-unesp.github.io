@@ -1,7 +1,6 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 30%;
     border: 1px #231f20;
     border-radius: 5px;
     margin: 0;
@@ -39,6 +38,13 @@
     width: 50%;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .card {
+        padding: 2px;
+    }
+}
+
+/*
 @media (max-width: 768px) {
     .card {
         width: 40%;
@@ -56,23 +62,6 @@
     }
 }
 
-@media (max-width: 480px) {
-    .card {
-        width: 90%; 
-        flex: 0 0 90%;
-        padding: 20px; 
-        margin: 8px auto; 
-    }
-    
-    .container {
-        padding: 8px; 
-    }
-    
-    .center {
-        width: 80%; 
-    }
-}
-
 @media (min-width: 1440px) {
     .card {
         width: 25%;
@@ -87,3 +76,4 @@
         width: 40%;
     }
 }
+*/

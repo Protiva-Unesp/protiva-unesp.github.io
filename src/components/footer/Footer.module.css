@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     color: white;
-    /*background: linear-gradient(to bottom left, #000000 40.2%, #000b24, #001e62);*/
     background: black;
     text-align: center;
     padding: 20px;
@@ -71,65 +70,28 @@ footer a:hover {
     color: #d600d6;
 }
 
-.socialRow {
-    display: flex; 
-    justify-content: flex-end; 
-    padding: 10px; 
-    margin-top: 40px;
-    margin-bottom: 40px;
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 100px;
+        padding: 5px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-copy p {
+        font-size: 24px;
+    }
 }
 
-.socialRow img {
-    margin: 9px;
-    width: 40px;
-    height: 40px;
-}
-
-.socialIcon {
-    display: flex; 
-    gap: 30px;
-}
-
-.socialIcon a {
-    width: 80px;
-    height: 80px;
-    background: rgba(217, 217, 217, 0.1);
-    display: inline-flex;
-    border-radius: 50%;
-    margin-right: 6px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    position: relative;
-    overflow: hidden;
-}
-
-.socialIcon a::before {
-    content: "";
-    width: 100%; /* Match the width of the container */
-    height: 100%; /* Match the height of the container */
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: 0.25s ease-in-out;
-}
-
-.socialIcon a:hover::before {
-    transform: scale(1);
-}
-
-.socialIcon a img {
-    width: 40%;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-}
-
-.socialIcon a:hover img {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-}
-
+/*
 @media (max-width: 768px) {
     .footer img {
         width: 40%;
@@ -160,26 +122,6 @@ footer a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .footer img {
-        width: 50%;
-    }
-
-    .footer p {
-        font-size: 10px;
-        margin-top: 10px;
-    }
-
-    .footer-column {
-        min-width: 100px;
-        padding: 5px;
-    }
-
-    .socialRow img {
-        width: 25px;
-        height: 25px;
-    }
-}
 
 @media (min-width: 1440px) {
     .footer img {
@@ -205,3 +147,4 @@ footer a:hover {
         height: 50px;
     }
 }
+*/

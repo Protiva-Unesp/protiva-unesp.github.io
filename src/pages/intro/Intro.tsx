@@ -2,7 +2,7 @@ import CardsContainer from "../../components/cardsContainer/CardsContainer";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import introData from "../../data/introData";
-import styles from "./Intro.module.css";
+import styles from "../styles/Topics.module.css";
 
 function Intro() {
     return (

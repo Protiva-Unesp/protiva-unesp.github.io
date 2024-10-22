@@ -1,18 +1,10 @@
 .container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    flex: 1;
     margin-top: 56px; 
-    min-height: calc(100vh - 56px); 
     padding: 0; 
     margin: 0; 
-}
-
-.main {
-    display: flex; 
-    flex: 1; 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
 }
 
 .sidebar {
@@ -47,25 +39,23 @@
     color: #d600d6;
 }
 
-.content {
-    flex: 1; 
-    padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
+.markdownContent {
+    flex: 1;
+    margin-top: 100px !important;
+    text-align: justify;
 }
 
-.content :is(h1, h2, h3 ,h4, h5, h6) {
+.markdownContent :is(h1, h2, h3 ,h4, h5, h6) {
     font-family: 'VT323', sans-serif;
     font-weight: normal;
     color: black;
 }
 
-.content p {
+.markdownContent p {
     color: black;
 }
 
-.content :is(ul, li) {
+.markdownContent :is(ul, li) {
     color: black;
 }
 
@@ -79,6 +69,9 @@
     width: 180px;
     height: 70px;
     margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     border-radius: 30px;
     border: 0;
     background-color: black;
@@ -107,16 +100,66 @@
     color: grey;
 }
 
-.hamburger {
+.burger {
     display: none; 
     cursor: pointer;
     font-size: 30px;
-    position: absolute; 
-    top: 60px; 
-    left: 10px;
-    z-index: 1000;
+    position: fixed; 
+    top: 70px; 
+    z-index: 1;
+    color: #33FF00;
+    background-color: black;
 }
 
+.burger:hover {
+    color: #d600d6;
+    background-color: #33FF00;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .markdownContent {
+        margin: 0; 
+        padding: 0;  
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px; 
+        height: 100%; 
+        background-color: #121212; 
+        transform: translateX(-100%); 
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .sidebar a {
+        font-size: 22px;    
+    }
+
+    .sidebar.open {
+        transform: translateX(0); 
+    }
+
+    .burger {
+        display: block; 
+    }
+
+    .main {
+        margin-left: 0; 
+        margin-top: 40px; 
+    }
+
+}
+
+/*
 @media (max-width: 768px) {
     .sidebar {
         position: fixed;
@@ -144,9 +187,4 @@
         margin-top: 40px; 
     }
 }
-
-@media (max-width: 480px) {
-    .sidebar {
-        width: 200px; 
-    }
-}
+*/

@@ -15,9 +15,7 @@ const Dropdown: React.FC = () => {
 
     return (
         <div className={styles.dropdown}>
-            <button className={styles.dropbtn}>Estude
-                <i className="fa fa-caret-down"></i>
-            </button>
+            <button className={styles.dropbtn}>Estude &#9660;</button>
             <div className={styles['dropdown-content']}>
                 <button className={styles.dropbtn} 
                     onClick= {() => handleNavigation("eda")}>

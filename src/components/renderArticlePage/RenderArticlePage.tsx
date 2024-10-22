@@ -13,7 +13,7 @@ const RenderArticlePage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [sidebarOpen, setSidebarOpen] = useState(false); 
     const sidebarRef = useRef<HTMLDivElement | null>(null); 
-    const hamburgerRef = useRef<HTMLDivElement | null>(null); 
+    const burgerRef = useRef<HTMLDivElement | null>(null); 
 
     useEffect(() => {
         if (files.length > 0) {
@@ -47,8 +47,8 @@ const RenderArticlePage = () => {
         if (
             sidebarRef.current && 
             !sidebarRef.current.contains(event.target as Node) && 
-            hamburgerRef.current && 
-            !hamburgerRef.current.contains(event.target as Node) 
+            burgerRef.current && 
+            !burgerRef.current.contains(event.target as Node) 
         ) {
             setSidebarOpen(false); 
         }
@@ -70,49 +70,46 @@ const RenderArticlePage = () => {
         <div>
             <Navbar />
             <div 
-                ref={hamburgerRef} 
-                className={styles.hamburger} 
+                ref={burgerRef} 
+                className={styles.burger} 
                 onClick={toggleSidebar}
             >
-                &#9776; 
+                &#9654; 
             </div>
             <div className={styles.container}>
-                <div className={styles.main}>
-                    <div ref={sidebarRef} className={`${styles.sidebar} 
-                        ${sidebarOpen ? styles.open : ''}`}>
-                        <ul>
-                            {files.map((file, index) => (
-                                <li key={index}>
-                                    <a href="#" onClick={() => 
-                                        setCurrentIndex(index)}>
-                                        {file.path.split('/').pop()?.
-                                            replace('.md', '').
-                                            replace(/_/g, ' ')}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className={styles.content}>
-                        {currentFile ? (
-                            <>
-                                <MarkdownRenderer content={
-                                    currentFile.content} />
-                                <div className={styles.navButtons}>
-                                    <button className={styles.left} onClick={handlePrevious} 
+                <div ref={sidebarRef} className={`${styles.sidebar} 
+                    ${sidebarOpen ? styles.open : ''}`}>
+                    <ul>
+                        {files.map((file, index) => (
+                            <li key={index}>
+                            <a href="#" onClick={() => 
+                                setCurrentIndex(index)}>
+                                {file.path.split('/').pop()?.
+                                replace('.md', '').
+                                replace(/_/g, ' ')}
+                            </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={styles.markdownContent}>
+                    {currentFile ? (
+                        <div>
+                            <MarkdownRenderer content={currentFile.content} />
+                            <div className={styles.navButtons}>
+                                <button className={styles.left} onClick={handlePrevious} 
                                     disabled={currentIndex === 0}>
-                                        Voltar
-                                    </button>
-                                    <button className={styles.right} onClick={handleNext} disabled={
-                                        currentIndex === files.length - 1}>
-                                        Avançar
-                                    </button>
-                                </div>
-                            </>
-                        ) : (
-                            <p>Selecione um arquivo</p>
-                        )}
-                    </div>
+                                        &#9664; Voltar
+                                </button>
+                                <button className={styles.right} onClick={handleNext} disabled={
+                                    currentIndex === files.length - 1}>
+                                        Avançar &#9654; 
+                                </button>
+                            </div>
+                        </div>
+                    ) : (
+                        <p>Selecione um arquivo</p>
+                    )}
                 </div>
             </div>
             <Footer />

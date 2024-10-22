@@ -2,18 +2,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-weight: 400;
     position: relative;
     background-color: white !important;
     color: black !important;
     font-family: Arial, sans-serif;
-}
-
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
 }
 
 @font-face {
