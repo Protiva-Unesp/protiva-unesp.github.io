@@ -41,6 +41,8 @@
 
 .markdownContent {
     flex: 1;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 100px !important;
     text-align: justify;
 }
@@ -121,11 +123,6 @@
         padding: 0;
     }
 
-    .markdownContent {
-        margin: 0; 
-        padding: 0;  
-    }
-
     .sidebar {
         position: fixed;
         left: 0;
@@ -155,6 +152,15 @@
         margin-top: 40px; 
     }
 
+    .navButtons {
+        padding: 0 20px 0 20px;
+    }
+
+    .navButtons button {
+        font-size: 18px;
+        width: 100px;
+        height: 40px;
+    }
 }
 
 /*

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styles from '../content/Content.module.css';
 
 interface MarkdownRendererProps {
     content: string;
@@ -8,7 +7,7 @@ interface MarkdownRendererProps {
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ( { content } ) => {
     return (
-        <div className={styles.content}>
+        <div>
             <ReactMarkdown>{ content }</ReactMarkdown>
         </div>
     );
