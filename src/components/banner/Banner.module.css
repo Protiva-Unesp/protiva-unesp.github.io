@@ -166,12 +166,19 @@
         padding: 5px;
     }
 
-    .banner h1 {
-        font-size: 40px;
+    .banner .container h1 {
+        font-size: 35px;
+        padding: 0 0 20px 0;
     }
 
     .banner .container span {
-        font-size: 35px;
+        font-size: 30px;
+        padding: 20px 0 0 0;
+    }
+
+    .banner .container p{
+        font-size: 25px;
+        padding: 20px 0 0 0;
     }
 
     .banner :is(h1, h2, h3, h4, h5, h6, p, a) {
@@ -185,8 +192,6 @@
     .banner :is(p, a, li, button, ul) {
         color: #33FF00;
     }
-
-    .banner .container
 
     .txt-rotate .wrap {
         white-space: normal;
