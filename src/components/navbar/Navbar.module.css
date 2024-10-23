@@ -28,7 +28,6 @@
 }
 
 .logoText:hover {
-    background-color: #33FF00;
     color: #d600d6;
 }
 
@@ -58,8 +57,8 @@
 }
 
 .topnav li a:hover {
-    background-color: #33FF00;
     color: #d600d6;
+    text-decoration: underline;
 }
 
 @media (max-width: 900px) {
