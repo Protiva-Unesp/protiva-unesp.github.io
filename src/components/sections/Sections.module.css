@@ -61,7 +61,6 @@
     padding: 0;
 }
 
-
 .sectionContent .imgContentPartners {
     display: flex;
     flex-direction: column;
@@ -137,6 +136,10 @@ img#edit {
 }
 
 @media (min-width: 1820px) {
+    .sectionContent {
+        padding: 20px 200px 70px 100px; 
+    }
+
     .sectionContent .imgContentPartners {
         display: flex;
         flex-direction: row;
@@ -148,17 +151,15 @@ img#edit {
     }
     
     .sectionContent .imgContentPartners img {
-        max-width: 300px; 
-        margin: 0 10px;
+        max-width: 200px; 
         height: auto; 
-        margin: 10px; 
-    }
-
-    .sectionContent .imgContent {
-        margin: 0 300px 0 0;
     }
 
     .sectionContent .imgContent img {
         max-width: 300px;
+    }
+
+    .sectionContent .textContent {
+        max-width: 1000px;
     }
 }
