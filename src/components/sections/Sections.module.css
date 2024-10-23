@@ -153,4 +153,12 @@ img#edit {
         height: auto; 
         margin: 10px; 
     }
+
+    .sectionContent .imgContent {
+        margin: 0 300px 0 0;
+    }
+
+    .sectionContent .imgContent img {
+        max-width: 300px;
+    }
 }
