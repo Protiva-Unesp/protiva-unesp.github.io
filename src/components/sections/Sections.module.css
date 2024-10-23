@@ -6,8 +6,15 @@
 .sectionContent {
     width: 100%;
     color: white;
-    padding: 20px 100px 80px 100px; 
+    padding: 20px 100px 20px 100px; 
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionContent .sectionPartners {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,7 +54,25 @@
 .sectionContent .imgContent {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    max-width: 300px;
+}
+
+.sectionContent .imgContent img {
+    padding: 0;
+}
+
+
+.sectionContent .imgContentPartners {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sectionContent .imgContentPartners img {
+    padding: 30px 20px 30px 20px;
 }
 
 .sectionContent h3 {
@@ -82,20 +107,6 @@
 
 img#edit {
     filter: grayscale(100%);
-}
-
-.imgContentGrid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imgContentGrid img {
-    max-width: 300px;
-}
-
-.imgContentGrid .grid-item {
-    margin: 10px 0;
 }
 
 @media (min-width: 1820px) {

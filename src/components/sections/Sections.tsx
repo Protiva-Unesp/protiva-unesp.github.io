@@ -15,10 +15,11 @@ function Section() {
                             Com nosso novo site, o aprendizado ficou 
                             ainda mais completo!</p>
                     </div>
-                    <div className={styles.imgContentGrid}>
-                        <img style={{ filter: 'saturate(5)'}} className="grid-item" src="./src/assets/img/logo_dco.png" alt="dco" />
-                        <img className="grid-item" src="./src/assets/img/logo-bgwhite.png" alt="dco" />                 
-                        <img className="grid-item" src="./src/assets/img/logo_unesp.svg" alt="dco" />                
+                    <div className={styles.imgContentPartners}>
+                        <img src="./src/assets/img/logo-bgwhite.png" alt="Protiva" />                 
+                        <img style={{ filter: 'saturate(5)'}} 
+                            src="./src/assets/img/logo_dco.png" alt="DCo" />
+                        <img src="./src/assets/img/logo_unesp.svg" alt="Unesp" />                
                     </div>
                 </div>
             </div>
@@ -71,8 +72,6 @@ function Section() {
                     </div>
                     <div className={styles.imgContent}>
                         <img
-                            style={{ maxWidth: '70%' }}
-                            className="grid-item"
                             src="/src/assets/img/logo_program.svg"
                             alt="programação"
                         />
