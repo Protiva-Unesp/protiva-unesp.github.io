@@ -8,11 +8,12 @@ function Section() {
                 <div className={styles.sectionContent}>
                     <div className={styles.textContent}>
                         <h3>Sobre a Protiva</h3>
-                        <p>Vídeos produzidos por alunos e professores da 
-                        Unesp sobre Programação Competitiva, com conteúdos 
-                        voltados para treinamento para competições como a 
-                        Olimpíada Brasileira de Informática, a Maratona SBC de 
-                        Programação, entre outras.</p>
+                        <p>Queremos que você brilhe nas competições de programação! 
+                            Nosso projeto visa estimular e capacitar alunos, 
+                            oferecendo vídeos e outros materiais para 
+                            te preparar para a OBI, Maratona SBC e mais. 
+                            Com nosso novo site, o aprendizado ficou 
+                            ainda mais completo!</p>
                     </div>
                     <div className={styles.imgContent}>
                         <h3>Imagem Protiva</h3>                 
