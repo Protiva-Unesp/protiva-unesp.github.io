@@ -28,6 +28,7 @@
 }
 
 .logoText:hover {
+    background-color: #33FF00;
     color: #d600d6;
 }
 
@@ -57,6 +58,7 @@
 }
 
 .topnav li a:hover {
+    background-color: #33FF00;
     color: #d600d6;
 }
 
@@ -101,7 +103,7 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .container {
         padding: 20px;
         font-size: 28px;
@@ -142,3 +144,46 @@
         padding: 10px;
     }
 }
+
+/*
+@media (max-width: 900px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: #33FF00;
+    }
+
+    .topnav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        z-index: 999;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: #33FF00;
+    }
+
+    .topnav.active {
+        display: flex;
+    }
+
+    .topnav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .topnav li a {
+        padding: 10px;
+    }
+
+}
+*/

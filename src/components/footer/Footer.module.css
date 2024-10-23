@@ -70,7 +70,7 @@ footer a:hover {
     color: #d600d6;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 900px) {
     .footer-row {
         flex-direction: column;
         align-items: center;

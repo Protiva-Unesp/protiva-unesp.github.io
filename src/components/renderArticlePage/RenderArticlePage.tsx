@@ -81,7 +81,7 @@ const RenderArticlePage = () => {
                     ${sidebarOpen ? styles.open : ''}`}>
                     <ul>
                         {files.map((file, index) => (
-                            <li key={index}>
+                            <li key={index} className={currentIndex === index ? styles.active : ''}>
                             <a href="#" onClick={() => 
                                 setCurrentIndex(index)}>
                                 {file.path.split('/').pop()?.
@@ -95,6 +95,16 @@ const RenderArticlePage = () => {
                 <div className={styles.markdownContent}>
                     {currentFile ? (
                         <div>
+                            <div className={styles.navButtons}>
+                                <button className={styles.left} onClick={handlePrevious} 
+                                    disabled={currentIndex === 0}>
+                                        &#9664; Voltar
+                                </button>
+                                <button className={styles.right} onClick={handleNext} disabled={
+                                    currentIndex === files.length - 1}>
+                                        Avançar &#9654; 
+                                </button>
+                            </div>
                             <MarkdownRenderer content={currentFile.content} />
                             <div className={styles.navButtons}>
                                 <button className={styles.left} onClick={handlePrevious} 

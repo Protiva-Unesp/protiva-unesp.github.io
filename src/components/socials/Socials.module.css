@@ -10,6 +10,7 @@
     align-items: center;
     font-family: 'VT323', sans-serif;
     color: #33FF00;
+    text-justify: auto;
 }
 
 .section img {

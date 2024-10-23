@@ -38,9 +38,10 @@
     width: 50%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .card {
         padding: 2px;
+        text-align: center;
     }
 }
 
