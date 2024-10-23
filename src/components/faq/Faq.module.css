@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: calc(100% - 260px); /* Subtract the left and right margins */
+    width: calc(100% - 260px); 
     margin-left: 130px;
     margin-right: 130px;
 }
@@ -27,13 +27,13 @@
 .contact img {
     max-width: 100%; 
     height: auto; 
-    max-height: 250px; /* Adjusted size */
+    max-height: 250px; 
 }
 
 .h2 {
-    font-size: 30px; /* Reduced size */
+    font-size: 30px; 
     font-weight: 700;
-    margin-bottom: 20px; /* Adjusted spacing */
+    margin-bottom: 20px; 
 }
 
 .faq-list {
@@ -49,33 +49,32 @@
 
 .faq-question {
     font-weight: bold;
-    padding: 15px; /* Reduced padding */
+    padding: 15px; 
     background-color: #f7f7f7;
     color: #121212;
     border-radius: 5px;
-    font-size: 16px; /* Reduced size */
+    font-size: 16px; 
     box-sizing: border-box;
-    max-width: 100%; /* Ensures it doesn't exceed the container's width */
-    width: 100%; /* Adjusts to container's width */
+    max-width: 100%; 
+    width: 100%; 
 }
 
 .faq-answer {
     max-height: 0;
     opacity: 0;
-    padding: 0 10px; /* Adjusted padding */
+    padding: 0 10px; 
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
     overflow: hidden;
-    width: 100%; /* Ensures it fits within the container */
+    width: 100%; 
     box-sizing: border-box;
-    font-size: 14px; /* Reduced size */
+    font-size: 14px; 
 }
 
-/* Adjust this section for when the FAQ is open */
 .faq-item.open .faq-answer {
-    max-height: 200px;  /* Set a max-height to ensure it does not grow indefinitely */
+    max-height: 200px;  
     opacity: 1;
-    padding: 10px; /* Adjusted padding */
-    overflow-y: auto; /* Allow scrolling if the content exceeds the max height */
+    padding: 10px; 
+    overflow-y: auto; 
 }
 
 .faqSection {

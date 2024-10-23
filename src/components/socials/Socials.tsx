@@ -1,6 +1,6 @@
-import navIcon1 from "../../assets/img/nav-icon1.svg";
-import navIcon2 from "../../assets/img/nav-icon2.svg";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
+import navIcon1 from "../../assets/img/youtube.svg";
+import navIcon2 from "../../assets/img/instagram.svg";
+import navIcon3 from "../../assets/img/facebook.svg";
 import styles from "./Socials.module.css";
 
 function Section() {

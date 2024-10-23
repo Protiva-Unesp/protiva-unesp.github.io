@@ -1,5 +1,11 @@
 import styles from "./Sections.module.css";
 import { Link } from "react-router-dom";
+import protiva from "../../assets/img/logo_bgwhite.png";
+import dco from "../../assets/img/logo_dco.png";
+import unesp from "../../assets/img/logo_unesp.svg";
+import graph from "../../assets/img/img_grap.png"
+import obi from "../../assets/img/logo_obi.svg"
+import intro from "../../assets/img/logo_program.svg"
 
 function Section() {
     return (
@@ -16,10 +22,10 @@ function Section() {
                             ainda mais completo!</p>
                     </div>
                     <div className={styles.imgContentPartners}>
-                        <img src="./src/assets/img/logo-bgwhite.png" alt="Protiva" />                 
+                        <img src={protiva} alt="Protiva" />                 
                         <img style={{ filter: 'saturate(5)'}} 
-                            src="./src/assets/img/logo_dco.png" alt="DCo" />
-                        <img src="./src/assets/img/logo_unesp.svg" alt="Unesp" />                
+                            src={dco} alt="DCo" />
+                        <img src={unesp} alt="Unesp" />                
                     </div>
                 </div>
             </div>
@@ -37,7 +43,7 @@ function Section() {
                         </Link>
                     </div>
                     <div className={styles.imgContent}>
-                        <img src="/src/assets/img/img_grap.png" alt="grafo" />
+                        <img src={graph} alt="grafo" />
                     </div>
                 </div>
             </div>
@@ -54,7 +60,7 @@ function Section() {
                         </Link>
                     </div>
                     <div className={styles.imgContent}>
-                        <img src="/src/assets/img/logo_obi.svg" alt="grafo" />                
+                        <img src={obi} alt="grafo" />                
                     </div>
                 </div>
             </div>
@@ -72,7 +78,7 @@ function Section() {
                     </div>
                     <div className={styles.imgContent}>
                         <img
-                            src="/src/assets/img/logo_program.svg"
+                            src={intro}
                             alt="programação"
                         />
                     </div>

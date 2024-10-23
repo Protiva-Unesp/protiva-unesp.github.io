@@ -1,5 +1,5 @@
 import { useState } from "react";
-import contactImg from "../../assets/img/contact-img.svg";
+import contactImg from "../../assets/img/contact_img.svg";
 import TrackVisibility from 'react-on-screen';
 import styles from './Faq.module.css'; 
 
