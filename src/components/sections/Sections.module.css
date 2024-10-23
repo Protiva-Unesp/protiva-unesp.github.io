@@ -40,6 +40,7 @@
 
 .sectionContent .textContent button:hover{
     cursor: pointer;
+    color: #d600d6;
     transform: translateY(-8px);
 }
 

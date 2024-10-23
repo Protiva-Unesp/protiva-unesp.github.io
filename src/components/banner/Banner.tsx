@@ -59,7 +59,7 @@ const Banner = () => {
                         </span>
                     </h1>
                 </div>
-                <p>Aprenda sobre estruturas de dados e algoritmos para Programação Competitiva!</p>
+                <p>Aprimore suas habilidades em lógica, algoritmos e resolução de problemas<br/>explorando o universo das competições de programação!</p>
             </div>
                 {/*
                 <div className={styles.squareFigContainer}>
