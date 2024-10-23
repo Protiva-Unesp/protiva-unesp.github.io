@@ -130,7 +130,7 @@
     background-color: #33FF00;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .container{
         margin: 0;
         padding: 0;

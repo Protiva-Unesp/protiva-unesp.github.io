@@ -69,7 +69,7 @@
     display: block;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .dropdown-content {
         top: 60px; 
         right: 0;

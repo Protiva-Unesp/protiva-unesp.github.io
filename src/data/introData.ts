@@ -16,8 +16,8 @@ const cardsData: CardData[] = [
         category: 'intro'
     },
     {
-        title: 'C',
-        description: 'Aprenda C',
+        title: 'C++',
+        description: 'Aprenda C++',
         category: 'intro'
     },
 ];

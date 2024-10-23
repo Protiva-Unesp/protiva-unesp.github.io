@@ -104,7 +104,7 @@
     filter: saturate(5);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .sectionContent {
         flex-direction: column;
         padding: 0;
