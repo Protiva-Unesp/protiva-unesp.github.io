@@ -16,7 +16,8 @@
     font-size: 30px;
 }
 
-/*
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
+    .paragraph {
+        padding: 10px 20px 10px 20px; 
+    }
 }
-*/
