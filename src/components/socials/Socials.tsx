@@ -7,9 +7,8 @@ function Section() {
     return (
         <div className={styles.section}>
             <h1>NOS SIGA NAS REDES SOCIAIS!</h1>
-            <p>Acesse nosso canal do Youtube para conferir video-aulas.<br/> 
-            Confira as nossas redes para saber mais sobre Programação 
-            Competitiva.</p>
+            <p>Confira nosso canal no Youtube para mais conteúdos
+            relacionados à Programação Competitiva.</p>
             <div className={styles.socialRow}>
                 <div className={styles.socialIcon}> 
                     <a href="https://www.youtube.com/@protiva_unesp">
