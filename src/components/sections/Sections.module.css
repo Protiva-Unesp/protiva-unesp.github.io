@@ -122,6 +122,23 @@ img#edit {
         padding: 0 20px 20px;
     }
 
+    .sectionContent .imgContentPartners {
+        flex-direction: row;
+        justify-content: center;        
+        flex-wrap: wrap; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .sectionContent .imgContentPartners img {
+        max-width: 100px; 
+        height: auto; 
+    }
+
+    .sectionContent .imgContent img {
+        max-width: 300px;
+    }
+
     .sectionContent h3 {
         font-size: 40px;
     }
@@ -141,7 +158,6 @@ img#edit {
     }
 
     .sectionContent .imgContentPartners {
-        display: flex;
         flex-direction: row;
         justify-content: center;        
         flex-wrap: wrap; 
