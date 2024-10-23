@@ -23,8 +23,7 @@ function Section() {
                     </div>
                     <div className={styles.imgContentPartners}>
                         <img src={protiva} alt="Protiva" />                 
-                        <img style={{ filter: 'saturate(5)'}} 
-                            src={dco} alt="DCo" />
+                        <img className={styles.saturateImg} src={dco} alt="DCo" />
                         <img src={unesp} alt="Unesp" />                
                     </div>
                 </div>

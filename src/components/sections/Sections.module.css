@@ -57,10 +57,6 @@
     max-width: 300px;
 }
 
-.sectionContent .imgContent img {
-    padding: 0;
-}
-
 .sectionContent .imgContentPartners {
     display: flex;
     flex-direction: column;
@@ -104,8 +100,8 @@
     background-color: #FFA500;
 }
 
-img#edit {
-    filter: grayscale(100%);
+.saturateImg {
+    filter: saturate(5);
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -154,7 +150,7 @@ img#edit {
 
 @media (min-width: 1820px) {
     .sectionContent {
-        padding: 20px 200px 70px 100px; 
+        padding: 20px 200px 70px 200px; 
     }
 
     .sectionContent .imgContentPartners {
