@@ -54,7 +54,7 @@
 .sectionContent .imgContent {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 40%;
 }
 
 .sectionContent .imgContentPartners {
@@ -68,6 +68,7 @@
 
 .sectionContent .imgContentPartners img {
     padding: 30px 20px 30px 20px;
+    height: auto;
 }
 
 .sectionContent h3 {
@@ -127,12 +128,8 @@
     }
 
     .sectionContent .imgContentPartners img {
-        max-width: 100px; 
+        max-width: 20%; 
         height: auto; 
-    }
-
-    .sectionContent .imgContent img {
-        max-width: 300px;
     }
 
     .sectionContent h3 {
@@ -167,11 +164,57 @@
         height: auto; 
     }
 
-    .sectionContent .imgContent img {
-        max-width: 300px;
+    .sectionContent .imgContent {
+        padding: 0 100px 0 100px;
     }
 
     .sectionContent .textContent {
         max-width: 1000px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .sectionContent {
+        padding: 20px 500px 70px 500px; 
+    }
+
+    .sectionContent h3 {
+        font-size: 50px;
+    }
+
+    .sectionContent p {
+        font-size: 45px;
+    }
+
+    .sectionContent .imgContentPartners img {
+        max-width: 300px; 
+    }
+}
+
+@media (min-width: 2800px) {
+    .sectionContent {
+        padding: 20px 800px 70px 000px; 
+    }
+
+    .sectionContent h3 {
+        font-size: 80px;
+    }
+
+    .sectionContent p {
+        font-size: 80px;
+    }
+
+    .sectionContent .imgContentPartners img {
+        max-width: 400px; 
+    }
+}
+
+@media (min-width: 3600px) {
+    .sectionContent {
+        padding: 20px 1200px 70px 1200px; 
+    }
+
+    .sectionContent .imgContentPartners img {
+        max-width: 500px; 
     }
 }

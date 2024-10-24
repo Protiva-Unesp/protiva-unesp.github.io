@@ -1,33 +1,48 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCategory } from '../categoryProvider/CategoryProvider';
 import styles from './Dropdown.module.css';
 
 const Dropdown: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false); 
     const navigate = useNavigate();
     const { setSelectedCategory } = useCategory();
+    const [burgerOpen, setBurgerOpen] = useState(false); 
+    const burgerRef = useRef<HTMLDivElement>(null);
 
     const handleNavigation = (category: string) => {
         setSelectedCategory(category);
         navigate(`/estude/${category}`);
         window.scrollTo(0, 0);
-        setIsOpen(false); 
+        setBurgerOpen(false);
     };
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen); 
+        setBurgerOpen(!burgerOpen); 
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+        if (burgerOpen && burgerRef.current && !burgerRef.current.contains(event.target as Node)) {
+            setBurgerOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [burgerOpen]);
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} ref={burgerRef}>
             <button
                 className={styles.dropdownTitle}
                 onClick={toggleDropdown} 
             >
                 Estude &#9660;
             </button>
-            {isOpen && ( 
+            {burgerOpen && (
                 <div className={styles['dropdown-content']}>
                     <button className={styles.dropbtn} 
                         onClick={() => handleNavigation("eda")}>

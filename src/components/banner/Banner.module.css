@@ -134,3 +134,9 @@
         font-size: 50px;
     }
 }
+
+@media (min-width: 1820px) {
+    .banner {
+        padding: 180px 300px 180px 300px; 
+    }
+}

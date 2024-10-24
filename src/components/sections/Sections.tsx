@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import protiva from "../../assets/img/logo_bgwhite.png";
 import dco from "../../assets/img/logo_dco.png";
 import unesp from "../../assets/img/logo_unesp.svg";
-import graph from "../../assets/img/img_grap.png"
+import dsa from "../../assets/img/dsa.svg"
 import obi from "../../assets/img/logo_obi.svg"
 import intro from "../../assets/img/logo_program.svg"
 
@@ -23,7 +23,7 @@ function Section() {
                     </div>
                     <div className={styles.imgContentPartners}>
                         <img src={protiva} alt="Protiva" />                 
-                        <img className={styles.saturateImg} src={dco} alt="DCo" />
+                        <img className={styles.saturateImg} src={dco} alt="Departamento de Computação" />
                         <img src={unesp} alt="Unesp" />                
                     </div>
                 </div>
@@ -42,7 +42,7 @@ function Section() {
                         </Link>
                     </div>
                     <div className={styles.imgContent}>
-                        <img src={graph} alt="grafo" />
+                        <img src={dsa} alt="Estruturas de Dados" />
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ function Section() {
                         </Link>
                     </div>
                     <div className={styles.imgContent}>
-                        <img src={obi} alt="grafo" />                
+                        <img src={obi} alt="Olimpíada Brasileira de Informática" />                
                     </div>
                 </div>
             </div>
@@ -76,10 +76,7 @@ function Section() {
                         </Link>
                     </div>
                     <div className={styles.imgContent}>
-                        <img
-                            src={intro}
-                            alt="programação"
-                        />
+                        <img src={intro} alt="Introdução à Programação" />
                     </div>
                 </div>
             </div>
