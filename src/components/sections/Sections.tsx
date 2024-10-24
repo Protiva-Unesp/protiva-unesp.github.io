@@ -1,13 +1,23 @@
 import styles from "./Sections.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import protiva from "../../assets/img/logo_bgwhite.png";
 import dco from "../../assets/img/logo_dco.png";
 import unesp from "../../assets/img/logo_unesp.svg";
 import dsa from "../../assets/img/dsa.svg"
 import obi from "../../assets/img/logo_obi.svg"
 import intro from "../../assets/img/logo_program.svg"
+import { useCategory } from "../categoryProvider/CategoryProvider";
 
 function Section() {
+    const navigate = useNavigate();
+    const { setSelectedCategory } = useCategory();
+
+    const handleNavigation = (category: string) => {
+        setSelectedCategory(category);
+        navigate(`/estude/${category}`);
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div className={styles.sectionContainer}>
             <div id="sectionWelcome" className={styles.sectionWelcome}>
@@ -37,9 +47,7 @@ function Section() {
                             e desenvolver soluções mais elegantes para problemas complexos.
                             Aqui você vai entender quais são as estruturas de dados existentes,
                             qual situação usar cada tipo de estrutura, suas abordagens e aplicações.</p>
-                        <Link to="/estude/eda">
-                            <button>Aprender ED&A</button>
-                        </Link>
+                        <button onClick={() => handleNavigation("eda")}>Aprender ED&A</button>
                     </div>
                     <div className={styles.imgContent}>
                         <img src={dsa} alt="Estruturas de Dados" />
@@ -54,9 +62,7 @@ function Section() {
                             que estimula o raciocínio lógico e a habilidade em programação. 
                             Sabemos que entender a solução de um problema é essencial para aprimorar suas habilidades. 
                             Por isso, disponibilizamos resoluções de questões anteriores da OBI.</p>
-                        <Link to="/estude/obi">
-                            <button>Estudar Respostas</button>
-                        </Link>
+                        <button onClick={() => handleNavigation("obi")}>Estudar Respostas</button>
                     </div>
                     <div className={styles.imgContent}>
                         <img src={obi} alt="Olimpíada Brasileira de Informática" />                
@@ -71,9 +77,7 @@ function Section() {
                             solucionar problemas por meio de software. Você desenvolverá a 
                             habilidade de criar algoritmos simples e entenderá como 
                             transformar ideias em código.</p>
-                        <Link to="/estude/intro">
-                            <button>Iniciar</button>
-                        </Link>
+                        <button onClick={() => handleNavigation("intro")}>Iniciar</button>
                     </div>
                     <div className={styles.imgContent}>
                         <img src={intro} alt="Introdução à Programação" />
