@@ -13,11 +13,16 @@ const Dropdown: React.FC = () => {
         setSelectedCategory(category);
         navigate(`/estude/${category}`);
         window.scrollTo(0, 0);
-        setBurgerOpen(false);
+        
+        if (window.innerWidth <= 1024) {
+            setBurgerOpen(false);
+        }
     };
 
     const toggleDropdown = () => {
-        setBurgerOpen(!burgerOpen); 
+        if (window.innerWidth <= 1024) {
+            setBurgerOpen(!burgerOpen);
+        }
     };
 
     const handleClickOutside = (event: MouseEvent) => {
@@ -42,7 +47,7 @@ const Dropdown: React.FC = () => {
             >
                 Estude &#9660;
             </button>
-            {burgerOpen && (
+            {(burgerOpen || window.innerWidth > 1024) && (
                 <div className={styles['dropdown-content']}>
                     <button className={styles.dropbtn} 
                         onClick={() => handleNavigation("eda")}>
@@ -51,7 +56,7 @@ const Dropdown: React.FC = () => {
                     <br />
                     <button className={styles.dropbtn} 
                         onClick={() => handleNavigation("obi")}>
-                        OBI - Repostas comentadas
+                        OBI - Respostas comentadas
                     </button>
                     <br />
                     <button className={styles.dropbtn} 
