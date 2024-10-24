@@ -1,5 +1,5 @@
 import styles from "./Sections.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import protiva from "../../assets/img/logo_bgwhite.png";
 import dco from "../../assets/img/logo_dco.png";
 import unesp from "../../assets/img/logo_unesp.svg";
