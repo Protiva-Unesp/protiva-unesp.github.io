@@ -61,7 +61,7 @@ const NavBar = () => {
                 {/* Mobile Menu (Dropdown) */}
                 {isMenuOpen && (
                     <div className="md:hidden mt-2">
-                        <Link to="/"
+                        <Link to="/aprender"
                           className="block py-2 text-gray-700 hover:bg-gray-100">
                             Aprender
                         </Link>
