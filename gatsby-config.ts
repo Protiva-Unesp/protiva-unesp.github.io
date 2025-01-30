@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `Protiva`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `https://protiva-unesp.github.io/`,
     },
     graphqlTypegen: true,
     plugins: [
