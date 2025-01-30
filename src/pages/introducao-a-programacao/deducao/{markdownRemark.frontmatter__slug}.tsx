@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../../../components/seo'
-import { blogContainer } from '../../../styles/blogPost.module.css'
 import NavBar from '../../../components/navbar'
 import Footer from '../../../components/footer'
 
@@ -9,12 +8,26 @@ const BlogPost = ({ data }) => {
     return (
         <>
             <NavBar />
-            <div className={blogContainer}>
-                <h1>{data.markdownRemark.frontmatter.title}</h1>
-                <p>{data.markdownRemark.frontmatter.description}</p>
-                <p>Autor(es): {data.markdownRemark.frontmatter.author}</p>
-                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-            </div>
+                <div className="max-w-4xl mx-auto px-4 py-8">
+                    {/* Blog Post Header */}
+                    <header className="mb-8">
+                      <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                        {data.markdownRemark.frontmatter.title}
+                      </h1>
+                      <p className="text-lg text-gray-700 mb-4">
+                        {data.markdownRemark.frontmatter.description}
+                      </p>
+                      <p className="text-sm text-gray-500">
+                        Autor(es): {data.markdownRemark.frontmatter.author}
+                      </p>
+                    </header>
+
+                    {/* Blog Post Content */}
+                    <div
+                      className="prose prose-lg max-w-none"
+                      dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+                    />
+                </div>
             <Footer />
         </>
     )
