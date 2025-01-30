@@ -1,0 +1,150 @@
+footer {
+    width: 100%;
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'VT323', sans-serif;
+    font-weight: normal;
+}
+
+.footer img {
+    width: 26%;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #00FF00;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    color: #33FF00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+}
+
+footer a {
+    color: #33FF00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #d600d6;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 100px;
+        padding: 5px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-copy p {
+        font-size: 24px;
+    }
+}
+
+/*
+@media (max-width: 768px) {
+    .footer img {
+        width: 40%;
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 150px;
+        padding: 5px;
+    }
+
+    .socialRow {
+        justify-content: center;
+    }
+
+    .socialRow img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .footer img {
+        width: 20%;
+    }
+
+    .footer p {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .footer-row {
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        min-width: 180px;
+        padding: 15px;
+    }
+
+    .socialRow img {
+        width: 50px;
+        height: 50px;
+    }
+}
+*/
