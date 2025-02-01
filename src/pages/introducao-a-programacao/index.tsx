@@ -54,6 +54,6 @@ const BlogPage = () => {
     )
 }
 
-export const Head = () => <Seo title="Aprenda sobre programação competitiva" />
+export const Head = () => <Seo title="Introdução à Programação" />
 
 export default BlogPage

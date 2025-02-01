@@ -47,7 +47,7 @@ export const query = graphql`
     query {
         allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/introducao-a-programacao/deducao/" } }
-            sort: { frontmatter: { date: DESC } }
+            sort: { frontmatter: { title: ASC } }
         ) {
             nodes {
                 frontmatter {
@@ -61,6 +61,6 @@ export const query = graphql`
     }
 `
 
-export const Head = () => <Seo title="Aprenda sobre programação competitiva" />
+export const Head = () => <Seo title="Dedução" />
 
 export default BlogPage

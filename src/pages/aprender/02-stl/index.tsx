@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
             <section className="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
                 <div className="flex flex-wrap items-center justify-between mb-8">
                     <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl">
-                        01 - Introdução
+                        02 - Standard Template Library
                     </h2>
                 </div>
                 <div className="flex flex-wrap -mx-4">
@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
                                 <div className="triangle"></div>
                                 <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
                                     <div>
-                                        <Link to={`/aprender/01-introducao/${node.frontmatter.slug}`}
+                                        <Link to={`/aprender/02-stl/${node.frontmatter.slug}`}
                                             className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
                                             {node.frontmatter.title}
                                         </Link>
@@ -45,7 +45,7 @@ const BlogPage = ({ data }) => {
 export const query = graphql`
     query {
         allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/01-introducao/" } }
+            filter: { fileAbsolutePath: { regex: "/02-stl/" } }
             sort: { frontmatter: { title: ASC } }
         ) {
             nodes {
@@ -60,6 +60,6 @@ export const query = graphql`
     }
 `
 
-export const Head = () => <Seo title="Introdução à Programação Competitiva" />
+export const Head = () => <Seo title="Standard Template Library" />
 
 export default BlogPage

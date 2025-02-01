@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../../../components/seo'
-import { blogContainer } from '../../../styles/blogPost.module.css'
 import NavBar from '../../../components/navbar'
+import { blogContainer } from '../../../styles/blogPost.module.css'
 import Footer from '../../../components/footer'
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, children }) => {
     return (
         <>
             <NavBar />

@@ -38,7 +38,7 @@ const IndexPage = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link to="provas-anteriores">
+                    <Link to="/provas-anteriores">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">Provas Anteriores</h2>
                             <p className="text-gray-700">
@@ -46,7 +46,7 @@ const IndexPage = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link to="introducao-a-programacao">
+                    <Link to="/introducao-a-programacao">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">Introdução à Programação</h2>
                             <p className="text-gray-700">
@@ -61,6 +61,6 @@ const IndexPage = () => {
     )
 }
 
-export const Head = () => <Seo title="Home Page" />
+export const Head = () => <Seo title="Início" />
 
 export default IndexPage
