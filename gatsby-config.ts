@@ -64,8 +64,8 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
-                name: `07-disjoint-set-union`,
-                path: `${__dirname}/src/articles/programacaoCompetitiva/07-disjoint-set-union`, 
+                name: `07-disjoint-set-union-find`,
+                path: `${__dirname}/src/articles/programacaoCompetitiva/07-disjoint-set-union-find`, 
             },
         },
         {

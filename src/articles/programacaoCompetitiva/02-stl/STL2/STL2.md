@@ -1,13 +1,12 @@
 ---
-title: "Standard Template Library: Associativos, iteratores e algoritmos"
+title: "03 - STL: associativos, iteratores e algoritmos"
 description: "descricao"
-date: "2021-07-24"
 slug: "stl-2"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---
 ### set
-● Armazenam elementos únicos seguindo uma ordem.
-– um critério de comparação precisa ser definido
+- Armazenam elementos únicos seguindo uma ordem.
+- um critério de comparação precisa ser definido
 ``` C++
 #include <string>
 #include <set>
@@ -25,12 +24,10 @@ int main() {
 }
 ```
 
-– O set não armazena elementos repetidos
-– No exemplo ao lado, o valor apresentado
-será 4 (número de elementos no set)
-– Se precisar de armazenar repetições,
-multiset poderá ser usado
-– Veja também hash_set
+- O set não armazena elementos repetidos
+- No exemplo ao lado, o valor apresentado será 4 (número de elementos no set)
+- Se precisar de armazenar repetições, multiset poderá ser usado
+- Veja também hash_set
 
 ### set - Formas de Ordenação
 ``` C++
@@ -70,15 +67,14 @@ int main() {
 ```
 
 ### Exercício Usando set
-● Resolva o problema URI 2174
-● Recomendações
-– Use set<string> para definir o conjunto de pomekons.
-– Como o conjunto não aceita repetições, basta inserir todos os pokemons
-na lista, mesmo se repetidos, pois eles serão inseridos apenas uma vez.
+- Resolva o problema URI 2174
+- Recomendações
+- Use set<string> para definir o conjunto de pomekons.
+- Como o conjunto não aceita repetições, basta inserir todos os pokemons na lista, mesmo se repetidos, pois eles serão inseridos apenas uma vez.
 
 ### map
- Mantém pares chave-valor, sendo cada chave única
-– Precisa de um critério de comparação entre as chaves.
+- Mantém pares chave-valor, sendo cada chave única
+- Precisa de um critério de comparação entre as chaves.
 ``` C++
 #include <cstdio>
 #include <map>
@@ -95,35 +91,25 @@ int main () {
     return 0;
 }
 ```
-– O dicionário não armazena chaves
-repetidas
-– O container multimap armazena repetições
-– Usar hash_map e hash_multimap pode
-melhorar o desempenho mas sem
-ordenação
+- O dicionário não armazena chaves repetidas
+- O container multimap armazena repetições
+- Usar hash_map e hash_multimap pode melhorar o desempenho mas sem ordenação
 
 ### Exercício Usando map
-● Resolva o problema URI 2727
-● Recomendações
-– Use map<string,char> para definir a relação chave-valor, assim a chave
-será o código e o valor o caractere
-– A iniciação do map pode ser feito manualmente, adicionando os 26 códigos
-um a um para cada caractere ou programaticamente.
-● Definindo:
-– map<string, char> decodifica;
-● Manualmente para a letra “i”, seria:
-– decodifica["... ... ..."] = 'i';
-– Para decodificar, basta ler o código de cada linha em uma string e usá-la
-como chave
+- Resolva o problema URI 2727
+- Recomendações
+    - Use map<string,char> para definir a relação chave-valor, assim a chave será o código e o valor o caractere
+    - A iniciação do map pode ser feito manualmente, adicionando os 26 códigos um a um para cada caractere ou programaticamente.
+- Definindo:
+    - map<string, char> decodifica;
+    - Manualmente para a letra “i”, seria:
+    - decodifica["... ... ..."] = 'i';
+    - Para decodificar, basta ler o código de cada linha em uma string e usá-la como chave
 
 ### Iteradores (iterator)
-• Um iterator é qualquer objeto capaz de interagir com os
-elementos de um container usando um conjunto de
-operadores
-• Uma variável iterator funciona como um ponteiro,
-“apontando” para cada elemento do container
-• Um iterator pode ser incrementado, para indicar o
-próximo elemento
+- Um iterator é qualquer objeto capaz de interagir com os elementos de um container usando um conjunto de operadores
+- Uma variável iterator funciona como um ponteiro, “apontando” para cada elemento do container
+- Um iterator pode ser incrementado, para indicar o próximo elemento
 
 ### Iterator Mimetiza Aritmética de Ponteiros
 ``` C++
@@ -157,11 +143,13 @@ float f: vect => range-based for
 a partir do C++11
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 7.8 1.2 5.6 9.0 3.4
 7.8 1.2 5.6 9.0 3.4
 7.8 1.2 5.6 9.0 3.4
 7.8 1.2 5.6 9.0 3.4
+```
 
 ### Iterator com set
 ``` C++
@@ -184,11 +172,13 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 joao
 jose
 maria
 pedro
+```
 
 ### Iterator com set
 ``` C++
@@ -222,10 +212,12 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 1 91
 2 52
 3 73
+```
 
 ### Iterator com multiset
 ``` C++
@@ -257,11 +249,13 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 1 91
 1 71
 2 52
 3 73
+```
 
 ### Iterator com map
 ``` C++
@@ -282,10 +276,12 @@ int main () {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 Antonio, 5.000000
 Maria, 7.500000
 Pedro, 10.000000
+```
 
 ### Iterator com Variáveis auto C++11
 ``` C++
@@ -307,8 +303,7 @@ int main() {
 ```
 
 ### Iterator com strings
-● Os iterators podem ser usados considerando os caracteres
-separadamente.
+- Os iterators podem ser usados considerando os caracteres separadamente.
 ``` C++
 #include <iostream>
 #include <string>
@@ -323,22 +318,18 @@ int main () {
 }
 ```
 ### Exercício Usando iterator e list
-● Resolva o problema onlinejudge 11988
-● Recomendações
-– Use list<char>.
-– Quando um “home” for encontrado, aponte iterator para inserir no início
-da lista; quando for um “end”, aponte o iterator para o fim da fila. Não
-esqueça de atualizar o iterado após cada letra inserida.
+- Resolva o problema onlinejudge 11988
+- Recomendações
+    - Use list<char>.
+    - Quando um “home” for encontrado, aponte iterator para inserir no início da lista; quando for um “end”, aponte o iterator para o fim da fila. Não esqueça de atualizar o iterado após cada letra inserida.
 
 ### Exercício Usando iterator
-● Resolva o problema URI 1244 da forma que deseja, mas
-utilize iterator para apresentar as palavras
+- Resolva o problema URI 1244 da forma que deseja, mas utilize iterator para apresentar as palavras
 
 ### Algoritmos
-• Algoritmos que podem ser aplicados aos containers
-através do iterators
-• Podem modificar ou não os dados
-• Lista em http://www.cplusplus.com/reference/algorithm/
+- Algoritmos que podem ser aplicados aos containers através do iterators
+- Podem modificar ou não os dados
+- Lista em http://www.cplusplus.com/reference/algorithm/
 
 ### stable_sort
 ``` C++
@@ -376,11 +367,10 @@ int main() {
 ```
 
 ### Exercício Usando stable_sort
-● Resolva o problema URI 1244 usando vector e
-stable_sort
-● Recomendações
-– Use vector<string> para definir a lista.
-– Use a função stable_sort() que ordenar as palavras.
+- Resolva o problema URI 1244 usando vector e stable_sort
+- Recomendações
+    - Use vector<string> para definir a lista.
+    - Use a função stable_sort() que ordenar as palavras.
 
 ### replace_if
 ``` C++
@@ -400,9 +390,11 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 10 90 4 -10 25 93 10 7 0 33
 10 10 4 -10 10 10 10 7 0 10
+```
 
 ### replace_if
 ``` C++
@@ -433,23 +425,18 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 Joao Maria Pedro Jose Antonio
 XXXX Maria Pedro XXXX Antonio
+```
 
 ### Algoritmos e Iteradores
-● Os algoritmos set_difference, set_union, set_intersection, entre
-outros, realizam operações sobre containers.
-● Estas funções recebem iteradores de entrada e saída
-● Insert_iterators são iteradores de saída desenvolvidos para
-permitir que algoritmos que normalmente escrevam elementos
-possam ser usados para inserir elementos em containers.
-set_difference(conj1Entra.begin(), conj1Entra.end(),
-conj2Entra.begin(), conj2Entra.end(),
-inserter(conjSaida, conjSaida.begin()));
-● Veja também: back_inserter, front_inserter e insert_iterator
-● Tipos diferentes de destinos podem ser usados, desde que o insert
-iterator utilize a rotina de inserção correspondente ao container destino
+- Os algoritmos set_difference, set_union, set_intersection, entre outros, realizam operações sobre containers.
+- Estas funções recebem iteradores de entrada e saída
+- Insert_iterators são iteradores de saída desenvolvidos para permitir que algoritmos que normalmente escrevam elementos possam ser usados para inserir elementos em containers. set_difference(conj1Entra.begin(), conj1Entra.end(), conj2Entra.begin(), conj2Entra.end(), inserter(conjSaida, conjSaida.begin()));
+- Veja também: back_inserter, front_inserter e insert_iterator
+- Tipos diferentes de destinos podem ser usados, desde que o insert iterator utilize a rotina de inserção correspondente ao container destino
 ``` C++
 #include <algorithm>
 #include <list>
@@ -471,13 +458,9 @@ int main() {
 ```
 
 ### Functores
- Rotinas que retornam instâncias de classes que
-implementam o operador () usado em comparações nos
-algoritmos
-● A escolha de um functor indica o que ocorrerá no
-algoritmo escolhido
-● Na omissão de um functor, o less é normalmente
-usado
+- Rotinas que retornam instâncias de classes que implementam o operador () usado em comparações nos algoritmos
+- A escolha de um functor indica o que ocorrerá no algoritmo escolhido
+- Na omissão de um functor, o less é normalmente usado
 
 ### Functores - greater
 ``` C++
@@ -500,17 +483,16 @@ int main() {
     printf("\n");
     return 0;
 }
-
 ```
 
 No vídeo, obtém-se:
+```
 Joao Maria Pedro Jose Antonio
 XXXX Maria Pedro XXXX Antonio
+```
 
 ### Containers de containers
-● Em containers de containers é necessário inserir os
-containers mais internos um a um.
-● Por exemplo:
-– vector<set<int> > adj
-– Cria um vetor de conjuntos, mas cada conjunto deve ser inserido
-explicitamente nos elementos do vector para que possam ser usados
+- Em containers de containers é necessário inserir os containers mais internos um a um.
+- Por exemplo:
+    - vector<set<int> > adj
+    - Cria um vetor de conjuntos, mas cada conjunto deve ser inserido explicitamente nos elementos do vector para que possam ser usados

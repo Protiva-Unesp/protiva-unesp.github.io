@@ -116,7 +116,7 @@ const BlogPage = () => {
                             <div className="triangle"></div>
                             <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
                                 <div>
-                                    <Link to="/aprender/07-disjoint-set-union"
+                                    <Link to="/aprender/07-disjoint-set-union-find"
                                         className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
                                         07 - Disjoint-set (Union Find)
                                     </Link>

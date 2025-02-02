@@ -1,43 +1,37 @@
 ---
-title: "Standard Template Library"
+title: "01 - Standard Template Library"
 description: "descricao"
-date: "2021-07-24"
 slug: "stl"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---
 ## Sequenciais e Adaptadores
 ### Introdução
-* O STL é uma biblioteca frequentemente incluída nos
-compiladores C++.
-* Ela fornece elementos do tipo
-	- containers,
-	- iteradores,
-	- algoritmos e
-	- functores (funções objetos)
-* Eles podem ser usados com praticamente qualquer tipo
-de dado
+- O STL é uma biblioteca frequentemente incluída nos compiladores C++.
+- Ela fornece elementos do tipo containers, iteradores, algoritmos e functores (funções objetos)
+- Eles podem ser usados com praticamente qualquer tipo de dado
 
 ### Containers
-#### sequenciais
--  vector,
--  list e
+#### Sequenciais
+-  vector
+-  list
 -  deque 
-=> #### adaptadores
--  queue,
--  stack e
+
+#### Adaptadores
+-  queue
+-  stack
 -  priority_queue
 
- ### associativos
+### Associativos
 -  set, multiset,
--  map e multimap.
--  hash_set, hash_multiset,
+-  map e multimap
+-  hash_set, hash_multiset
 -  hash_map e hash_multimap
 
-* A escolha de um container depende das características específicas
-desejadas
+### Como escolher um container?
+- A escolha de um container depende das características específicas desejadas
 - operações disponíveis
 - complexidade de cada operação
-* Tabela comparativa em http://www.cplusplus.com/reference/stl/
+- Tabela comparativa em http://www.cplusplus.com/reference/stl/
 
 ### Containers
 
@@ -47,7 +41,7 @@ C = amortized constant time
 http://www.tantalon.com/pete/cppopt/appendix.htm
 
 ### vector
-* Sequência contígua de dados com tamanho variável.
+- Sequência contígua de dados com tamanho variável.
 
 ``` C++
 #include <cstdio>
@@ -66,13 +60,15 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 1.230000, 9.870000, 6.450000, 0.000000 (lixo), 3
 6.450000
 1.230000, 9.870000, 6.450000 (lixo), 2
+```
 
 ### list
-* Lista sequencial de dados com tamanho variável.
+- Lista sequencial de dados com tamanho variável.
 ``` C++
 #include <cstdio>
 #include <list>
@@ -102,13 +98,15 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 (4.500000, 5.600000)
 (1.200000, 2.300000)
 (6.700000, 7.800000)
+```
 
 ### Ordenação (estável) em list
-list pode se ordenar usando a função membro sort()
+- list pode se ordenar usando a função membro sort()
 ``` C++
 #include <cstdio>
 #include <list>
@@ -139,12 +137,14 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 (1.200000, 2.300000)
 (4.500000, 5.600000)
 (6.700000, 7.800000)
+```
 
-* list pode se ordenar usando a ordem natural
+- list pode se ordenar usando a ordem natural
 ``` C++
 #include <cstdio>
 #include <list>
@@ -178,58 +178,57 @@ int main() {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 (1.200000, 2.300000)
 (4.500000, 5.600000)
 (6.700000, 7.800000)
+```
 
 ### Exercício usando list
-* Resolva o problema URI 1244
-* Recomendações
-- Use `list<string>` para definir a lista.
-- Use a função membro sort() da list pois, após a ordenação, o problema
-precisa que os elementos de mesmo comprimento permaneçam na ordem
-original, ou seja, a ordenação deve ser estável.
+- Resolva o problema URI 1244
+- Recomendações
+    - Use `list<string>` para definir a lista.
+    - Use a função membro sort() da list pois, após a ordenação, o problema precisa que os elementos de mesmo comprimento permaneçam na ordem original, ou seja, a ordenação deve ser estável.
 
 ### Outras operações em list
-* Funções membros
-- splice Move elementos de uma lista para outra
-- remove Remove elementos com valor específico
-- remove_if Remove elementos com condição
-- merge Junta listas ordenadas
-- sort Ordena elementos no container
-- reverse Inverte a ordem dos elementos
+- Funções membros
+    - `splice` Move elementos de uma lista para outra
+    - `remove` Remove elementos com valor específico
+    - `remove_if` Remove elementos com condição
+    - `merge` Junta listas ordenadas
+    - `sort` Ordena elementos no container
+    - `reverse` Inverte a ordem dos elementos
 
 ### Deque - Double-Ended QUEue
-* Semelhante à vector
-- permite inserir e remover do início e fim da sequência
-- operador `[ ]`
-- sem as operações de list
+- Semelhante à vector
+    - permite inserir e remover do início e fim da sequência
+    - operador `[]`
+    - sem as operações de list
 
 ### Stack - Last In First Out - Pilha
-* Funções membros
-- empty testa se o container está vazio
-- size retorna o tamanho
-- top faz acesso ao próximo elemento
-- push adiciona um elemento ao topo
-- pop remove o elemento do topo
+- Funções membros
+    - `empty` testa se o container está vazio
+    - `size` retorna o tamanho
+    - `top` faz acesso ao próximo elemento
+    - `push` adiciona um elemento ao topo
+    - `pop` remove o elemento do topo
 
 ### Exercício usando pilha
-* Resolva o problema Plug-in do Codeforces
-- https://codeforces.com/contest/81/problem/A
-* Recomendações
-- Use stack<char> para definir uma pilha.
-- Quando o último caractere lido for igual ao do topo da pilha, o caractere
-deve ser ignorado e também retirado do topo da pilha.
+- Resolva o problema Plug-in do Codeforces
+    - https://codeforces.com/contest/81/problem/A
+- Recomendações
+    - Use stack<char> para definir uma pilha.
+    - Quando o último caractere lido for igual ao do topo da pilha, o caractere deve ser ignorado e também retirado do topo da pilha.
 
 ### Queue (Fila) - First In First Out
-* Funções membros
-- empty Testa se o container está vazio
-- size Retorna o tamanho
-- front Faz acesso ao primeiro elemento
-- back Faz acesso ao último elemento
-- push Insere um elemento no final da fila
-- pop Apaga o primeiro elemento da fila
+- Funções membros
+    - `empty` Testa se o container está vazio
+    - `size` Retorna o tamanho
+    - `front` Faz acesso ao primeiro elemento
+    - `back` Faz acesso ao último elemento
+    - `push` Insere um elemento no final da fila
+    - ``pop` Apaga o primeiro elemento da fila
 
 ### Uso de queue
 ``` C++
@@ -273,8 +272,8 @@ int main () {
 ```
 
 ### priority_queue – Fila com Prioridade
-* Fila com critério de prioridade
-- se o critério for igual, vale a ordem de entrada
+- Fila com critério de prioridade
+    - se o critério for igual, vale a ordem de entrada
 ``` C++
 #include <cstdio>
 #include <queue>
@@ -304,11 +303,13 @@ int main () {
 }
 ```
 
-No vídeo, obtém-se:
+Obtém-se:
+```
 Maria Jose Pedro
+```
 
 ### Exercício usando priority_queue
-* Resolva o problema URI 1244 agora usando priority_queue
-* Recomendações
-- Use "priority_queue<string>" para definir a lista.
-- Coloque como critério de prioridade o número de caracteres da palavra, quando terminar de inserir todas as palavras a ordem já estará como exigida no problema.
+- Resolva o problema URI 1244 agora usando priority_queue
+- Recomendações
+    - Use `priority_queue<string>` para definir a lista.
+    - Coloque como critério de prioridade o número de caracteres da palavra, quando terminar de inserir todas as palavras a ordem já estará como exigida no problema.

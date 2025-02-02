@@ -1,54 +1,50 @@
 ---
-title: "Exercícios IV"
+title: "02 - Exercícios"
 description: "descricao"
-date: "2021-07-24"
-slug: "exercicios-iv"
+slug: "exercicios-4"
 ---
 ## Resolução dos Exercícios
-## Exercícios: E e F
+### Exercícios: E e F
 
 ### F - Factorials and Powers of Two
-Um número é considerado powerful se:
-• Potência de dois ou,
-• Fatorial
-ou seja, o número m é powerful se existe um inteiro d não negativo:
-• m = 2^d ou,
-• m = d!
+- Um número é considerado powerful se:
+    - Potência de dois ou,
+    - Fatorial
+- ou seja, o número m é powerful se existe um inteiro d não negativo:
+    - m = 2^d ou,
+    - m = d!
 
-Dado um valor n, encontre o mínimo número k tal que n possa ser
-representado como a soma de k números distintos que são powerful.
-Exemplos:
+- Dado um valor n, encontre o mínimo número k tal que n possa ser representado como a soma de k números distintos que são powerful.
+- Exemplos:
+
 240 = 24 + 32 + 64 + 120 (k = 4)
+
 240 = 120 + 120 (INVÁLIDO)
 
 7 = 1 + 2 + 4 (k = 3)
 7 = 1 + 6 (k = 2)
 Solução: 2
 
-• Se n não pode ser representado pela soma de distintos números
-powerful, print -1
-Essa situação nunca irá acontecer pois qualquer número inteiro pode ser
-representado pela soma de potências de dois.
+- Se n não pode ser representado pela soma de distintos números powerful, print -1
+- Essa situação nunca irá acontecer pois qualquer número inteiro pode ser representado pela soma de potências de dois.
 
 ![img1](img1.png)
 
-Sendo assim, a quantidade de bits
-ativos no número n como o mínimo
-valor para k.
+- Sendo assim, a quantidade de bits ativos no número n como o mínimo valor para k.
 
-A solução ótima pode ser formada por uma das seguintes situações:
-Situação 1:
-• Soma somente de valores potências de dois.
+- A solução ótima pode ser formada por uma das seguintes situações:
 
-Situação 2:
-• Soma somente de valores que são fatoriais.
+- Situação 1:
+    - Soma somente de valores potências de dois.
 
-Situação 3:
-• Soma de potências de dois com soma de fatoriais.
+- Situação 2:
+    - Soma somente de valores que são fatoriais.
 
-Situação 1: Soma somente de valores potências de dois.
-Esse é nosso limite inferior de k, podemos calcular contando quais
-são os bits ativos de n.
+- Situação 3:
+    - Soma de potências de dois com soma de fatoriais.
+
+- Situação 1: Soma somente de valores potências de dois.
+    - Esse é nosso limite inferior de k, podemos calcular contando quais são os bits ativos de n.
 ``` C++
 ll bits_ativos(ll n){
     ll x = 0, pot = 1, k = 0;
@@ -63,8 +59,7 @@ ll bits_ativos(ll n){
 }
 ```
 
-Equivalente com complexidade
-O(numero_de_bits) :
+- Equivalente com complexidade O(numero_de_bits) :
 ``` C++
 ll bits_ativos(ll n){
 return __builtin_popcountll(n);
@@ -72,10 +67,8 @@ return __builtin_popcountll(n);
 ``` 
 [Builtin functions of GCC compiler](https://www.geeksforgeeks.org/builtin-functions-gcc-compiler/)
 
-Situação 2: Soma somente de valores que são fatoriais.
-Primeiro, precisamos saber quais são os fatoriais possíveis. No
-problema é descrito que n <= 10¹² , logo, precisamos apenas pré-calcular
-até o fatorial 14!, já que 15! = 1.307.674.368.000 > 10¹².
+- Situação 2: Soma somente de valores que são fatoriais.
+ - Primeiro, precisamos saber quais são os fatoriais possíveis. No problema é descrito que n <= 10¹² , logo, precisamos apenas pré-calcular até o fatorial 14!, já que 15! = 1.307.674.368.000 > 10¹².
 ``` C++
 #define MAX_FAC 14
 fac = vector<ll>(MAX_FAC + 1);
@@ -87,13 +80,14 @@ void pre_processar_fatoriais(){
     }
 }
 ``` 
-Todos fatoriais que podem ser usados no problema:
+- Todos fatoriais que podem ser usados no problema:
+
 Fatoriais (14) = {1, 2, 6, 24, 120, 720, 5040,
 40320, 362880, 3628800, 39916800,
 479001600, 6227020800, 87178291200}
 
-Situação 2: Soma somente de valores que são fatoriais.
-Como o número de fatoriais possíveis é 14, conseguimos pré-calcular todas as somas possíveis entre esses fatoriais. Ou seja, gerar todos subsets de soma possíveis para os 14 números. O(2¹⁴ ), como 2¹⁴ = 16.384, passa tranquilo no problema.
+- Situação 2: Soma somente de valores que são fatoriais.
+    - Como o número de fatoriais possíveis é 14, conseguimos pré-calcular todas as somas possíveis entre esses fatoriais. Ou seja, gerar todos subsets de soma possíveis para os 14 números. O(2¹⁴ ), como 2¹⁴ = 16.384, passa tranquilo no problema.
 ``` C++
 void subset_sum_fac(ll x){
 if (x == MAX_FAC+1){
@@ -115,11 +109,8 @@ else{
 }
 ``` 
 
-Situação 3: Soma de potências de dois com soma de fatoriais
-Como todas as somas de todos possíveis fatoriais podem ser salvas em
-um map, podemos passar por cada uma das somas que encontramos na
-Situação 2 e calcular um número x que diz quanto falta para a soma da
-Situação 2 chegar em n. Assim, conseguimos calcular para x a Situação 1.
+- Situação 3: Soma de potências de dois com soma de fatoriais
+    - Como todas as somas de todos possíveis fatoriais podem ser salvas em um map, podemos passar por cada uma das somas que encontramos na Situação 2 e calcular um número x que diz quanto falta para a soma da Situação 2 chegar em n. Assim, conseguimos calcular para x a Situação 1.
 ``` C++
 for (map<ll, ll>:: iterator itr =
 fac_sub.begin();itr!=fac_sub.end();++itr)
@@ -139,16 +130,15 @@ k_minimo = min (Sit_1(n) , Sit_3 )
 ``` 
 
 ### E - Su Doku
-Dado um valor N e uma grade N 2 xN 2 de um Sudoku parcialmente
-resolvida, o objetivo é completar o quebra-cabeças, inserindo números
-de 1 até N 2 nas células vazias de modo que:
-• todos os números que compõem uma linha sejam distintos;
-• todos os números que compõem uma coluna sejam distintos;
-• todos os números que componham uma subgrade de tamanho NxN
-sejam distintos.
+- Dado um valor N e uma grade N 2 xN 2 de um Sudoku parcialmente resolvida, o objetivo é completar o quebra-cabeças, inserindo números de 1 até N 2 nas células vazias de modo que:
 
-img2 - img44 (montar gif)
-![gif1](gif1.gif)
+- todos os números que compõem uma linha sejam distintos;
+- todos os números que compõem uma coluna sejam distintos;
+- todos os números que componham uma subgrade de tamanho NxN sejam distintos.
+
+- Confira na GIF abaixo:
+
+![img2 - img44](gif1.gif)
 ``` C++
 int main() {
     // leitura do tamanho do tabuleiro e alocação da matriz do Sudoku
@@ -180,15 +170,18 @@ bool solve(int row, int col) {
         // se sim, pula para a linha de baixo e volta para primeira coluna
         col = 0;
         row++;
-        // caso passe da última linha, o quebra-cabeças tem solução e retorna verdadeiro
+        // caso passe da última linha, o quebra-cabeças tem solução e 
+        // retorna verdadeiro
         if (row == n)
             return true;
     }
     // verifica se a célula atual é uma célula vazia
     if (sudoku[row][col] == 0) {
-        // sendo uma célula vazia, vamos tentar inserir valores de 1 até n^2 nela
+        // sendo uma célula vazia, vamos tentar inserir valores de 1 
+        // até n^2 nela
         for (int i = 1; i <= n; i++) {
-            // verificamos se é possível inserir o valor i, respeitando as regras do jogo
+            // verificamos se é possível inserir o valor i, respeitando as 
+            // regras do jogo
             if (verify(row, col, i)) {
                 // em caso afirmativo, alteramos o valor da célula
                 sudoku[row][col] = i;
@@ -200,10 +193,13 @@ bool solve(int row, int col) {
         // se nenhum valor retornar uma solução válida, esvaziamos a casa
         sudoku[row][col] = 0;
     } else
-        // se já é uma célula com valor, avançamos para a próxima coluna apenas
+        // se já é uma célula com valor, avançamos para a próxima 
+        // coluna apenas
         return solve(row, col + 1);
-    //se o código chegar até aqui, quer dizer que, para o tabuleiro no estado atual, não tem solução
-    //assim, retornamos na recursão, e tentamos achar uma solução para próxima configuração
+    // se o código chegar até aqui, quer dizer que, para o tabuleiro no 
+    // estado atual, não tem solução
+    // assim, retornamos na recursão, e tentamos achar uma solução para 
+    // próxima configuração
     return false;
 }
 
@@ -230,9 +226,10 @@ bool verify(int row, int col, int elem) {
                 return false;
         }
     }
-    // se chegou até aqui, todas as especificações foram atendidas e retorna verdadeiro
+    // se chegou até aqui, todas as especificações foram atendidas e retorna 
+    // verdadeiro
     return true;
 }
 ``` 
 
-Complexidade: O(N^M), onde N é quantidade de números possíveis de serem inseridos em cada célula do Sudoku e M a quantidade de células vazias. Ex: Sudoku resolvido, 9x9 com 63 casas vazias, teria complexidade O(9⁶³ ).
+- Complexidade: O(N^M), onde N é quantidade de números possíveis de serem inseridos em cada célula do Sudoku e M a quantidade de células vazias. Ex: Sudoku resolvido, 9x9 com 63 casas vazias, teria complexidade O(9⁶³ ).

@@ -1,26 +1,22 @@
 ---
-title: "Exercícios X"
+title: "02 - Exercícios"
 description: "descricao"
-date: "2021-07-24"
-slug: "exercicios-x"
+slug: "exercicios-10"
 ---
-# Explicação dos Exercícios de Grafo
-## Exercícios B, D e G
+## Explicação dos Exercícios de Grafo
+### Exercícios B, D e G
 
 ### B - Find the Treasure
-img1 - img7 (montar gif)
-![gif1](gif1.gif)
+
+- Confira a GIF abaixo
+![img1-img7](gif1.gif)
 
 ### BFS partindo de múltiplas fontes
-● Seu funcionamento é exatamente igual ao da BFS.
-● No entanto, ao invés de começar em um único nó, todos os
-vértices que considerarmos como ínicio serão inseridos na
-fila de processamento.
-● Útil para resolução de problemas que requerem o cálculo
-da mínima distância ou custo para se chegar a um vértice.
+- Seu funcionamento é exatamente igual ao da BFS.
+- No entanto, ao invés de começar em um único nó, todos os vértices que considerarmos como ínicio serão inseridos na fila de processamento.
+- Útil para resolução de problemas que requerem o cálculo da mínima distância ou custo para se chegar a um vértice.
 
-img8 - img18 (montar gif)
-![gif2](gif2.gif)
+![img8-img18](gif2.gif)
 
 ``` C++
 void bfs(const vector<int> &sources) {
@@ -46,24 +42,18 @@ void bfs(const vector<int> &sources) {
 ### D - Police Stations
 
 img19 - img33 (montar gif)
-![gif3](gif3.gif)
+![img19-img33](gif3.gif)
 
 ### G - Jane and the Frost Giants
-● Jane está presa em um labirinto que contém armadilhas de
-fogo, espalhando uma célula para o lado, nas direções
-vertical e horizontal, a cada minuto.
-● Jane leva um minuto para andar para uma célula adjacente.
-● Determinar o tempo mínimo para Jane escapar por uma das
-bordas do labirinto, se possível.
-● Estratégia: computar o tempo mínimo que demora para uma
-célula pegar fogo a partir de cada armadilha.
-● Após isso, computar o tempo mínimo que leva para Jane
-alcançar uma célula adjacente e se é possível alcançá-la
-antes do fogo.
-● Verificar se ela consegue chegar em alguma borda.
+- Jane está presa em um labirinto que contém armadilhas de fogo, espalhando uma célula para o lado, nas direções vertical e horizontal, a cada minuto.
+- Jane leva um minuto para andar para uma célula adjacente.
+- Determinar o tempo mínimo para Jane escapar por uma das bordas do labirinto, se possível.
+- Estratégia: computar o tempo mínimo que demora para uma célula pegar fogo a partir de cada armadilha.
+- Após isso, computar o tempo mínimo que leva para Jane alcançar uma célula adjacente e se é possível alcançá-la antes do fogo.
+- Verificar se ela consegue chegar em alguma borda.
 
-img34 - img46 (montar gif)
-![gif4](gif4.gif)
+- Confira a GIF abaixo
+![img34-img46](gif4.gif)
 
 ``` C++
 int main() {

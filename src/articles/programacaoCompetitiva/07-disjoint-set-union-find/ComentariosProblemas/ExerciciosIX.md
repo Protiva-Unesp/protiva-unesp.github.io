@@ -1,43 +1,39 @@
 ---
-title: "Exercícios IX"
+title: "02 - Exercícios"
 description: "descricao"
-date: "2021-07-24"
-slug: "exercicios-ix"
+slug: "exercicios-9"
 ---
 ## Resolução dos Exercícios
 ### B - Ancient Berland Roads
-● São dadas N cidades e M rotas bidirecionais
-● Com o passar do tempo existem queries que tiram estradas
-● E também queries que mudam a população de uma cidade
-● Em cada querie printar a máxima população de um grupo de cidades
-● Problema off querie
-● Cada mudança de população salvar nas queries a pop_antiga - pop_nova
-● Se tenho uma população 3 na cidade e mudar para 5
-● Salvar 3 - 5 = - 2 na querie de mudança de população
-● Usar um multiset pra escolher a cidade com maior população
-● Se aparecer uma querie P tem que retirar a população daquele conjunto
-de cidades do multiset
-● Colocar a população de novo com o valor atualizado
-● Em cada querie printar o valor mais alto no multiseto
+- São dadas N cidades e M rotas bidirecionais
+- Com o passar do tempo existem queries que tiram estradas
+- E também queries que mudam a população de uma cidade
+- Em cada querie printar a máxima população de um grupo de cidades
+- Problema off querie
+- Cada mudança de população salvar nas queries a pop_antiga - pop_nova
+- Se tenho uma população 3 na cidade e mudar para 5
+- Salvar 3 - 5 = - 2 na querie de mudança de população
+- Usar um multiset pra escolher a cidade com maior população
+- Se aparecer uma querie P tem que retirar a população daquele conjunto de cidades do multiset
+- Colocar a população de novo com o valor atualizado
+- Em cada querie printar o valor mais alto no multiseto
 
-img1 - img15 (montar gif)
-![gif1](gif1.gif)
+- Confira na GIF abaixo:
+
+![img1-img15](gif1.gif)
 
 ### D - Almost Union-Find
-● Implementar uma estrutura de dados que permite as
-seguintes operações:
+- Implementar uma estrutura de dados que permite as seguintes operações:
 
 ![img16](img16.png)
 
-● São dados N elementos, com valores de 1 até N, e M
-comandos;
-● Inicialmente, cada Ni elemento pertence a um subconjunto
-distinto;
-● Para cada comando Mi, modificar a estrutura conforme as
-ações de cada comando na tabela.
+- São dados N elementos, com valores de 1 até N, e M comandos;
+- Inicialmente, cada Ni elemento pertence a um subconjunto distinto;
+- Para cada comando Mi, modificar a estrutura conforme as ações de cada comando na tabela.
 
-img17 - img33 (montar gif)
-![gif2](gif2.gif)
+- Confira na GIF abaixo:
+
+![img17-img33](gif2.gif)
 
 ``` C++
 int main() {

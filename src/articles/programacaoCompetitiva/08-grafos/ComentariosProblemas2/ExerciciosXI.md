@@ -1,27 +1,23 @@
 ---
-title: "Exercícios XI"
+title: "04 - Exercícios 2"
 description: "descricao"
-date: "2021-07-24"
 slug: "exercicios-xi"
 ---
-# Explicação dos Exercícios de Grafo
-## Exercícios B, D, E e F
+## Explicação dos Exercícios de Grafo
+### Exercícios B, D, E e F
 
 ### B - Roads of NITT
-● Existem N hotels conectados entre si por N - 1 arestas.
-● No início, sempre existe um caminho entre dois pares de
-hotéis, mas, com o tempo, algumas rotas se tornam
-inutilizáveis.
-● Dadas Q consultas, determinar quantos pares de hotéis (X,
-Y) não tem uma rota entre si.
-● As consultas podem ser de 2 tipos:
-○ R X -> remove a estrada X. É garantido que ela não foi
-removida anteriormente.
-○ Q -> retorna o resultado do número de pares de hotéis (X, Y)
-que não possuem rota entre si.
+- Existem N hotels conectados entre si por N - 1 arestas.
+- No início, sempre existe um caminho entre dois pares de hotéis, mas, com o tempo, algumas rotas se tornam inutilizáveis.
+- Dadas Q consultas, determinar quantos pares de hotéis (X, Y) não tem uma rota entre si.
+- As consultas podem ser de 2 tipos:
+    - R X -> remove a estrada X. É garantido que ela não foi removida anteriormente.
+    - Q -> retorna o resultado do número de pares de hotéis (X, Y) que não possuem rota entre si.
 
-img1 - img23
-![gif1](gif1.gif)
+- Confira a GIF abaixo:
+
+![img1-img23](gif1.gif)
+
 ``` C++
 ll q;
 cin >> q;
@@ -78,16 +74,11 @@ cout << "\n";
 ```
 
 ### E - Spanning Tree Fraction
-● Temos um grafo conexo G com N vértices, indexados de 0
-até N - 1, e M arestas.
-● Cada aresta desse grafo é uma quádrupla (U, V, a, b),
-sendo U o vértice de origem, V o vértice de destino, a e
-b pesos da nossa aresta.
-● Achar uma árvore geradora T que contém um subconjunto das
-M arestas e maximize a expressão ∑i∈T ai / ∑i∈T bi, sendo i
-o índice da aresta inserida em T.
-● Escrever o termo resultante no formato de uma fração
-irredutível p / q.
+- Temos um grafo conexo G com N vértices, indexados de 0 até N - 1, e M arestas.
+- Cada aresta desse grafo é uma quádrupla (U, V, a, b), sendo U o vértice de origem, V o vértice de destino, a e b pesos da nossa aresta.
+- Achar uma árvore geradora T que contém um subconjunto das M arestas e maximize a expressão ∑i∈T ai / ∑i∈T bi, sendo i o índice da aresta inserida em T.
+- Escrever o termo resultante no formato de uma fração irredutível p / q.
+
 ``` C++
 bool cmp(tuple<ii, ll, ll> a, tuple<ii, ll, ll> b) {
     ii p, q;
@@ -129,14 +120,14 @@ int main() {
 }
 ```
 
-F - Airports
-● Você pode colocar aeroportos em qualquer cidade.
-● São dadas as possíveis pistas que ligam as cidades.
-● Objetivo: Garantir que cada cidade tenha acesso a um
-aeroporto.
+### F - Airports
+- Você pode colocar aeroportos em qualquer cidade.
+- São dadas as possíveis pistas que ligam as cidades.
+- Objetivo: Garantir que cada cidade tenha acesso a um aeroporto.
 
-img24 - img38 (montar gif)
-![gif2](gif2.gif)
+- Confira a GIF abaixo:
+
+![img24-img38](gif2.gif)
 
 ``` C++
 for(int i = 0; i < m; i++){

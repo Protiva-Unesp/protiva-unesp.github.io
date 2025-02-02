@@ -1,8 +1,7 @@
 ---
-title: "Exercícios I"
+title: "04 - Exercícios"
 description: "descricao"
-date: "2021-07-24"
-slug: "exercicios-i"
+slug: "exercicios-1"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 ---
 ## C – Beat the Spread! (UVA – 10812)

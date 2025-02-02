@@ -1,8 +1,10 @@
 .blogContainer {
-    max-width: 800px; /* Keeps the text readable on large screens */
-    margin: 40px auto; /* Centers content with vertical spacing */
+    max-width: 800px; 
+    margin: 40px auto; 
     padding: 20px;
-    line-height: 1.7; /* Improves readability */
+    line-height: 1.7; 
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .blogContainer h1
@@ -35,7 +37,15 @@
 .blogContainer ul, 
 .blogContainer ol {
     margin-bottom: 16px;
-    padding-left: 10px; /* Slight left padding for alignment */
+    padding-left: 10px; 
+}
+
+.blogContainer ul {
+    list-style-type: disc;
+}
+
+.blogContainer ol {
+    list-style-type: decimal;
 }
 
 .blogContainer pre {
@@ -50,4 +60,26 @@
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+.blogContainer table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are merged */
+    border: 2px solid #000; /* Outline for the entire table */
+}
+
+.blogContainer th {
+    border: 1px solid #000; /* Border for header cells */
+    padding: 10px;
+    background-color: #f2f2f2; /* Light gray background for headers */
+    text-align: left;
+}
+
+.blogContainer td {
+    border: 1px solid #000; /* Border for data cells */
+    padding: 10px;
+}
+
+.blogContainer tr:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
 }

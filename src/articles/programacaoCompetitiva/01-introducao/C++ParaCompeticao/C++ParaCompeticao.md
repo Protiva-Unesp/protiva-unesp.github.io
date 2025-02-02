@@ -1,7 +1,6 @@
 ---
-title: "C++ para competição"
+title: "02 - C++ para competição"
 description: "descricao"
-date: "2021-07-24"
 slug: "cpp-para-competicao"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 ---
@@ -34,21 +33,18 @@ cout << “C: ” << setprecision(3) << c << endl;
 ``` 
 
 ### Formato padrão dos problemas
-• Descrição do problema
-• Formato da Entrada
-• Formato da Saída
-• Exemplos
+- Descrição do problema
+- Formato da Entrada
+- Formato da Saída
+- Exemplos
 
 ### Formato padrão dos problemas
-• Muita atenção ao formato da saída, em especial ao número de
-espaços e quebras de linhas.
-• Problemas na apresentação dos resultados podem gerar um
-Presentation Error (PE)
-• Alguns juízes não possui esta classe de resposta, e consideram erros
-de apresentação como uma Wrong Answer (WA).
+- Muita atenção ao formato da saída, em especial ao número de espaços e quebras de linhas.
+- Problemas na apresentação dos resultados podem gerar um Presentation Error (PE)
+- Alguns juízes não possui esta classe de resposta, e consideram erros de apresentação como uma Wrong Answer (WA).
 
 ### Situações comuns
-• Ler até acabar o arquivo de entrada
+Ler até acabar o arquivo de entrada
 ``` C++
 int a, b, c;
 while(cin >> a >> b)
@@ -59,15 +55,19 @@ while(cin >> a >> b)
 ``` 
 
 #### Exemplo de entrada 
+```
 1 2
 5 10
 3 2
+```
 #### Exemplo de saída
+```
 3
 15
 5
+```
 
-• Número de casos de teste predeterminado (Opção 1)
+Número de casos de teste predeterminado (Opção 1)
 ``` C++
 int t, a, b, c;
 cin >> t;
@@ -80,17 +80,21 @@ for(int i = 0; i < t; i++)
 ``` 
 
 #### Exemplo de entrada
+```
 3
 1 2
 5 10
 3 2
+```
 
 #### Exemplo de saída
+```
 3
 15
 5
+```
 
-• Número de casos de teste predeterminado (Opção 2)
+Número de casos de teste predeterminado (Opção 2)
 ``` C++
 int t, a, b, c;
 cin >> t;
@@ -103,17 +107,21 @@ while(t--)
 ``` 
 
 #### Exemplo de entrada
+```
 3
 1 2
 5 10
 3 2
+```
 
 #### Exemplo de saída
+```
 3
 15
 5
+```
 
-• Última entrada é marcada por zeros
+Última entrada é marcada por zeros
 ``` C++
 int a, b, c;
 while(1)
@@ -126,13 +134,17 @@ while(1)
 }
 ``` 
 
-Exemplo de entrada
+### Exemplo de entrada
+```
 1 2
 5 10
 3 2
 0 0
+```
 
-Exemplo de saída
+### Exemplo de saída
+```
 3
 15
 5
+```

@@ -1,17 +1,20 @@
 ---
-title: "Exercícios III"
+title: "06 - Exercícios 2"
 description: "descricao"
-date: "2021-07-24"
-slug: "exercicios-iii"
+slug: "exercicios-3"
 ---
 ## Resolução dos Exercícios
-## Exercícios: C e E
+### Exercícios: C e E
 
 ### C - Grapevine
 
-img1 - img5
+![img1](img1.png)
+![img2](img2.png)
+![img3](img3.png)
+![img4](img4.png)
+![img5](img5.png)
 
-• Solução: O(q*n*log^2(min(n,m)))
+- Solução: O(q*n*log^2(min(n,m)))
 ``` C++
 while (cin >> n >> m){
     if (n == 0 && m == 0) break;
@@ -37,7 +40,8 @@ ll busca_binaria(ll &l, ll &u)
         for (int i = 0; i < n; i++){
             //Encontra a posicao j na linha i em que v[i][j] é >= l
             int j = lower_bound(v[i].begin(), v[i].end(), l) - v[i].begin();
-            //Verifica se para dado tamanho de quadrado existe essa posicao na matriz
+            //Verifica se para dado tamanho de quadrado 
+            // existe essa posicao na matriz
             if (verifica(i + mid - 1, (j + mid - 1))){
                 possivel = 1;
                 if (v[i][j] > u) possivel = 0;
@@ -58,7 +62,7 @@ ll busca_binaria(ll &l, ll &u)
 }
 ```
 
-• Solução: O(q*n*log(min(n,m)))
+• Solução: O(q * n * log(min(n,m)))
 ``` C++
 ll u = max(n, m);
 vector<vector<ll>> v (n, vector<ll> (m));
@@ -79,8 +83,10 @@ while(q--){
         xma = indu - indd;
         indu--;
         if(indu >= 0)
-            yma = upper_bound(diag[u + (i - indu)].begin(), diag[u + (i - indu)].end(), b)
-            lower_bound(diag[u + (i - indu)].begin(), diag[u + (i - indu)].end(), a);
+            yma = upper_bound(diag[u + (i - indu)].begin(), 
+                diag[u + (i - indu)].end(), b)
+            lower_bound(diag[u + (i - indu)].begin(), 
+                diag[u + (i - indu)].end(), a);
         else yma = 0;
         tam = max(tam, min(xma, yma));
     }

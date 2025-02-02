@@ -1,31 +1,24 @@
 ---
-title: "Exercícios XII"
+title: "02 - Exercícios"
 description: "descricao"
-date: "2021-07-24"
 slug: "exercicios-xii"
 ---
-# Resolução Exercícios Strings
-## Exercício E, F, G e H
+## Resolução Exercícios Strings
+### Exercício E, F, G e H
 
 ### E - Maximum repetition substring
-● Solução:
-○ Suffix Array
-○ Range Minimum Query
+- Solução:
+    - Suffix Array
+    - Range Minimum Query
 
 ### F - Clock Pictures
-● São apresentadas duas fotos de um mesmo relógio com N
-ponteiros. Cada ponteiro i está posicionado em um ângulo
-ai em milésimos de grau (1º = 1000).
-● Determinar se é possível que as fotos tenham sido tiradas
-no mesmo horário do dia, considerando que a câmera pode
-ter sido rotacionada, deixando as fotos em ângulos
-diferentes.
-● Como saber se o relógio marca o mesmo horário?
-○ A sequência de abertura do ângulo entre dois ponteiros tem que ser a
-mesma para todos os pares de ponteiros em ambos os relógios, partindo
-de um par e passando por todos os outros no sentido horário.
+- São apresentadas duas fotos de um mesmo relógio com N ponteiros. Cada ponteiro i está posicionado em um ângulo ai em milésimos de grau (1º = 1000).
+- Determinar se é possível que as fotos tenham sido tiradas no mesmo horário do dia, considerando que a câmera pode ter sido rotacionada, deixando as fotos em ângulos diferentes.
+- Como saber se o relógio marca o mesmo horário?
+    - A sequência de abertura do ângulo entre dois ponteiros tem que ser a mesma para todos os pares de ponteiros em ambos os relógios, partindo de um par e passando por todos os outros no sentido horário.
 
-img1 - img15
+- Confira a GIF abaixo:
+
 ![gif1](gif1.gif)
 
 ``` C++
@@ -59,12 +52,9 @@ return 0;
 ```
 
 ### G - Ada and Spring Cleaning
-● Ada precisa fazer uma limpeza de primavera e, para tal,
-possui uma lista de afazeres.
-● Ela mantém as atividades dessa lista como uma única
-string S. Cada atividade contida em S possui comprimento
-K.
-● Temos que contar quantas atividades diferentes ela fez.
+- Ada precisa fazer uma limpeza de primavera e, para tal, possui uma lista de afazeres.
+- Ela mantém as atividades dessa lista como uma única string S. Cada atividade contida em S possui comprimento K.
+- Temos que contar quantas atividades diferentes ela fez.
 
 ![img19](img19.png)
 ![img20](img20.png)
@@ -81,20 +71,15 @@ cout << int(mp.size()) << "\n";
 ```
 
 ### H - GATTACA
-● Uma sequência genética é uma string S de tamanho N,
-composta pelos caracteres ‘A’, ‘C’, ‘G’ e ‘T’.
-● Normalmente, um fio de DNA possui um segmento (substring)
-que se repete duas ou mais vezes, chamados repetições.
-● Encontrar a repetição de maior tamanho em S.
+- Uma sequência genética é uma string S de tamanho N, composta pelos caracteres ‘A’, ‘C’, ‘G’ e ‘T’.
+- Normalmente, um fio de DNA possui um segmento (substring) que se repete duas ou mais vezes, chamados repetições.
+- Encontrar a repetição de maior tamanho em S.
 
 ![img21](img21.png)
 ![img22](img22.png)
 
-● Utilizar uma busca binária pra encontrar o tamanho da
-substring.
-● Para cada novo tamanho, pode-se percorrer a string toda e
-verificar a partir de uma posição inicial, salvar a
-substring daquele tamanho em um map.
+- Utilizar uma busca binária pra encontrar o tamanho da substring.
+- Para cada novo tamanho, pode-se percorrer a string toda e verificar a partir de uma posição inicial, salvar a substring daquele tamanho em um map.
 
 ![img23](img23.png)
 ![img24](img24.png)

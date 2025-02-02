@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
                                 <div className="triangle"></div>
                                 <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
                                     <div>
-                                        <Link to={`/aprender/07-disjoint-set-union/${node.frontmatter.slug}`}
+                                        <Link to={`/aprender/07-disjoint-set-union-find/${node.frontmatter.slug}`}
                                             className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
                                             {node.frontmatter.title}
                                         </Link>

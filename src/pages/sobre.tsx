@@ -7,7 +7,10 @@ const AboutPage = () => {
     return (
         <>
             <NavBar />
-            <p>Projeto de extensão da Unesp Bauru</p>
+            <p>Material produzido por alunos e professores da Unesp sobre 
+            Programação Competitiva, com conteúdos voltados para treinamento 
+            para competições como a Olimpíada Brasileira de Informática, a 
+            Maratona SBC de Programação, entre outras.</p>
             <Footer />
         </>
     )
