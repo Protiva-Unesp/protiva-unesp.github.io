@@ -1,0 +1,599 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.14.1"/><style data-href="/styles.a9e54db5eacbdb045062.css" data-identity="gatsby-global-css">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{-webkit-text-size-adjust:100%;font-feature-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-feature-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-10{margin-right:2.5rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-6{width:1.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-full{max-width:100%}.max-w-none{max-width:none}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-8{gap:2rem}.space-x-4>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(1rem*var(--tw-space-x-reverse))}.space-x-8>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(2rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(2rem*var(--tw-space-x-reverse))}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235/var(--tw-border-opacity,1))}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgba(239,246,255,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-blue-100{--tw-gradient-to:#dbeafe var(--tw-gradient-to-position)}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.py-4{padding-bottom:1rem;padding-top:1rem}.py-6{padding-bottom:1.5rem;padding-top:1.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-none{line-height:1}.leading-tight{line-height:1.25}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255/var(--tw-bg-opacity,1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width:640px){.sm\:w-1\/2{width:50%}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width:1024px){.lg\:w-1\/3{width:33.333333%}}.blogPost-module--blogContainer--5a556{line-height:1.7;margin:40px auto;max-width:800px;padding:20px;text-align:justify;text-justify:inter-word}.blogPost-module--blogContainer--5a556 h1
+.blogPost-module--blogContainer--5a556 h2,.blogPost-module--blogContainer--5a556 h3{margin-bottom:16px;margin-top:24px;padding-bottom:8px}.blogPost-module--blogContainer--5a556 h1{font-size:36px;font-weight:700}.blogPost-module--blogContainer--5a556 h2{font-size:28px}.blogPost-module--blogContainer--5a556 h3{font-size:25px}.blogPost-module--blogContainer--5a556 h4{font-size:20px}.blogPost-module--blogContainer--5a556 ol,.blogPost-module--blogContainer--5a556 p,.blogPost-module--blogContainer--5a556 ul{margin-bottom:16px;padding-left:10px}.blogPost-module--blogContainer--5a556 ul{list-style-type:disc}.blogPost-module--blogContainer--5a556 ol{list-style-type:decimal}.blogPost-module--blogContainer--5a556 pre{background:#f5f5f5;border-radius:6px;margin:16px 0;padding:12px}.blogPost-module--blogContainer--5a556 img{display:block;height:auto;margin:20px auto;max-width:100%}.blogPost-module--blogContainer--5a556 table{border:2px solid #000;border-collapse:collapse;width:100%}.blogPost-module--blogContainer--5a556 th{background-color:#f2f2f2;border:1px solid #000;padding:10px;text-align:left}.blogPost-module--blogContainer--5a556 td{border:1px solid #000;padding:10px}.blogPost-module--blogContainer--5a556 tr:hover{background-color:#e0e0e0}footer{align-items:center;background:#e2e2e2;box-sizing:border-box;display:flex;flex-direction:column;font-family:sans-serif;padding:20px;text-align:left;width:100%}footer h2{color:#555;font-weight:700}.footer-module--footer--a2fe4 img{width:26%}.footer-module--footer--a2fe4 p{color:#343a40;font-size:16px;font-weight:400;letter-spacing:.5px;margin-top:20px}.footer-module--footer-row--e766a{display:flex;flex-wrap:wrap;justify-content:center}.footer-module--footer-column--bc482{align-items:left;display:flex;flex:1;flex-direction:column;min-width:120px;padding:10px}.footer-module--footer-column--bc482 ul{list-style:none;margin:0;padding:0}.footer-module--footer-column--bc482 li{font-size:15px;margin-bottom:10px}.footer-module--footer-title--92ec1{font-weight:700;margin-bottom:10px}.footer-module--footer-copy--4cd61{margin-top:20px}footer a{color:#343a40;text-decoration:none}footer a:hover{text-decoration:underline}@media (min-width:320px) and (max-width:900px){.footer-module--footer-row--e766a{align-items:center;flex-direction:column}.footer-module--footer-column--bc482{min-width:100px;padding:5px}.footer-module--footer--a2fe4 p{font-size:10px;margin-top:10px}.footer-module--footer-copy--4cd61 p{font-size:24px}}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-gatsby-head="true">01 - Introdução à Análise Combinatória | Protiva</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav class="bg-white shadow-lg"><div class="max-w-6xl mx-auto px-4"><div class="flex justify-between items-center py-4"><div class="flex-shrink-0"><a class="text-2xl font-bold text-gray-900" href="/">ProTiva</a></div><div class="hidden md:flex space-x-8"><a class="text-gray-700 hover:text-blue-600" href="/aprender/">Aprender</a><a class="text-gray-700 hover:text-blue-600" href="/provas-anteriores/">Provas Anteriores</a><a class="text-gray-700 hover:text-blue-600" href="/introducao-a-programacao/">Introdução à Programação</a><a class="text-gray-700 hover:text-blue-600" href="/sobre/">Sobre</a></div><div class="md:hidden"><button class="text-gray-700 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div></div></div></nav><div class="blogPost-module--blogContainer--5a556"><h1>01 - Introdução à Análise Combinatória</h1><p>descricao</p><p>Autor(es): <!-- -->Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa</p><div><h3>Análise Combinatória</h3>
+<ul>
+<li>
+<p>Combinatória, o estudo dos arranjos dos objetos, é uma parte importante da matemática discreta. É o ramo da matemática que se dedica à contagem de elementos ou eventos discretos e de suas possíveis combinações.</p>
+</li>
+<li>
+<p>Diversos problemas de programação competitiva envolvem análise combinatória.</p>
+</li>
+<li>
+<p>Diversos problemas de contagem e de combinação possuem soluções fechadas, ou seja, existem fórmulas matemáticas resultantes da análise combinatória que podem ser aplicadas.</p>
+</li>
+<li>
+<p>Este é um dos motivos da importância da análise combinatória para a Computação, pois permite substituir um algoritmo com complexidade alto (busca por backtracking, por exemplo), por uma única chamada a uma simples fórmula.</p>
+</li>
+<li>
+<p>Em Programação Competitiva, isto é particularmente importante, permitindo resolver problemas aparentemente complexos de forma bastante simples, e sem estourar o tempo limite.</p>
+</li>
+<li>
+<p>Em alguns casos, também é possível a obtenção de look-up tables para soluções off-line.</p>
+</li>
+<li>
+<p>Bases da contagem:</p>
+</li>
+<li>
+<p>Regra do Produto: Suponha que um procedimento possa ser dividido em uma sequência de duas tarefas. Se houver 𝒏 formas de fazer a primeira tarefa e, para cada uma dessas formas, há 𝒎 formas de fazer a segunda, então há 𝒏. 𝒎 formas de concluir o procedimento. Exemplo: Quantidade de números de 3 dígitos que podem ser formados apenas com os algarismos 1, 2, 5 e 7. Devemos preencher 3 dígitos escolhendo dentro de 4 algarismos: 4 ∗ 4 ∗ 4 = 64 possibilidades Se não pudesse haver repetição de algarismos: 4 ∗ 3 ∗ 2 = 24 possibilidades</p>
+</li>
+</ul>
+<h3>Bases da contagem:</h3>
+<ul>
+<li>Regra do Soma: Se uma tarefa puder ser realizada em uma de 𝒏 formas ou em uma das 𝒎 formas, em que nenhuma das 𝒏 formas seja igual a alguma das 𝒎 formas, então há 𝒏 + 𝒎 formas de realizar a tarefa.</li>
+<li>Caso mais geral: quando há intersecção entre os conjuntos de “formas”, devemos subtraí-la da soma:</li>
+</ul>
+<p>|𝐴1 ∪ 𝐴2| = |𝐴1| + |𝐴2| − |𝐴1 ∩ 𝐴2|</p>
+<ul>
+<li>Uma associação é um arranjo de 𝒏 itens, onde cada item pode ser escolhido de uma lista de 𝒎 valores, com repetição.</li>
+<li>Por exemplo, quantas formas diferentes existem de se pintar 4 casas utilizando 3 cores.</li>
+<li>Utilizando a regra do produto:</li>
+</ul>
+<p>𝑆 (𝑛, 𝑚) = 𝑚^𝑛</p>
+<ul>
+<li>
+<p>Existem 𝑆(4,3) = 3⁴ = 81 associações possíveis entre 4 casas e 3 cores</p>
+</li>
+<li>
+<p>Caso específico: subconjuntos</p>
+</li>
+<li>
+<p>Quantos subconjuntos podemos formar a partir de um conjunto de 𝒏 elementos? Trata-se de um problema de seleção sem reposição.</p>
+</li>
+<li>
+<p>A seleção ou não de cada um dos 𝒏 elementos pode ser representada de forma binária (selecionar ou não selecionar): arranjo binário de 𝒏 posições.</p>
+</li>
+<li>
+<p>Logo, o número de possíveis subconjuntos é 𝑺(𝒏, 𝟐) = 𝟐^𝒏</p>
+</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/58aaa2d187a58ff58217afaf1fa9d2ff/8ecb0/img1.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 17.177914110429448%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVR42lWNSwuCQBSF/f9EqLRpH5SbFv2FVqJGtJAsnWx6WaMTipvCPN0Zg+pcLt893JcRZUs47gDTYIiJb8EJbKKpa03vn45vU5oYe32atTBye5jHMyi1FIYsBVbbBSIegosE+1OIg9whzTbgRHZZg+cM7Eq+YEhF3PU/TM4hbvJI11qgqmDgV00DyLt6BeQF+VfnH8+ur5ZafFOpLIG6pjmp6zfzSddVus3zZgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img1' title='' src='/static/58aaa2d187a58ff58217afaf1fa9d2ff/a6d36/img1.png' srcset='/static/58aaa2d187a58ff58217afaf1fa9d2ff/222b7/img1.png 163w,
+/static/58aaa2d187a58ff58217afaf1fa9d2ff/ff46a/img1.png 325w,
+/static/58aaa2d187a58ff58217afaf1fa9d2ff/a6d36/img1.png 650w,
+/static/58aaa2d187a58ff58217afaf1fa9d2ff/e548f/img1.png 975w,
+/static/58aaa2d187a58ff58217afaf1fa9d2ff/8ecb0/img1.png 989w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Exemplo 1:
+<ul>
+<li>Um computador de 32 bits é capaz de endereçar quantos gigabytes de memória?</li>
+</ul>
+</li>
+</ul>
+<p>𝑆 (32,2) = 2³² = 2². 2³⁰ = 4𝐺𝐵</p>
+<ul>
+<li>
+<p>Exemplo 2:</p>
+<ul>
+<li>Quantas senhas diferentes é possível criar utilizando de 8 a 10 letras ou dígitos, considerando letras minúsculas e maiúsculas.</li>
+</ul>
+<p>𝑆(8, 62) + 𝑆(9,62) + 𝑆(10,62) = 853.054.792.520.188.672</p>
+</li>
+</ul>
+<h3>Permutação</h3>
+<ul>
+<li>Permutação é um arranjo de 𝒏 itens, onde cada item aparece exatamente uma única vez.</li>
+<li>O 1º elemento do arranjo pode assumir qualquer um dos 𝒏 itens, o 2º pode assumir 𝒏 − 𝟏 itens (qualquer um, exceto o já assumido pelo 1º) e assim por diante.</li>
+<li>Logo, pela regra do produto:</li>
+</ul>
+<p>𝑃(𝑛) = 𝑛(𝑛 − 1)(𝑛 − 2) … 1 = 𝑛!</p>
+<p>𝑃(𝑛) = 𝑛!</p>
+<ul>
+<li>
+<p>Exemplo: anagramas</p>
+<ul>
+<li>Quantos anagramas existem da palavra MESA</li>
+<li>Conjunto de elementos: 𝑀, 𝐸, 𝑆, 𝐴</li>
+<li>𝑃(4) = 4! = 24 anagramas</li>
+</ul>
+</li>
+<li>
+<p>Permutação com elementos repetidos</p>
+</li>
+<li>
+<p>Exemplo: anagrama da palavra CASA</p>
+<ul>
+<li>A letra “A” aparece duas vezes, se aplicássemos a fórmula da permutação, o anagrama ACSA, por exemplo, seria contado duas vezes, como se cada letra A fosse uma letra diferente. CASA => ACSA, ACSA</li>
+<li>Considerando um conjunto de elementos, e que o elemento 1 se repete 𝑛1 vezes, o 2 se repete 𝑛2 vezes, e assim por diante, chegamos em:</li>
+</ul>
+</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/194f43c3d303447a135a95f4753deee1/1320e/img2.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 22.085889570552148%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtUlEQVR42lWP2QqFMAxE+/9f5aM+lKIgFBVEQcQHF1yquM1lAgVvIDQk6ZmMep4H0zThvm8wWJ/nCfZ9fuN9X3m3bUMQBBiG4a+vwjBEFEWoqgrrusIYgyRJUBQF0jRF27ZomgbLsogod47jwDzPyLJMgPu+wzknIoogBpev65KaQwIJJrDrOvnEXl3XsNaiLEuM44i+75HnucDpTn3P9TWTAt6ynxNIN3EcQ2strngVReiU8x970i4XUHeegAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img2' title='' src='/static/194f43c3d303447a135a95f4753deee1/a6d36/img2.png' srcset='/static/194f43c3d303447a135a95f4753deee1/222b7/img2.png 163w,
+/static/194f43c3d303447a135a95f4753deee1/ff46a/img2.png 325w,
+/static/194f43c3d303447a135a95f4753deee1/a6d36/img2.png 650w,
+/static/194f43c3d303447a135a95f4753deee1/e548f/img2.png 975w,
+/static/194f43c3d303447a135a95f4753deee1/1320e/img2.png 1292w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<h3>Arranjo</h3>
+<ul>
+<li>Arranjo: quantas possibilidades há de escolher 𝒓 elementos de um conjunto de 𝒏 elementos, em que a ordem de escolha é relevante?</li>
+<li>É uma generalização da permutação. Uma permutação pode ser considerada como um arranjo em que 𝒓 = 𝒏</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/bef6a5d8dc71c78a2fc37ee435306c1f/afa26/img3.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 30.061349693251532%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9klEQVR42m1Ry6qDQAyd//+bbrRLF3VhF74QLFoFH1hFRQviW09JuJbb0kCYZCY5yTkj8Gf7vmPbtndM/is+avI8x/V6xe12e9eQi2maMAwDuq77aKZ8nmd82/GeJAkkSWLg/ybO5zNOpxNM04SqqliWBa7rwrIsxHGMNE2h6zoXP59PBng8HsiyjN8IuCgK9qZpIBzHQV3XvL4sywiCgAHv9zuiKGIA27YZkHKiWJYlqqpC27Z80j0N9X0f4qDZ9z3rM44jN1O+rusHTWrSNA2Xy4XBwjDkgYZhMCNFUSC+tfml2fERRM/zPKZK+pL+JMMBTpu/AK9gxFDfdrBFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img3' title='' src='/static/bef6a5d8dc71c78a2fc37ee435306c1f/a6d36/img3.png' srcset='/static/bef6a5d8dc71c78a2fc37ee435306c1f/222b7/img3.png 163w,
+/static/bef6a5d8dc71c78a2fc37ee435306c1f/ff46a/img3.png 325w,
+/static/bef6a5d8dc71c78a2fc37ee435306c1f/a6d36/img3.png 650w,
+/static/bef6a5d8dc71c78a2fc37ee435306c1f/e548f/img3.png 975w,
+/static/bef6a5d8dc71c78a2fc37ee435306c1f/afa26/img3.png 1258w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<pre><code class="language-C++">int PermutationCoeff(int n, int k)
+{
+    int Fn = 1, Fk;
+    for (int i = 1; i &#x3C;= n; i++)
+    {
+        Fn *= i;
+        if (i == n - k)
+        Fk = Fn;
+    }
+    int coeff = Fn / Fk;
+    return coeff;
+}
+</code></pre>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/75fcacba4a2a995c2215d4037265b43b/6bfd0/img4.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 29.447852760736193%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDklEQVR42nVR14rDQBDz/39aDCYEkxg73DlucYt7b4pmwfd2A2K2jDSaXW3fd0zTBInjOBQk5Hwcx79913VomgZ936PnWvYLa+SsiGMsYYjWsqDleQ5d1+G6LoIgQBRFiuR5HkzTRFmWihST5DgOXqz7Iaz7Ha/bDfb1it/LBSHXCfna6XBdVyzLorIgyzIFETwd79um1lNRoKRA9XigoSGJjZPszJoQDMNAkiTKhTgWR7ZtI01TbBTxfV8Jz2xoP5+Y5xmF7Cnic6KCDc4n08RdXdfqUN6l47jjMCB9v9G0LchGTXJbVZiJnGPtvJ/IAXPDpsPngzM0/Bf8EIggG6gsoIA0UFkgd1LHJzoFvy1iyxNdXkD3AAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img4' title='' src='/static/75fcacba4a2a995c2215d4037265b43b/a6d36/img4.png' srcset='/static/75fcacba4a2a995c2215d4037265b43b/222b7/img4.png 163w,
+/static/75fcacba4a2a995c2215d4037265b43b/ff46a/img4.png 325w,
+/static/75fcacba4a2a995c2215d4037265b43b/a6d36/img4.png 650w,
+/static/75fcacba4a2a995c2215d4037265b43b/e548f/img4.png 975w,
+/static/75fcacba4a2a995c2215d4037265b43b/6bfd0/img4.png 1011w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<pre><code class="language-C++">int PermutationCoeff(int n, int k)
+{
+    int coeff = 1;
+    for (int i = n; i > (n - k); i--)
+        coeff *= i;
+    return coeff;
+}
+</code></pre>
+<h3>Combinação</h3>
+<ul>
+<li>Combinação: quantas possibilidades há de escolher 𝑟 elementos de um conjunto de 𝑛 elementos, em que a ordem de escolha não é relevante?</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/a0664e2ae48e5abdb03d2dac14c33dcc/b1584/img5.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 20.245398773006134%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVR42l1PyQqFQAyb//84L2444jbKgDsuiAc1koLie4VC2rRJq87zxHEcuK4LDNYP3rYNjuPAGINvPLzneQiC4KenXNdFkiTIsgxN0yCOY4zjiLZtEUWR9HzfR9d1gvd9x7IsWNdV9oqiEDzPs3BKa42yLGWJJHHf9yJAcWIK04BZVZVczes4S3NrrfQ4p75vMv9f5uXDMLzv1nWNNE0RhqEYTtP0muZ5jhtBNSyR2SmcJwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img5' title='' src='/static/a0664e2ae48e5abdb03d2dac14c33dcc/a6d36/img5.png' srcset='/static/a0664e2ae48e5abdb03d2dac14c33dcc/222b7/img5.png 163w,
+/static/a0664e2ae48e5abdb03d2dac14c33dcc/ff46a/img5.png 325w,
+/static/a0664e2ae48e5abdb03d2dac14c33dcc/a6d36/img5.png 650w,
+/static/a0664e2ae48e5abdb03d2dac14c33dcc/e548f/img5.png 975w,
+/static/a0664e2ae48e5abdb03d2dac14c33dcc/3c492/img5.png 1300w,
+/static/a0664e2ae48e5abdb03d2dac14c33dcc/b1584/img5.png 1342w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Tanto no caso da permutação como da combinação, temos que tomar um pouco de cuidado com nossa implementação (estamos usando muito fatorial), tanto em relação ao tempo quanto ao limite de nossas variáveis.</li>
+<li>Para a combinação, pode-se calcular qualquer coeficiente binomial baseado na seguinte recorrência (que deriva o conhecido Triângulo de Pascal):</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/3869971d0bc924af14dade95a0f86651/6edca/img6.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 23.926380368098158%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA00lEQVR42k1QyQqFQAyb//8v8ebFHcUNF9xXFBTNIwXlBcrMtJk0rcrzHMdx4B91XYP5dV1x3zeGYUCWZZimSerXdSFJEpRlKXdGFEWoqgrKtm2EYYhlWfA8D7ZtQxAEQqDIOI7SgG8G0fc9LMuC53lyn+dZNEzThCKByhQhgW4cx5GPdEe8jXzfl1ocx584OawzRFDXdTD2fRcCT9d1oWmafOSYdGgYBtI0FU7XdZ8geTRC0LVqmkbGep0QzBVF8e3wPE/ZF9fy7rBtW+HzZP7N/QDfoneadZ20CAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img6' title='' src='/static/3869971d0bc924af14dade95a0f86651/a6d36/img6.png' srcset='/static/3869971d0bc924af14dade95a0f86651/222b7/img6.png 163w,
+/static/3869971d0bc924af14dade95a0f86651/ff46a/img6.png 325w,
+/static/3869971d0bc924af14dade95a0f86651/a6d36/img6.png 650w,
+/static/3869971d0bc924af14dade95a0f86651/e548f/img6.png 975w,
+/static/3869971d0bc924af14dade95a0f86651/3c492/img6.png 1300w,
+/static/3869971d0bc924af14dade95a0f86651/6edca/img6.png 1351w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<pre><code class="language-C++">long long bin[MAXN][MAXR];
+void calcularCoefBin(int n, int k){ //Pré-calculando em O(n*k)
+    int i, j;
+    for (i = 0; i &#x3C;= n; i++){
+        for (j = 0; j &#x3C;= min(i, k); j++){
+        if (j == 0 || j == i)
+            bin[i][j] = 1;
+        else
+            bin[i][j] = bin[i - 1][j - 1] + bin[i - 1][j];
+        }
+    }
+}
+</code></pre>
+<h3>Exemplo: caminho através de uma grade</h3>
+<ul>
+<li>Quantas formas temos de caminhar em uma grade 𝑛 𝑥 𝑚 a partir do canto superior esquerdo e alcançar o canto inferior direito caminhando apenas para baixo e para a direita?</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/145c9aaca1e43b1c1d02c73590cb4046/7608e/img7.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 69.93865030674846%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVR42o2TW4vaUBSF81Pahz62DAyWvpVpCy1Cy0BhkNrSPzjgiz4MWBUZHadVWkcH7xovo8ao8ZLEa7K694laHaalJ2ySczhZ51trJxL2h20f3HXThK7rMA0D/zukgxkJwLJ2z518Hj9SKWSyWQwGA0wmE1QqFSiKgtFoJNaGwyHG4/EDgqsVkE4D87kjKsuwCgUUSLQbiyF7cQGl30fs8hJZOqBcLouSaV+1Wt0Ys+8J1uvAvj2iKRKhThQ/r64wXyyECBOyCIsxNd8PBbfZtdvAcrnTs4joNplE4+4O/kBAvBgMBpHJZJBIJBCPx8VarVbbE2SyLdU9QR45sswbi8WimLdaLUHFlKqqYjabiVz/CE6nwPU10Ok4RbY2vJhRY3w+H0qlEs7Pz1GgTP1+P1IUQzgcRiQSQZIcRKNRxxFl71hmUSajE7Ht2CYGFluv1yI7x0RbdJgJucsLAqhz9g9mSFYE5a5PK2p8WthlwlwuJwiZiulCoZCg3nWZ9h8KNhqMdJDhlixPWe5n2KGDmZIJZSakBtokLFm2BVGUnGUasLShmNt0LZcLpG/SJNIk0l/oksg36vINrZWIukh0bFd8NvRtrukg6V+/EWeiGyZFrGOsG5jQs6IOoI2nMBdLdJUeiRbRkOvQRk72Un/Uxa60jlPb+Zh+MaUBo9eCPehhrpDdVhlavQBNzqN3m0LtexTNYADNZAyqrkJ67XXhb3Xy2QXP+6fwnB7hw9kx3B+f4Z37Cb68fATvyWO8PTvCm68vcPrpOdyeY7zyuvAbuu74BGa0D3gAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img7' title='' src='/static/145c9aaca1e43b1c1d02c73590cb4046/a6d36/img7.png' srcset='/static/145c9aaca1e43b1c1d02c73590cb4046/222b7/img7.png 163w,
+/static/145c9aaca1e43b1c1d02c73590cb4046/ff46a/img7.png 325w,
+/static/145c9aaca1e43b1c1d02c73590cb4046/a6d36/img7.png 650w,
+/static/145c9aaca1e43b1c1d02c73590cb4046/7608e/img7.png 735w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Exemplo: caminho através de uma grade</li>
+<li>1ª forma de analisar: note que cada caminho é necessariamente constituído de um conjunto de 𝑛 + 𝑚 passos, 𝑛 para baixo e 𝑚 para a direita.</li>
+<li>Sendo assim, um caminho nada mais é do que uma permutação de passos para baixo e para a direita. Podemos considerar como se fosse um anagrama (com “letras” repetidas). Ex: BBDDB. Logo, pela fórmula da permutação com elementos repetidos:</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/d5b90935462c6a73aef16fd16e74e4b6/5c5b6/img8.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 23.926380368098158%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA00lEQVR42l1QWaqEQBDz/vcRvID45fKhjLsiKqggIiruGVLg8J4FoburQippBa+67/sfnh5rnmd4noeqqjAMA9q2Rdd1CMMQvu8jTVMoZVmiaRpkWSbntm0/8fM8MU3TT3AcR9i2DcuyUBQFgiBAHMcwDAOmaUpP0TRNmtys67oMP58PoiiCqqpwXVcWUYSuyKWJuq4FnNExHdKxcl0XCFbf90iSRCKQSGFuXZZF3vu+CzfPcxEgz3EcwbquOI4DyvvPnnh///R9ZxqK0BkTMu4z/wKdwXU5v97I1wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img8' title='' src='/static/d5b90935462c6a73aef16fd16e74e4b6/a6d36/img8.png' srcset='/static/d5b90935462c6a73aef16fd16e74e4b6/222b7/img8.png 163w,
+/static/d5b90935462c6a73aef16fd16e74e4b6/ff46a/img8.png 325w,
+/static/d5b90935462c6a73aef16fd16e74e4b6/a6d36/img8.png 650w,
+/static/d5b90935462c6a73aef16fd16e74e4b6/e548f/img8.png 975w,
+/static/d5b90935462c6a73aef16fd16e74e4b6/5c5b6/img8.png 1265w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>2ª forma de analisar: novamente, considerando que um caminho é constituído de 𝑛 + 𝑚 passos, 𝑛 para baixo e 𝑚 para a direita.</li>
+<li>Necessariamente, dois caminhos distintos diferem na ordem de um ou mais dos 𝑛 passos para baixo, dentro dos 𝑛 + 𝑚 passos totais.</li>
+<li>Exemplo, considerando uma grade 2x2:
+<ul>
+<li><strong>baixo</strong> - direita - <strong>baixo</strong> - direita (ordens 1 e 3)</li>
+<li><strong>baixo</strong> - <strong>baixo</strong> - direita - direita (ordens 1 e 2)</li>
+</ul>
+</li>
+<li>2ª forma de analisar: novamente, considerando que um caminho é constituído de 𝑛 + 𝑚 passos, 𝑛 para baixo e 𝑚 para a direita.</li>
+<li>Dessa forma, podemos escolher 𝑛 posições dentro das 𝑛 + 𝑚 possíveis como sendo passos para baixo. Se tratando de um problema de combinação, já que a ordem de escolha das posições não importam, as combinações (1,3) e (3,1) representam o mesmo caminho (pensando no exemplo anterior)</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/d52d6b1ba105f9ce052c7a75ea71724a/ffaa5/img9.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 26.993865030674847%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCklEQVR42nWO2WrCYBCF8/6P04XSUmitC00NpUa8sChEJRpj1KSJMcm/fE56USilA8Ns58w5TlVVJEnC6XzmkKZ8FQW73Y7j8UgYhsRxjDGG4nQiXC7ZrNeEmw2qrinynCiKWMk+WCyw1uI0SpHJw1LIaRBQSM2FfBaBTARK6VOpE98nmk6ZzedEggsmE9IsIxcDn7MZezFBWeKYusJut1hRtG0vAANordHirFVtHSrVYGSntEI3tdwVRm5WenM4SO4xWYrDcgVRjCD5E9pKyntj+Dcahaj+jI779oj78YLr9/Cer/F6d7x3bhkO7hl2bvCervAGD7yOB4Lr4o56v9Pv447733x31OUC/Yl22YEteI0AAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img9' title='' src='/static/d52d6b1ba105f9ce052c7a75ea71724a/a6d36/img9.png' srcset='/static/d52d6b1ba105f9ce052c7a75ea71724a/222b7/img9.png 163w,
+/static/d52d6b1ba105f9ce052c7a75ea71724a/ff46a/img9.png 325w,
+/static/d52d6b1ba105f9ce052c7a75ea71724a/a6d36/img9.png 650w,
+/static/d52d6b1ba105f9ce052c7a75ea71724a/e548f/img9.png 975w,
+/static/d52d6b1ba105f9ce052c7a75ea71724a/ffaa5/img9.png 1299w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<h3>Esperança matemática</h3>
+<ul>
+<li>A Esperança Matemática, o valor esperado ou a expectância de uma variável aleatória nada mais é do que a média aritmética de uma variável aleatória.</li>
+<li>Para uma variável aleatória discreta 𝑋 com valores possíveis 𝑥1, 𝑥2, 𝑥3, … e com as probabilidades representadas pela função 𝑝(𝑥𝑖), o valor esperado calcula-se pela série:</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/f71d072a9f63ea3c63490b8b49af5417/ad997/img10.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 38.036809815950924%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJ0lEQVR42n1SyY6CQBDt//8MLp6RixcPhmiMsh3YXGLkBIFAMICCAm+maoIRZ5xOOq9SS9erVy3wz+n7ntHzPOz3+5Hv0xFD0vt9PB6cEEURNpsNttst23S6rnsi5Q5IV9R1jaqqQFiWJa7X64jJ+XyGJEkcC8PwF8v7/Y62bdnXNA3EfD7Her3msWazGXzfRxzHWC6XyLKMi1RVxWKxYNtxHKRpyhMQa9u2YVkWkiRhWcRqtcJut4OmaRw8HA7I85yZDWzJHthRc8MwcDweMZ1O+TFqaJomdF3/0ZAo08ikxe12G41FhZPJhJNd12VfURScRw0JiS1JcrlcIP5ayKvwp9MJsixDURSe4DX2XgNayqevMiDpRY8GQfDc8ujrDPnfC+kNA196OV5lc+H3CAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img10' title='' src='/static/f71d072a9f63ea3c63490b8b49af5417/a6d36/img10.png' srcset='/static/f71d072a9f63ea3c63490b8b49af5417/222b7/img10.png 163w,
+/static/f71d072a9f63ea3c63490b8b49af5417/ff46a/img10.png 325w,
+/static/f71d072a9f63ea3c63490b8b49af5417/a6d36/img10.png 650w,
+/static/f71d072a9f63ea3c63490b8b49af5417/e548f/img10.png 975w,
+/static/f71d072a9f63ea3c63490b8b49af5417/ad997/img10.png 1012w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>
+<p>Sendo que 𝑛 pode tender ao ∞ se a série for convergente.</p>
+</li>
+<li>
+<p>Exemplo: uma pequena cirurgia dentária pode ser realizada por um método cujo tempo de recuperação (em dias) é modelado pela variável aleatória X. Determine a Esperança Matemática da variável X da função discreta de probabilidade abaixo</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>5</th>
+<th>10</th>
+<th>15</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>𝒑𝒊</td>
+<td>0,3</td>
+<td>0,2</td>
+<td>0,4</td>
+<td>0,1</td>
+</tr>
+</tbody>
+</table>
+<p>𝐸(𝑋) = 5 ∗ 0,3 + 10 ∗ 0,2 + 15 ∗ 0,4 + 20 ∗ 0,1</p>
+<p>𝐸(𝑋) = 11,5</p>
+<ul>
+<li>Espera-se que o tempo médio de recuperação seja de 11,5 dias</li>
+</ul>
+<h3>Relação de Recorrência</h3>
+<ul>
+<li>Uma relação de recorrência é uma equação definida em termos de si mesma.</li>
+<li>Trata-se de um conceito matemático intimamente ligado ao conceito de recursão em computação.</li>
+<li>Por exemplo, qualquer polinômio</li>
+</ul>
+<p>𝑝𝑛(𝑥) = 𝑐0 + 𝑐1𝑥 + … + 𝑐𝑛𝑥𝑛</p>
+<p>pode ser escrito recorrentemente pela regra de Horn como:</p>
+<p>𝑝0(𝑥) = 𝑐𝑛</p>
+<p>𝑝𝑖(𝑥) = 𝑐𝑛−𝑖 + 𝑥. 𝑝𝑖−1(𝑥)</p>
+<ul>
+<li>Algo muito importante, especialmente em PC, é que muitas recorrências podem ser expressas simplificadamente através de funções:</li>
+<li>Isso permite o cálculo analítico de qualquer termo de sequências numéricas recorrentes, independente da quantidade de termos precedentes.</li>
+<li>Exemplo: i-ésimo termo de uma Progressão Aritmética</li>
+<li>Relação de recorrência</li>
+</ul>
+<p>𝑎1 = 𝑋</p>
+<p>𝑎𝑛 = 𝑎𝑛−1 + 𝑟</p>
+<ul>
+<li>Termo geral</li>
+</ul>
+<p>𝑎𝑛 = 𝑎1 + ( 𝑛 − 1)𝑟</p>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/b79bd81df18b144e89e8f9c12f7453b2/6937a/img11.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 40.49079754601227%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVR42oVSCW6DQAzk/19rUoG4SaIcQCNuEsIRrqntFlqpVWvJeNe7Hs94UZI4gu3YeN1uoesGgjDA5mUD0zSx2+0kOo4LTVOhGwbCMATbPM/4zRT+PJ8dFTlQVRWWZcJ1PYmGYUqe3fM8tG27gi2+2jh+AfLBSIm+78WHYfj0UeI0T0iSBFmWIooinI5HBEGA+/1OuQwNN6L8TLUK/rGFxel0xNv1isvlIrLjOF7XdV2DNsJSAKdpQkSz9H0faZrifD4jpc7LGdvtdkNVPaS4LAp0XUfeIqd7ddOACkFyPgBZLlPnbldiwfPK8/wH04YKGYhjQaDraPoBZVkgp9yfkvkR/MCXWXEjTdPoT9Bh2xb2+72AHw4HWZumJcqU7wwWX2RO0yhMec/RdV1hxgyrqpK7ZVni8ahkFKzyHWApYniWqo6TAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img11' title='' src='/static/b79bd81df18b144e89e8f9c12f7453b2/a6d36/img11.png' srcset='/static/b79bd81df18b144e89e8f9c12f7453b2/222b7/img11.png 163w,
+/static/b79bd81df18b144e89e8f9c12f7453b2/ff46a/img11.png 325w,
+/static/b79bd81df18b144e89e8f9c12f7453b2/a6d36/img11.png 650w,
+/static/b79bd81df18b144e89e8f9c12f7453b2/e548f/img11.png 975w,
+/static/b79bd81df18b144e89e8f9c12f7453b2/6937a/img11.png 1094w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<h3>Indução Matemática</h3>
+<ul>
+<li>
+<p>Dada uma sequência ou relação de recorrência e valor(es) base conhecido(s), como obter uma expressão fechada para o 𝑛-ésimo termo?</p>
+</li>
+<li>
+<p>Uma das metodologias matemáticas para solucionar esse tipo de problema é a indução.</p>
+</li>
+<li>
+<p>Essa metodologia requer uma hipótese, usualmente obtida a partir da observação de um conjunto de valores iniciais conhecidos e, possivelmente, ajustes por tentativa-e-erro.</p>
+</li>
+<li>
+<p>Exemplo:</p>
+<p>𝑇0 = 0</p>
+<p>𝑇𝑛 = 2𝑇𝑛−1 + 1</p>
+</li>
+</ul>
+<p>𝒏 0 1 2 3 4 5 6</p>
+<p>𝑻𝒏 0 1 3 7 15 31 63</p>
+<table>
+<thead>
+<tr>
+<th>𝒏</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>𝑻𝒏</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>15</td>
+<td>31</td>
+<td>63</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Neste exemplo, uma hipótese fácil de obter é 𝑇𝑛 = 2^𝑛 − 1</p>
+</li>
+<li>
+<p>Três passos da Prova por Indução:</p>
+</li>
+</ul>
+<ol>
+<li>Mostre que a hipótese satisfaz o valor base:</li>
+</ol>
+<ul>
+<li>𝑇0 = 2⁰ − 1 = 0</li>
+</ul>
+<ol start="2">
+<li>Assuma que a hipótese é válida para qualquer 𝑛:</li>
+</ol>
+<ul>
+<li>𝑇𝑛 = 2^𝑛 − 1</li>
+</ul>
+<ol start="3">
+<li>Use esta hipótese para generalizar para os elementos seguintes:</li>
+</ol>
+<ul>
+<li>
+<p>𝑇𝑛+1 = 2𝑇𝑛 + 1 = 2(2𝑛 − 1) + 1 = 2^𝑛+1^ − 2 + 1 = 2^𝑛+1^ − 1</p>
+</li>
+<li>
+<p>As razões da validade deste tipo de prova estão intimamente ligadas às razões do funcionamento de programas recursivos:</p>
+</li>
+<li>
+<p>Garante-se o funcionamento para caso(s) base (boundary conditions)</p>
+</li>
+<li>
+<p>Obtém-se o caso geral (general conditions) garantindo que este funciona como uma função do caso imediatamente anterior.</p>
+</li>
+</ul>
+<h3>Eggfruit Cake (SBC - Nacional 2019)</h3>
+<ul>
+<li>Neste problema temos um bolo coberto por frutas, onde cada fruta pode ser uma eggfruit (E) ou um persimmon (P).</li>
+<li>Objetivo: determinar quantas formas há de cortar o bolo em fatias que possuam até S frutas em que pelo menos uma delas é uma fruta do tipo E?</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 610px; '>
+      <a class='gatsby-resp-image-link' href='/static/6084a6aca4bb679642face05b5ed05a2/5aae9/img12.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 69.93865030674846%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4UlEQVR42pVTR8tiQRCcf+9BvYgioicRRPAgCh48KIoHQcxizgkMmHOqpXoZed8u38duw2PmdU/VdFf3KPxg7/cb+/0e2+0W5/MZ/2Lqp+BsNkO1WkWn00Gz2cTpdPp/QmZFI7jRaAhpt9vFeDwWYuOZbwn1Aa56/3g8UCgUUKvVhCifzwvxd4TapzTJ/X7H6/X6ErxcLhgMBmi1WphOp5+48XJezE/7FA9NJhMprdfrSQO0HY9HISTZYrHA8/n8ktV6vcZoNMJwOBS8EBaLRYRCISmp3+8L6e12EzBL5D9j4XBYVm2r1UpwqVRKKiCWPhWNRuFwOFCpVDCfz5HNZmVErtcrcrmcZE8dnU4nIpHIh5B+s9kMm82GYDCIUqkkpIqsBNbrdRkRZqSN5dDXbrflIpZt1DidTsPlcsmXSCRES6W14o0EGDvIPclY0uFw+KvD1J/jxOx2u93vLvMlMAsGyuWyZKq7SX1MJpOsHB1jw7TGPO/xeOB2u7HZbKA4vNQuHo/D5/OJnsyGGtrtdni9XgGx01y1LZdL+Sc2FovBarUik8lAsd0U22KxiDMQCHxA9CeTyU+nKbo2viQ9+HyWfr9fqhQNCaDAPEA9tTFLXsjmMJM/XwgrofaMs1xq+Avg2w3URmy79QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img12' title='' src='/static/6084a6aca4bb679642face05b5ed05a2/5aae9/img12.png' srcset='/static/6084a6aca4bb679642face05b5ed05a2/222b7/img12.png 163w,
+/static/6084a6aca4bb679642face05b5ed05a2/ff46a/img12.png 325w,
+/static/6084a6aca4bb679642face05b5ed05a2/5aae9/img12.png 610w' sizes='(max-width: 610px) 100vw, 610px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Primeiramente, já que cada fatia precisa ter pelo menos uma fruta do tipo E, vamos olhar para cada fruta E e ver quantas possibilidades de corte temos que incluam esta posição.</li>
+<li>Exemplo: 𝑆 = 3</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/195ff804e96217209b4a93c73ebd210a/f09ab/img13.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 15.950920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVR42nWNyw7BUABE+/nCwkIiEV8hWGgsbGxEoqVSUUkbgoTe2wdV3Nsej9g6i0lmkpkxzuGZNM7wdhMs3ySJLshIkt9zIhHjH116do15MEKGMUIKng9NcFjRdxp07QrL7RgRym/P4A9aa8Lf2WY3pevUWe8truntd5a8/QzTaWK6bYKjxyW5/R/8UJblW6AonjxUhi7UN1dKIYQgiVOcYEhnUWXgtjjJPS9ejd9GzmNNdAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img13' title='' src='/static/195ff804e96217209b4a93c73ebd210a/a6d36/img13.png' srcset='/static/195ff804e96217209b4a93c73ebd210a/222b7/img13.png 163w,
+/static/195ff804e96217209b4a93c73ebd210a/ff46a/img13.png 325w,
+/static/195ff804e96217209b4a93c73ebd210a/a6d36/img13.png 650w,
+/static/195ff804e96217209b4a93c73ebd210a/e548f/img13.png 975w,
+/static/195ff804e96217209b4a93c73ebd210a/f09ab/img13.png 1250w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Sendo 𝑞𝐸 a quantidade de frutas do tipo E, temos que:</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/edc4d3bd8c33acf50aecebc8427fec15/32ac3/img14.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 30.67484662576687%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVR42nVQy07DMBDM1yPBBY4gPgKJIoEAiQsHLjxaKqBV1RJoQmInThznaccZNhEVHMpIo13vSjPecUCQqYTvexBCIAxDeJ6HIAgGMnpzzhAyhohzhP2M+rZtsQ3OtqHWGmVZkmBItSJDRcIcUqZQSiGKov8FjTG0tKiaHEUth74XrEjIW3vICgmWuEiVQF1r5Hk+7LSpISuGjNiYEtbawcTpz8nSAvOPOzwsL5AKBZHEqOoKSZxiFbzibLyHiXsDEaUUSwzdGKz8GUbPBzh92sHUvUXMk2HndF2HDXtsqqWf8ojOJLPF5z1G033M149QsiCzEjLJsPia4PrlEFdvx3gPZsiz8m+G3Q9/0Z/R2Q6mbVAZBWP1MO9jYiykLGOMl5c4Ge/ifHoEn7v4BkqAxwnfMoNBAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img14' title='' src='/static/edc4d3bd8c33acf50aecebc8427fec15/a6d36/img14.png' srcset='/static/edc4d3bd8c33acf50aecebc8427fec15/222b7/img14.png 163w,
+/static/edc4d3bd8c33acf50aecebc8427fec15/ff46a/img14.png 325w,
+/static/edc4d3bd8c33acf50aecebc8427fec15/a6d36/img14.png 650w,
+/static/edc4d3bd8c33acf50aecebc8427fec15/e548f/img14.png 975w,
+/static/edc4d3bd8c33acf50aecebc8427fec15/32ac3/img14.png 1249w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Mas isso gera um problema: fatias que possuem mais de uma fruta E serão contadas mais de uma vez (1 vez para cada fruta E).</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/94a6963d8f757eb01016402dfebf7509/7830c/img15.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 5.521472392638037%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAXElEQVR42gFRAK7/AOPj4//l5eT/5+Xq/9Pcwf+dwWX/mMVr/5PBYv/K2Lv/9/T6//7+/f//////7u7u/9/g4P/o6Of/4uLi/6bKf/+Uwmb/m8Jj/7LMi//q6e3/1t9D3QZ9WEcAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img15' title='' src='/static/94a6963d8f757eb01016402dfebf7509/a6d36/img15.png' srcset='/static/94a6963d8f757eb01016402dfebf7509/222b7/img15.png 163w,
+/static/94a6963d8f757eb01016402dfebf7509/ff46a/img15.png 325w,
+/static/94a6963d8f757eb01016402dfebf7509/a6d36/img15.png 650w,
+/static/94a6963d8f757eb01016402dfebf7509/e548f/img15.png 975w,
+/static/94a6963d8f757eb01016402dfebf7509/3c492/img15.png 1300w,
+/static/94a6963d8f757eb01016402dfebf7509/7830c/img15.png 1345w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>
+<p>Solução: para cada fruta E, vamos olhar a sua distância até a fruta anterior (D). Toda fatia de tamanho maior ou igual a D+1 que contenha a fruta anterior deve ser descontada.</p>
+</li>
+<li>
+<p>Análise:</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tamanho da fatia</th>
+<th>Possibilidades</th>
+<th># de possibilidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>𝐷 + 1</td>
+<td>E...E</td>
+<td>1</td>
+</tr>
+<tr>
+<td>𝐷 + 2</td>
+<td>XE...E, E...EX</td>
+<td>2</td>
+</tr>
+<tr>
+<td>𝐷 + 3</td>
+<td>XXE...E, XE...EX, E...EXX</td>
+<td>3</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td></td>
+</tr>
+<tr>
+<td>S</td>
+<td>...</td>
+<td>S-D</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Valores para subtrair (quantidade de fatias repetidas):</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 479px; '>
+      <a class='gatsby-resp-image-link' href='/static/da3e4914ea672bd906d1216204a02d76/a9b70/img16.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 23.926380368098158%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9klEQVR42oWQW0+DUBCE+f//yNREpfpQQ8AHGgoS7g1KS8q13Pk8EE3si24yOWczuzs7K83zzA/GcSRNU+q6pu97yrLkLPIlljwKo5XLLhfiOKbrh5X7EP8sy2iaBmkQhfM0rURZFLzudoRRhGlZ+J6HaVoURU56Trjb3PNuGTw8yiiKQpbnlFXFVn5CVTVc10PayFuubYtt2ySnE4Zh4Pv+N4L1DcMQTwwPgoA3TUXX9ziOQySEgzAQg1w0VV0XkZyXZzLPJ0k+6bp+tdYKgd9YrAzDwF7XxVYFk3DUtd1NzdK7nEwS8nA8Io7If2EeDlT19c+aLzPUeTecscaDAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img16' title='' src='/static/da3e4914ea672bd906d1216204a02d76/a9b70/img16.png' srcset='/static/da3e4914ea672bd906d1216204a02d76/222b7/img16.png 163w,
+/static/da3e4914ea672bd906d1216204a02d76/ff46a/img16.png 325w,
+/static/da3e4914ea672bd906d1216204a02d76/a9b70/img16.png 479w' sizes='(max-width: 479px) 100vw, 479px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Total:</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/9acc738b7b22b6a42d67ca8650ea8d96/71c8e/img17.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 16.56441717791411%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVR42jVO1w6DMBDj/78OQR/Yo5BmQCkqIAQZ7iVST7LOiePYkbUW2hj4Oc8T8zyBMYbrurAsb3DOYUh3zkFrHeA94Uz3nhsP4l6LPmRS04y26yDIzMYRdd2EDz1PkgRZlkFIgecwoMpzFOkDiniRpujLElkco69q0kdE/7T7vkPacRzYtm9oLPgLTdvCku4bhCb7Dk3BViloKWEkbXpn1hUOwA+U8eQXKpQT+QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img17' title='' src='/static/9acc738b7b22b6a42d67ca8650ea8d96/a6d36/img17.png' srcset='/static/9acc738b7b22b6a42d67ca8650ea8d96/222b7/img17.png 163w,
+/static/9acc738b7b22b6a42d67ca8650ea8d96/ff46a/img17.png 325w,
+/static/9acc738b7b22b6a42d67ca8650ea8d96/a6d36/img17.png 650w,
+/static/9acc738b7b22b6a42d67ca8650ea8d96/71c8e/img17.png 875w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<h3>Desafio: SBC - Regional 2020 – Problema A</h3>
+<ul>
+<li>Problema: Considere um álbum de figurinha onde todas as figurinhas são iguais. Sendo assim, para completar o álbum basta coletar 𝑁 figurinhas.</li>
+<li>Porém, quando se compra um pacote de figurinhas, ele contém um número aleatório de figurinhas.</li>
+<li>Objetivo: determinar, em média, quantos pacotes são necessários para completar um álbum?</li>
+<li><a href="https://vjudge.net/problem/Gym-102428M">https://vjudge.net/problem/Gym-102428M</a></li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/671dc12a0af685bc7bb46de4e9118ad3/ec3e2/img18.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 44.78527607361963%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLUlEQVR42qVS2ZKEIAzk/7/SGW9FwBNRx2w6SNXuwzwtVV2dBOgkEFXXNZVVRfu+03mdFEKg8zzpCEfk4/iDFDsZOPs7BqjBGMqyF1Us2ve9cNd11LYtNU1D73fOfk81x7EHEe89retK1jmaponmeRYG1L57NmYax5HhhHWvhZ2zZK0lx7axhn3ed6PsfVvqOIIoO75ouNphGIQ1V4vKkijiaOnz+dB1Xd8FQ9ifahy33JHWOgow4wmMYftJgHax7vuOwgzYyQcU+sebQUQ/IlLtUykSgZOfEiYb+7EDI6zwyws/cMr836WQJXvFX67KkipOUPPvwi+KQn665DgSwwYDeZ7LGcSA5ItgPFxTx+02PC5pZND+tm20LIuMybpu7HvyHIv+yraXMUpnfgDorLLXO1WyrAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img18' title='' src='/static/671dc12a0af685bc7bb46de4e9118ad3/a6d36/img18.png' srcset='/static/671dc12a0af685bc7bb46de4e9118ad3/222b7/img18.png 163w,
+/static/671dc12a0af685bc7bb46de4e9118ad3/ff46a/img18.png 325w,
+/static/671dc12a0af685bc7bb46de4e9118ad3/a6d36/img18.png 650w,
+/static/671dc12a0af685bc7bb46de4e9118ad3/e548f/img18.png 975w,
+/static/671dc12a0af685bc7bb46de4e9118ad3/ec3e2/img18.png 997w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/5ba257d8a0c7d22b22f072d46e30ffc3/20751/img19.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 39.877300613496935%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVR42mVS2Y6EMAzr//8jy4qjlMLAcJSzkI0zAnXYBwuUurZjUGmaUpImZKuKdJ5TXdfkvad93wV4n+eZ8iyjKIrIlpaMMTRN0xcPWNeVVMVC766jZVnk4hOYD8MgRkVR0DiOMoPgk4uZypAwSciUJWmtOakVpwvbtgkx5/RxHJO1loWNmOAs5MJIgdA27e18pboAIs6QEFznHM3LLAh5110F55T7kZU4IZ5hL+gJZKSPoh8RNaYU4WeHSKxKXrVpGkkBgBgC63bcMYRg3vf9P04Iha+XcI+4oHVOVV2x08cNgDNW0dLh7ychd+hGd6e6IF+5eb3YdbjXA47juHGepxDfbUv4I7A+5t4fXzwAGn9tSWcsv+vDOQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img19' title='' src='/static/5ba257d8a0c7d22b22f072d46e30ffc3/a6d36/img19.png' srcset='/static/5ba257d8a0c7d22b22f072d46e30ffc3/222b7/img19.png 163w,
+/static/5ba257d8a0c7d22b22f072d46e30ffc3/ff46a/img19.png 325w,
+/static/5ba257d8a0c7d22b22f072d46e30ffc3/a6d36/img19.png 650w,
+/static/5ba257d8a0c7d22b22f072d46e30ffc3/e548f/img19.png 975w,
+/static/5ba257d8a0c7d22b22f072d46e30ffc3/20751/img19.png 1037w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Dicas:
+<ul>
+<li>Pode-se perceber com certa facilidade que este exercício envolve o conceito de esperança matemática. Porém, a aplicação não é tão direta quanto no exemplo que foi dado anteriormente.</li>
+<li>Um passo importante é buscar determinar uma relação de recorrência 𝑥𝑖 tal que 𝑥𝑖 = quantidade de pacotes esperado para conseguir ≥ 𝑖 figurinhas.</li>
+<li>Uma vez determinada essa relação de recorrência, pode ser necessário alguma técnica específica para que ela possa ser calculada de forma eficiente, sem gerar TLE.</li>
+<li>Caso específico a se considerar: 𝐴 = 0. Não é um caso muito mais complicado que o caso geral, mas é necessário um tratamento especial.</li>
+<li>Resolução: <a href="https://www.youtube.com/watch?v=icXLy96-yGI&#x26;t=6537s">https://www.youtube.com/watch?v=icXLy96-yGI&#x26;t=6537s</a></li>
+</ul>
+</li>
+</ul>
+<h3>Referências</h3>
+<p>Biblioteca de códigos de Thiago Alexandre Domingues de Souza.</p>
+<p>Matemática Discreta e Suas Aplicações. Kenneth H. Rosen.</p>
+<p>Programming Challenges: The Programming Contest Training Manual. Stevem S. Skiena e Miguel A. Revilla.</p>
+<p><a href="https://www.geeksforgeeks.org/permutation-coefficient/">https://www.geeksforgeeks.org/permutation-coefficient/</a></p>
+<p><a href="http://wiki.icmc.usp.br/images/a/ac/SCC211Cap6A.pdf">http://wiki.icmc.usp.br/images/a/ac/SCC211Cap6A.pdf</a></p>
+<p><a href="https://mundoeducacao.uol.com.br/matematica/permutacao-envolvendo-elementos-repetidos.htm">https://mundoeducacao.uol.com.br/matematica/permutacao-envolvendo-elementos-repetidos.htm</a></p>
+<p><a href="https://brasilescola.uol.com.br/matematica/permutacao-com-elementos-repetidos.htm">https://brasilescola.uol.com.br/matematica/permutacao-com-elementos-repetidos.htm</a></p>
+<p><a href="https://sites.google.com/site/estatisticabasicacc/conteudo/probabilidade/variaveis-aleatorias-discretas/esperanca-matematica">https://sites.google.com/site/estatisticabasicacc/conteudo/probabilidade/variaveis-aleatorias-discretas/esperanca-matematica</a></p></div></div><footer class="footer-module--footer--a2fe4"><div class="footer-module--footer-row--e766a"><div class="footer-module--footer-column--bc482"><h2>FUNDAÇÕES</h2><ul><li><a href="https://www.editoraunesp.com.br/">Editora Unesp</a></li><li><a href="https://www.fundunesp.org.br/">Fundunesp</a></li><li><a href="https://www.vunesp.com.br/">Fundação Vunesp</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>GOVERNO</h2><ul><li><a href="https://www.saopaulo.sp.gov.br/">Governo de São Paulo</a></li><li><a href="https://www.cruesp.sp.gov.br/">Conselhos de Reitores</a></li><li><a href="https://unesp.br/transparencia/">Transparência Unesp</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>SISTEMAS</h2><ul><li><a href="https://sistemas.unesp.br/">Sistemas Online</a></li><li><a href="https://www2.unesp.br/eduroam">EDUROAM</a></li><li><a href="https://www2.unesp.br/ai/grupos-de-trabalho/redes-de-computadores/conteudos/videoconferencia/">Videoconferência</a></li><li><a href="https://www2.unesp.br/vpn">VPN</a></li><li><a href="https://email.unesp.br/">Webmail</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>SAÚDE</h2><ul><li><a href="https://www.unesp.br/unespsaude/">Unesp Saúde</a></li><li><a href="https://www.ecaresentinela.com.br/">e-Care Sentinela</a></li><li><a href="https://www.unesp.br/numis">NUMIS</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>INFORMAÇÕES</h2><ul><li><a href="https://www2.unesp.br/secgeral/manuais/legislacao-unesp/">Legislação Unesp</a></li><li><a href="https://www2.unesp.br/secgeral/diplomas/revalidacao/">Revalidação de Diplomas</a></li><li><a href="https://www2.unesp.br/secgeral/diplomas/reconhecimento/">Reconhecimento de Diplomas</a></li><li><a href="#">Localização</a></li><li><a href="https://www.unesp.br/ouvidoria">Ouvidoria</a></li><li><a href="https://www2.unesp.br/politica-de-uso">Políticas de Uso</a></li></ul></div></div><div class="footer-module--footer-copy--4cd61"><p>2025<!-- --> Protiva</p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/aprender/06-arvores/analise-combinatoria/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-0597d7d3418de1955ef2.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-91630b4ba6e9242e18b4.js\"],\"component---src-pages-aprender-01-introducao-index-tsx\":[\"/component---src-pages-aprender-01-introducao-index-tsx-80cd18607060c585e9cc.js\"],\"component---src-pages-aprender-01-introducao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-01-introducao-markdown-remark-frontmatter-slug-tsx-4a00f5be70577610137f.js\"],\"component---src-pages-aprender-02-stl-index-tsx\":[\"/component---src-pages-aprender-02-stl-index-tsx-198ee80a815c376c3631.js\"],\"component---src-pages-aprender-02-stl-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-02-stl-markdown-remark-frontmatter-slug-tsx-8bbb10585265cc26cda7.js\"],\"component---src-pages-aprender-03-forca-bruta-recursao-backtracking-index-tsx\":[\"/component---src-pages-aprender-03-forca-bruta-recursao-backtracking-index-tsx-82fcffb4c22238875144.js\"],\"component---src-pages-aprender-03-forca-bruta-recursao-backtracking-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-03-forca-bruta-recursao-backtracking-markdown-remark-frontmatter-slug-tsx-3dea8c339d1b87489e22.js\"],\"component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-index-tsx\":[\"/component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-index-tsx-5b37929668fde2721274.js\"],\"component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-markdown-remark-frontmatter-slug-tsx-2d6741a68b855be10ab4.js\"],\"component---src-pages-aprender-05-programacao-dinamica-index-tsx\":[\"/component---src-pages-aprender-05-programacao-dinamica-index-tsx-f82753c2ed6a8ac806b7.js\"],\"component---src-pages-aprender-05-programacao-dinamica-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-05-programacao-dinamica-markdown-remark-frontmatter-slug-tsx-b472033dd73c6ac171f7.js\"],\"component---src-pages-aprender-06-arvores-index-tsx\":[\"/component---src-pages-aprender-06-arvores-index-tsx-d94cd261983ca8162c6b.js\"],\"component---src-pages-aprender-06-arvores-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-06-arvores-markdown-remark-frontmatter-slug-tsx-58c297498d4c5d3d9718.js\"],\"component---src-pages-aprender-07-disjoint-set-union-find-index-tsx\":[\"/component---src-pages-aprender-07-disjoint-set-union-find-index-tsx-6494bc2cf9868ecc66d8.js\"],\"component---src-pages-aprender-07-disjoint-set-union-find-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-07-disjoint-set-union-find-markdown-remark-frontmatter-slug-tsx-af9dd2bed1cc3c24d9d0.js\"],\"component---src-pages-aprender-08-grafos-index-tsx\":[\"/component---src-pages-aprender-08-grafos-index-tsx-c7f7d80cbb3bab1b9e12.js\"],\"component---src-pages-aprender-08-grafos-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-08-grafos-markdown-remark-frontmatter-slug-tsx-2ee0be0c88ebab8ca61d.js\"],\"component---src-pages-aprender-09-kmp-string-hashing-index-tsx\":[\"/component---src-pages-aprender-09-kmp-string-hashing-index-tsx-25ff8a3abe46700f69aa.js\"],\"component---src-pages-aprender-09-kmp-string-hashing-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-09-kmp-string-hashing-markdown-remark-frontmatter-slug-tsx-1d5d488cfede94c15268.js\"],\"component---src-pages-aprender-10-teoria-dos-numeros-index-tsx\":[\"/component---src-pages-aprender-10-teoria-dos-numeros-index-tsx-d192b515102e90aa0a15.js\"],\"component---src-pages-aprender-10-teoria-dos-numeros-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-10-teoria-dos-numeros-markdown-remark-frontmatter-slug-tsx-3df868af0a6ff085ffd9.js\"],\"component---src-pages-aprender-11-analise-combinatoria-index-tsx\":[\"/component---src-pages-aprender-11-analise-combinatoria-index-tsx-2a788e0275faaab4769d.js\"],\"component---src-pages-aprender-11-analise-combinatoria-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-11-analise-combinatoria-markdown-remark-frontmatter-slug-tsx-989c46a7968aebb1b798.js\"],\"component---src-pages-aprender-index-tsx\":[\"/component---src-pages-aprender-index-tsx-bd664371dbfd4b1c8bfa.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-7c227276dd208b01dea0.js\"],\"component---src-pages-introducao-a-programacao-deducao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-deducao-index-tsx-8d6eb837d5dab806da72.js\"],\"component---src-pages-introducao-a-programacao-deducao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-introducao-a-programacao-deducao-markdown-remark-frontmatter-slug-tsx-2a5a107d785c2a66caba.js\"],\"component---src-pages-introducao-a-programacao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-index-tsx-1a95b0534658661c5ac2.js\"],\"component---src-pages-introducao-a-programacao-ordenacao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-ordenacao-index-tsx-793999e9f569b2afaf41.js\"],\"component---src-pages-introducao-a-programacao-ordenacao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-introducao-a-programacao-ordenacao-markdown-remark-frontmatter-slug-tsx-e461bec7eae9522e6173.js\"],\"component---src-pages-provas-anteriores-index-tsx\":[\"/component---src-pages-provas-anteriores-index-tsx-254c25403af1314de207.js\"],\"component---src-pages-provas-anteriores-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-provas-anteriores-markdown-remark-frontmatter-slug-tsx-ad0e0f0dafb7f8e230bf.js\"],\"component---src-pages-sobre-tsx\":[\"/component---src-pages-sobre-tsx-433bb418ff50c41da4bb.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="cc670d79800359f88f19";</script><script src="/webpack-runtime-105fc78d825956d32b4b.js" async></script><script src="/framework-8156c71e4f6907919132.js" async></script><script src="/app-0597d7d3418de1955ef2.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

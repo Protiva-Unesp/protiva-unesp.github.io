@@ -1,0 +1,567 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.14.1"/><style data-href="/styles.a9e54db5eacbdb045062.css" data-identity="gatsby-global-css">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{-webkit-text-size-adjust:100%;font-feature-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-feature-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-10{margin-right:2.5rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-6{width:1.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-full{max-width:100%}.max-w-none{max-width:none}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-8{gap:2rem}.space-x-4>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(1rem*var(--tw-space-x-reverse))}.space-x-8>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(2rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(2rem*var(--tw-space-x-reverse))}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235/var(--tw-border-opacity,1))}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgba(239,246,255,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-blue-100{--tw-gradient-to:#dbeafe var(--tw-gradient-to-position)}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.py-4{padding-bottom:1rem;padding-top:1rem}.py-6{padding-bottom:1.5rem;padding-top:1.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-none{line-height:1}.leading-tight{line-height:1.25}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255/var(--tw-bg-opacity,1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width:640px){.sm\:w-1\/2{width:50%}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width:1024px){.lg\:w-1\/3{width:33.333333%}}.blogPost-module--blogContainer--5a556{line-height:1.7;margin:40px auto;max-width:800px;padding:20px;text-align:justify;text-justify:inter-word}.blogPost-module--blogContainer--5a556 h1
+.blogPost-module--blogContainer--5a556 h2,.blogPost-module--blogContainer--5a556 h3{margin-bottom:16px;margin-top:24px;padding-bottom:8px}.blogPost-module--blogContainer--5a556 h1{font-size:36px;font-weight:700}.blogPost-module--blogContainer--5a556 h2{font-size:28px}.blogPost-module--blogContainer--5a556 h3{font-size:25px}.blogPost-module--blogContainer--5a556 h4{font-size:20px}.blogPost-module--blogContainer--5a556 ol,.blogPost-module--blogContainer--5a556 p,.blogPost-module--blogContainer--5a556 ul{margin-bottom:16px;padding-left:10px}.blogPost-module--blogContainer--5a556 ul{list-style-type:disc}.blogPost-module--blogContainer--5a556 ol{list-style-type:decimal}.blogPost-module--blogContainer--5a556 pre{background:#f5f5f5;border-radius:6px;margin:16px 0;padding:12px}.blogPost-module--blogContainer--5a556 img{display:block;height:auto;margin:20px auto;max-width:100%}.blogPost-module--blogContainer--5a556 table{border:2px solid #000;border-collapse:collapse;width:100%}.blogPost-module--blogContainer--5a556 th{background-color:#f2f2f2;border:1px solid #000;padding:10px;text-align:left}.blogPost-module--blogContainer--5a556 td{border:1px solid #000;padding:10px}.blogPost-module--blogContainer--5a556 tr:hover{background-color:#e0e0e0}footer{align-items:center;background:#e2e2e2;box-sizing:border-box;display:flex;flex-direction:column;font-family:sans-serif;padding:20px;text-align:left;width:100%}footer h2{color:#555;font-weight:700}.footer-module--footer--a2fe4 img{width:26%}.footer-module--footer--a2fe4 p{color:#343a40;font-size:16px;font-weight:400;letter-spacing:.5px;margin-top:20px}.footer-module--footer-row--e766a{display:flex;flex-wrap:wrap;justify-content:center}.footer-module--footer-column--bc482{align-items:left;display:flex;flex:1;flex-direction:column;min-width:120px;padding:10px}.footer-module--footer-column--bc482 ul{list-style:none;margin:0;padding:0}.footer-module--footer-column--bc482 li{font-size:15px;margin-bottom:10px}.footer-module--footer-title--92ec1{font-weight:700;margin-bottom:10px}.footer-module--footer-copy--4cd61{margin-top:20px}footer a{color:#343a40;text-decoration:none}footer a:hover{text-decoration:underline}@media (min-width:320px) and (max-width:900px){.footer-module--footer-row--e766a{align-items:center;flex-direction:column}.footer-module--footer-column--bc482{min-width:100px;padding:5px}.footer-module--footer--a2fe4 p{font-size:10px;margin-top:10px}.footer-module--footer-copy--4cd61 p{font-size:24px}}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-gatsby-head="true">01 - Introdução à Teoria dos Números | Protiva</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav class="bg-white shadow-lg"><div class="max-w-6xl mx-auto px-4"><div class="flex justify-between items-center py-4"><div class="flex-shrink-0"><a class="text-2xl font-bold text-gray-900" href="/">ProTiva</a></div><div class="hidden md:flex space-x-8"><a class="text-gray-700 hover:text-blue-600" href="/aprender/">Aprender</a><a class="text-gray-700 hover:text-blue-600" href="/provas-anteriores/">Provas Anteriores</a><a class="text-gray-700 hover:text-blue-600" href="/introducao-a-programacao/">Introdução à Programação</a><a class="text-gray-700 hover:text-blue-600" href="/sobre/">Sobre</a></div><div class="md:hidden"><button class="text-gray-700 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div></div></div></nav><div class="blogPost-module--blogContainer--5a556"><h1>01 - Introdução à Teoria dos Números</h1><p>descricao</p><p>Autor(es): <!-- -->Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli</p><div><h3>BigInteger</h3>
+<ul>
+<li>
+<p>Certos problemas da Maratona de Programação recebem como entrada números inteiros que extrapolam o limite de variáveis do tipo long long int</p>
+</li>
+<li>
+<p>Tamanho de uma variável long long int: 8 bytes</p>
+</li>
+<li>
+<p>Intervalo de números que podem ser armazenados em uma variável desse tipo:</p>
+</li>
+<li>
+<p>-9.223.372.036.854.775.808 à 9.223.372.036.854.775.807</p>
+</li>
+<li>
+<p>0 à 18.446.744.073.709.551.615 (unsigned long long int)</p>
+</li>
+<li>
+<p>Certos problemas da Maratona de Programação recebem como entrada números inteiros que extrapolam o limite de variáveis do tipo long long int</p>
+</li>
+<li>
+<p>Exemplo: 2667 - Jogo de Boca</p>
+<ul>
+<li>Entrada: 𝑁 (3 ≤ 𝑁 ≤ 10¹⁰⁰)</li>
+</ul>
+</li>
+<li>
+<p>1ª Situação: dependendo das operações necessárias de se fazer com o número, podemos ler o número como sendo uma string e trabalhar com essa string.</p>
+</li>
+<li>
+<p>Exemplos:</p>
+<ul>
+<li>Operações simples com dígitos</li>
+<li>Uso de Aritmética Modular</li>
+</ul>
+</li>
+<li>
+<p>2ª Situação: se precisarmos fazer operações com esse número como soma, subtração, multiplicação e divisão, o problema se torna mais complexo.</p>
+</li>
+<li>
+<p>Nesses casos, não recomendamos usar a linguagem C++. É possível trabalhar com BigInteger em C++ (a biblioteca do Thiago traz códigos para isso), porém a quantidade de código necessária é relativamente grande.</p>
+</li>
+<li>
+<p>Sugestões: Java ou Python</p>
+</li>
+<li>
+<p>Em Java podemos usar a classe BigInteger da biblioteca java.math</p>
+</li>
+</ul>
+<pre><code class="language-Java">String Num;
+BigInteger NumGrande;
+Scanner S = new Scanner(System.in);
+Num = S.nextLine();
+NumGrande = new BigInteger(Num);
+NumGrande = NumGrande.mod(new BigInteger("3"));
+System.out.println(NumGrande);
+</code></pre>
+<ul>
+<li>
+<p>Em Python, não precisamos nos preocupar muito com o tamanho de um inteiro, a memória é alocada conforme o necessário para comportar o tamanho do número.</p>
+</li>
+<li>
+<p><a href="https://www.geeksforgeeks.org/python-input-methods-competitive-programming/">Entrada e Saída em Python</a></p>
+</li>
+<li>
+<p><a href="https://www.geeksforgeeks.org/python-input-methods-competitive-programming/">Python em Programação Competitiva</a></p>
+</li>
+<li>
+<p><a href="https://www.geeksforgeeks.org/python-input-methods-competitive-programming/">Muita coisa sobre Python</a></p>
+</li>
+<li>
+<p>Em Python, não precisamos nos preocupar muito com o tamanho de um inteiro, a memória é alocada conforme o necessário para comportar o tamanho do número.</p>
+</li>
+</ul>
+<pre><code class="language-Python">U = int(input())
+print(U % 3)
+</code></pre>
+<h3>Teoria dos Números</h3>
+<ul>
+<li>A Teoria dos Números é o ramo da matemática que se preocupa com as propriedades dos números inteiros.</li>
+<li>Existe uma coleção de algoritmos interessantes derivados de estudos da Teoria dos Números que solucionam problemas de forma inteligente e eficiente.</li>
+<li>Aqui faremos uma breve introdução à alguns tópicos relativos à Teoria dos Números.</li>
+</ul>
+<h4>Números primos</h4>
+<ul>
+<li>
+<p>Diversos problemas envolvem o uso de números primos.</p>
+</li>
+<li>
+<p>Dessa forma, precisamos, inicialmente, de uma forma de testar se um número é primo ou não.</p>
+</li>
+<li>
+<p>Recordando: números primos são números naturais que têm apenas dois divisores: 1 e ele mesmo.</p>
+</li>
+<li>
+<p>Algoritmo ingênuo 𝑂(𝑛)</p>
+</li>
+</ul>
+<pre><code class="language-C++">bool ehPrimo(int n)
+{
+    for(int i = 2; i &#x3C; n; i++)
+    if (n % i == 0)
+        return false;
+    return true;
+}
+</code></pre>
+<ul>
+<li>
+<p>Porém, na verdade só precisamos testar até 𝒏</p>
+</li>
+<li>
+<p>Demonstração:</p>
+<ul>
+<li>Suponha que não, nesse caso existe 𝒏 tal que o menor fator primo 𝒑 de 𝒏 é maior que sqrt(𝒏).</li>
+<li>Se 𝒑 divide 𝒏, então 𝒏/𝒑 também divide 𝒏, e 𝒏/𝒑 deve ser maior que sqrt(n).</li>
+<li>Mas se 𝒑 > sqrt(n) e 𝒏/𝒑 > sqrt(n) , então 𝒑 . 𝒏/𝒑 > 𝒏, o que é um absurdo!</li>
+</ul>
+</li>
+<li>
+<p>Algoritmo 𝑂( sqrt(𝑛))</p>
+</li>
+</ul>
+<pre><code class="language-C++">bool ehPrimo(int n)
+{
+    for(int i = 2; i*i &#x3C;= n; i++)
+        if (n % i == 0)
+            return false;
+    return true;
+}
+</code></pre>
+<h3>Crivo de Eratóstenes</h3>
+<ul>
+<li>
+<p>O Crivo de Eratóstenes é um método de encontrar os números primos até um certo valor limite.</p>
+</li>
+<li>
+<p>Útil em casos que faremos vários testes de primalidade e na fatoração de números.</p>
+</li>
+<li>
+<p>Ideia geral: dado que um número 𝒑 é primo, marcamos os múltiplos de 𝒑 como não sendo números primos.</p>
+</li>
+<li>
+<p>Algoritmo:</p>
+</li>
+</ul>
+<pre><code>Cria-se uma lista de 2 a MAX, marcando todos como primos
+Para cada número i de 2 até sqrt(MAX)
+Se i está marcado como primo
+Marcar todos os números múltiplos de i a partir de i . i 
+como compostos (não primos)
+</code></pre>
+<h3>Por que podemos marcar só a partir de 𝑖. 𝑖?</h3>
+<ul>
+<li>Antes de 𝒊. 𝒊 temos: 𝑖. 2, 𝑖. 3, 𝑖. 4, … 𝑖. (𝑖 − 1). Ou ainda, 𝒊. 𝒋 | 𝟐 ≤ 𝒋 &#x3C; 𝒊</li>
+<li>Seja 𝒙 = 𝒊. 𝒋, 𝒙 é múltiplo de 𝒊 e também é múltiplo de 𝒋</li>
+<li>Todo 𝒋 ou é primo, ou é múltiplo de um número primo menor que 𝒊, ou seja, um primo já “descoberto” pelo algoritmo</li>
+<li>Se 𝒋 é primo
+<ul>
+<li>Todos os seus múltiplos foram marcados como não primo, inclusive 𝒊. 𝒋</li>
+</ul>
+</li>
+<li>Se 𝒋 é múltiplo de um primo 𝒑 &#x3C; 𝒊
+<ul>
+<li>Então ele já foi marcado como composto, por ser múltiplo de 𝒑, assim como todos os seus múltiplos</li>
+</ul>
+</li>
+<li>Logo, todos os números 𝒊. 𝒋 | 𝟐 ≤ 𝒋 &#x3C; 𝒊 já foram marcados</li>
+</ul>
+<pre><code class="language-C++">bool ehPrimo[MAX];
+vector&#x3C;int> primos;
+void crivo(int n){
+    memset(ehPrimo, true, sizeof(ehPrimo));
+    for(int p = 2; p * p &#x3C;= n; p++){
+        if (ehPrimo[p]){
+            primos.push_back(p); //Lista incompleta, primos até sqrt(n)
+            for(int i = p*p; i &#x3C;= n; i += p)
+            ehPrimo[i] = false;
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>Confira a GIF abaixo:</li>
+</ul>
+<p><img src="/static/gif1-e08da4be4e83d51729c742a0c017db20.gif" alt="img1-img6"></p>
+<ul>
+<li>Este algoritmo possui complexidade 𝑂(𝑛 log log 𝑛)</li>
+<li>Esta demonstração não é muito simples. Caso queira conferir, veja o artigo do <a href="https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html#toc-tgt-1">CP-Algorithms</a>.</li>
+<li>Com certas otimizações ainda é possível obter um <a href="https://cp-algorithms-brasil.com/Algebra/Crivo2.html">algoritmo de complexidade linear</a>.</li>
+</ul>
+<h3>Fatoração</h3>
+<ul>
+<li>Fatoração em 𝑂(sqrt(𝑛))</li>
+</ul>
+<pre><code class="language-C++">vector&#x3C;int> fatorar(int n) {
+    vector&#x3C;int> fator;
+    for (int i = 2; i*i &#x3C;= n; i++){
+        while (n % i == 0){
+            fator.push_back(i);
+            n /= i;
+        }
+    }
+    if (n > 1)
+    fator.push_back(n);
+    return fator;
+}
+</code></pre>
+<ul>
+<li>
+<p>Também é possível obter um algoritmo de fatoração com complexidade 𝑂(log 𝑛), baseando-se no Crivo de Eratóstenes.</p>
+</li>
+<li>
+<p>Primeiramente, ao invés de utilizarmos o crivo para descobrirmos todos os primos, faremos uma pequena alteração para computar para cada número o seu Menor Fator Primo (Shortest Prime Factor - SPF).</p>
+</li>
+<li>
+<p>Crivo para Fatoração</p>
+</li>
+</ul>
+<pre><code class="language-C++">int spf[MAXN];
+void crivo(){
+    for(int i=2; i &#x3C; MAXN; i++){
+        if(spf[i] == 0){
+            spf[i] = i;
+            for(int j=i*i; j&#x3C;MAXN; j+=i){
+                if(spf[j] == 0) spf[j] = i;
+            }
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>A partir do vetor SPF pré-calculado, podemos realizar a fatoração de um número qualquer seguindo o seguinte algoritmo:</li>
+</ul>
+<pre><code>fatores = []
+enquanto n > 1
+Inserir spf[n] em fatores
+n = n/spf[n]
+</code></pre>
+<h4>Fatoração em 𝑂(log 𝑛)</h4>
+<pre><code class="language-C++">vector&#x3C;int> fatorar(int n){
+    vector&#x3C;int> fator;
+    while(n > 1){
+        fator.push_back(spf[n]);
+        n /= spf[n];
+    }
+    return fator;
+}
+</code></pre>
+<h3>Look-up tables</h3>
+<ul>
+<li>Existem casos onde podemos gerar um vetor ou matriz de consulta manualmente (ou previamente por outro programa), e inseri-los prontos no nosso código. Dessa forma, economiza-se o tempo de gerar tal vetor/matriz.</li>
+<li>Por exemplo, se para resolver um problema precisamos de todos os primos até 𝑁, podemos embutir um vetor de primos já dentro do código.</li>
+</ul>
+<pre><code class="language-C++">int primos[] = {2, 3, 5, 7, 11, 13, … }
+</code></pre>
+<ul>
+<li>Isso também pode ser gerado por um programa auxiliar.</li>
+</ul>
+<p><em>“The judge can’t look into your heart or your program to see your intentions - it only checks the results.”</em>
+(Skiena &#x26; Revilla, 2003; p. 129)</p>
+<h3>Máximo Divisor Comum</h3>
+<ul>
+<li>Problema: encontrar o maior divisor comum de um par de números.</li>
+<li>Algoritmo de Euclides</li>
+<li>OBS: se 𝑚𝑑𝑐(𝑥, 𝑦) = 1, então dizemos que 𝑥 e 𝑦 são coprimos ou primos entre si.</li>
+</ul>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/646b41c5f3e9acda4023fbe1f7a96dcc/4ad3a/img7.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 54.601226993865026%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTklEQVR42n2Sy09TURCHD4+GFiqUFoQGJDGKmvgPuFKjCzTRxBUuFBBEXrW9bTHVuEJdGIOxAWyCJCSCgDXi0gTdumWnEaMCTXxE4wOD0rT39XnutURQdJLJzL33zDe/mXvE1NQkC/MLWGZoOrqqoqpZTJlruVy33msa2WzmL1flGcMwefrmE7PPXiDQTVI/PjK79Jq5729ZzH5lPvOZlLrEB3WZ99oyi5kvvMsuYWDyL9Nkw3Q6LYHSMrrKN22FFS3No5k4Q2MdJCZ7GEkGuXUvRCIZYFjmd6bPMTEdY+J+jNGpME8eD4Cp223MXDMbiGnK7nZC7OpBxEmBu8OBsz0fR1seoln88iZhfytozkc0CkKX91h7Qs8xfgNZBUIsfhhxRuAJl1Ma8lBy1i1jGa5AMZuCpZQrXrwRH3ldDpT+vRJobABco/Bi/AjOQIld5Oxx5ryIopy7Ai7ZpBjRIYj275NA/f/AvoGjVHeWUR+uwR+upCJSgUcq9YW9+CJSXdRLpXx2tAp6rx+wgcZGQD038oUbDYgWQWFnAW6p1N/rpyq6GW/Qi1/xU9O9lcJ2h31GsRSaf4xsyB0Yuo4qo7WP8/FDiDaBo8cl9yjVRCopU0rxdFVQ1b1Nxiqc3S7EaQu437ovsta0GRZr/ciy27XEMWqDbnbHPOyMVrNdjrcjWk59yM0uxU2d4qMuvIVa+aMuxRuQN379yC9Tz1n1V9JnHlxhcqSF5Ggj48OnGEu0MDHSynjiBHdvHmd0qI3hwU5uDzbxMNkna+ZYy/gJmet+/SYj6zUAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img7' title='' src='/static/646b41c5f3e9acda4023fbe1f7a96dcc/a6d36/img7.png' srcset='/static/646b41c5f3e9acda4023fbe1f7a96dcc/222b7/img7.png 163w,
+/static/646b41c5f3e9acda4023fbe1f7a96dcc/ff46a/img7.png 325w,
+/static/646b41c5f3e9acda4023fbe1f7a96dcc/a6d36/img7.png 650w,
+/static/646b41c5f3e9acda4023fbe1f7a96dcc/e548f/img7.png 975w,
+/static/646b41c5f3e9acda4023fbe1f7a96dcc/4ad3a/img7.png 1152w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<h4>MDC/GCD em 𝑂(log(𝑎 + 𝑏))</h4>
+<pre><code class="language-C++">int gcd(int a, int b){
+    if (a == 0)
+        return b;
+    return gcd(b % a, a);
+}
+</code></pre>
+<ul>
+<li>Problema: encontrar o menor múltiplo comum entre um par de inteiros.</li>
+<li>Para encontrar o mmc(x, y), podemos calcular o mdc(x, y) e utilizar a seguinte fórmula:</li>
+</ul>
+<p>𝑚𝑚𝑐(𝑥, 𝑦) ∗ 𝑚𝑑𝑐(𝑥, 𝑦) = 𝑥 ∗ 𝑦</p>
+<p>Ou seja:</p>
+<p>𝑚𝑚𝑐(𝑥, 𝑦) = 𝑥 ∗ 𝑦 / 𝑚𝑑𝑐(𝑥, 𝑦)</p>
+<h4>MMC/LCM em 𝑂(log(𝑎 + 𝑏))</h4>
+<pre><code class="language-C++">int lcm(int a, int b){
+    return a * (b / gcd(a, b));
+}
+</code></pre>
+<h4>Equações diofantinas</h4>
+<ul>
+<li>Podemos definir uma equação diofantina linear como uma equação da forma</li>
+</ul>
+<p>𝒂𝟏𝒙𝟏 + 𝒂𝟐𝒙𝟐 + ⋯ + 𝒂𝒏 𝒙𝒏 = 𝒄</p>
+<ul>
+<li>sendo 𝒂𝟏, … , 𝒂𝒏 coeficientes inteiros não nulos, 𝒙𝟏 … , 𝒙𝒏 as variáveis inteiras a serem determinadas e 𝒄 uma constante inteira.</li>
+<li>Diversos problemas podem ser modelados usando equações diofantinas.</li>
+<li>Em especial, vamos nos preocupar com equações diofantinas de duas variáveis</li>
+</ul>
+<p>𝒂𝒙 + 𝒃𝒚 = 𝒄</p>
+<h4>Equações diofantinas – Fantastic Beasts</h4>
+<ul>
+<li>Exemplo de Problema: Fantastic Beasts (Final da Maratona SBC de Programação - 2018)</li>
+<li>Resumindo: considere um grafo direcionado em que os vértices representam zoológicos, e cada zoológico aponta para apenas para um outro zoológico (grau de saída = 1). Temos animais espalhados por esses zoológicos, e a cada unidade de tempo todos os animais avançam para o próximo zoológico.</li>
+<li>Objetivo: determinar onde e quando TODOS os animais se encontrarão, no mesmo zoológico ao mesmo tempo (se isso puder ocorrer em diversos momentos e locais, determinar o primeiro deles)</li>
+<li>Supondo que já estamos em uma fase um pouco mais avançada no problema, onde conseguimos modelar para cada zoológico z uma equação que determina os momentos em que um animal a passa por lá (os animais vão acabar presos em ciclos).</li>
+</ul>
+<p>𝑡 = 𝑡0 + 𝑘. 𝑖</p>
+<p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; '>
+      <a class='gatsby-resp-image-link' href='/static/13d1b23ee559393302b62ae695bc5ebf/cd536/img8.png' style='display: block' target='_blank' rel='noopener'>
+    <span class='gatsby-resp-image-background-image' style="padding-bottom: 56.44171779141104%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2ElEQVR42o1Sa2/aQBDk//8bfkEfaVPaKgEClWgwENRgZIPt8z3sww+ms0eC+gWpJ6/W3l3P7OzeYDgcIlqtIKfrOvR9j77r0XYtv/sQO/fn4Ju2Dbn3fPuWA5/F7oCH+QIDAfpTH/FTRXgs1xjTFvYVE73BzGwvMb2G7Tx+uzjkfxRLRG4fcg/MvdQpQc+BJAAKc2FLZKZE4Qy01TDOIisLKKOh+O2cgyoVrK9gTxUq+pLxTBehvmmaoDIA+tpjPp/j1/QJ2+kUs9kMaZrgcDigyHOoogg+SZIAXFUVtNbIGTuyJs/yELsCZlmGZRRh9fyMbLeD9x6lKmH4k7GWas743xMA0zTFcsm5RCu87uNAkLIb6Sje7wlqYAksJosQeReSc/D/El4ksyMBEYnZ8UigFEopgsWISLSlrTcbrKmiYJ3Uy2242eGtI0sQooRdioo0jlGQVM6tMVw71LqENiYM23Czrq7guQzHmdYvG9QE9ZTsKVckOy5BFiTjkIVIx0ISAGtXIz/yiijNbZZcCAGtQ9d08BXlnXiJaV3L+XkCnhqSWtbYUGuNu3Y8+Pr4Ad8mn/D96Y72JdiI76PpZ9wzLrn7Cd/H9OOPISZe8qO3f0bTu5AXrL8tJELuF7V3XwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class='gatsby-resp-image-image' alt='img8' title='' src='/static/13d1b23ee559393302b62ae695bc5ebf/a6d36/img8.png' srcset='/static/13d1b23ee559393302b62ae695bc5ebf/222b7/img8.png 163w,
+/static/13d1b23ee559393302b62ae695bc5ebf/ff46a/img8.png 325w,
+/static/13d1b23ee559393302b62ae695bc5ebf/a6d36/img8.png 650w,
+/static/13d1b23ee559393302b62ae695bc5ebf/e548f/img8.png 975w,
+/static/13d1b23ee559393302b62ae695bc5ebf/cd536/img8.png 1114w' sizes='(max-width: 650px) 100vw, 650px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
+  </a>
+    </span></p>
+<ul>
+<li>Proposição 1: 𝒂𝒙 + 𝒃𝒚 = 𝒄 admite solução sse 𝒈𝒄𝒅(𝒂, 𝒃) | 𝒄</li>
+</ul>
+<p>==></p>
+<ul>
+<li>Sendo (𝑥0, 𝑦0) uma solução da equação</li>
+<li>Seja 𝑑 = gcd(𝑎, 𝑏), então 𝑑|𝑎 e 𝑑|𝑏. Logo podemos reescrever 𝑎 = 𝐴𝑑 e 𝑏 = 𝐵𝑑</li>
+</ul>
+<p>𝑐 = 𝑎𝑥0 + 𝑏𝑦0 = 𝐴𝑑 𝑥0 + 𝐵𝑑 𝑦0</p>
+<p>𝑐 = 𝑑(𝐴𝑥0 + 𝐵𝑦0)</p>
+<p>Denotando 𝑞 = 𝐴𝑥0 + 𝐵𝑦0</p>
+<p>𝑐 = 𝑑𝑞 Portanto, 𝑑|𝑐</p>
+<ul>
+<li>Proposição 1: 𝒂𝒙 + 𝒃𝒚 = 𝒄 admite solução sse 𝒈𝒄𝒅(𝒂, 𝒃) | 𝒄</li>
+</ul>
+<p>&#x3C;==</p>
+<ul>
+<li>Seja 𝑑 = gcd(𝑎, 𝑏)</li>
+<li>Pelo Teorema de Bézout, existe solução (𝑥0, 𝑦0) para 𝑎𝑥 + 𝑏𝑦 = 𝑑</li>
+</ul>
+<p>•- Por hipótese, 𝑑|𝑐 ⇒ ∃𝑡 / 𝑐 = 𝑑𝑡</p>
+<p>𝑐 = 𝑑𝑡</p>
+<p>𝑐 = (𝑎𝑥0 + 𝑏𝑦0)𝑡</p>
+<p>𝑐 = 𝑎(𝑥0𝑡) + 𝑏(𝑦0𝑡)</p>
+<ul>
+<li>
+<p>Portanto, se 𝑑 | 𝑐, então a equação 𝑎𝑥 + 𝑏𝑦 = 𝑐 admite solução</p>
+</li>
+<li>
+<p>Como determinar uma solução?</p>
+</li>
+</ul>
+<ol>
+<li>Obter uma solução (𝑥0, 𝑦0) para 𝑎𝑥 + 𝑏𝑦 = gcd(𝑎, 𝑏)</li>
+<li>Para 𝑎𝑥 + 𝑏𝑦 = 𝑐:
+a) 𝑡 = 𝑐/𝑑 em que 𝑑 = gcd(𝑎, 𝑏)
+b) 𝑥 = 𝑥0𝑡
+c) 𝑦 = 𝑦0𝑡</li>
+<li>Se uma equação diofantina tem uma solução, então ela tem infinitas:</li>
+</ol>
+<ul>
+<li>Solução para 𝑎𝑥 + 𝑏𝑦 = gcd(𝑎, 𝑏)</li>
+</ul>
+<ol>
+<li>Caso base (𝑎 = 0):
+<ul>
+<li>Se 𝑎 = 0 então temos 𝑏𝑦 = gcd(0, 𝑏)</li>
+<li>Sabemos que gcd 0, 𝑏 = 𝑏</li>
+<li>Então 𝑏𝑦 = 𝑏, logo 𝑦 = 1</li>
+<li>Nesse caso 𝑥 pode assumir qualquer valor. Como queremos uma solução qualquer, por motivos de simplificação, faremos 𝑥 = 0</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<p>Solução base: (0, 1)</p>
+</li>
+<li>
+<p>Solução para 𝑎𝑥 + 𝑏𝑦 = gcd(𝑎, 𝑏)</p>
+</li>
+</ul>
+<ol start="2">
+<li>Passo da indução:</li>
+</ol>
+<ul>
+<li>
+<p>Temos 𝑎𝑥 + 𝑏𝑦 = gcd(𝑎, 𝑏)</p>
+</li>
+<li>
+<p>Pelo Algoritmo de Euclides, sabemos que gcd 𝑎, 𝑏 = gcd 𝑏%𝑎, 𝑎 = 𝑑</p>
+</li>
+<li>
+<p>Logo, podemos obter outra equação diofantina: 𝑏%𝑎 𝑥1 + 𝑎𝑦1 = 𝑑 (∗)</p>
+</li>
+<li>
+<p>Solução para 𝑎𝑥 + 𝑏𝑦 = gcd(𝑎, 𝑏)</p>
+</li>
+<li>
+<p>Considerando o resultado da divisão inteira, podemos dizer que:</p>
+</li>
+</ul>
+<p>𝑏 = 𝑏</p>
+<p>𝑎 𝑎 + 𝑏%𝑎</p>
+<p>𝑏%𝑎 = 𝑏 − 𝑏</p>
+<p>𝑎 𝑎</p>
+<ul>
+<li>Substituindo em (∗)</li>
+</ul>
+<p>𝑏 − 𝑏</p>
+<p>𝑎 𝑎 𝑥1 + 𝑎𝑦1 = 𝑑</p>
+<p>𝑏𝑥1 − 𝑏</p>
+<p>𝑎 𝑎𝑥1 + 𝑎𝑦1 = 𝑑</p>
+<p>𝑎 𝑦1 − 𝑏</p>
+<p>𝑎 𝑥1 + 𝑏𝑥1 = 𝑑</p>
+<p>𝒂𝒙 + 𝒃𝒚 = 𝒅</p>
+<h4>Implementação</h4>
+<pre><code class="language-C++">int gcd(int a, int b, int &#x26;x, int &#x26;y){
+    if (a == 0){
+        x = 0;
+        y = 1;
+        return b;
+    }
+    int x1, y1;
+    int d = gcd(a, b % a, x1, y1);
+    x = y1 - x1 * (b/a);
+    y = x1;
+    return d;
+}
+
+bool solve(int a, int b, int c, int &#x26;x0, int &#x26;y0, int &#x26;g) {
+    g = gcd(abs(a), abs(b), x0, y0);
+    if (c % g) {
+        return false;
+    }
+    x0 *= c / g;
+    y0 *= c / g;
+    if (a &#x3C; 0) x0 = -x0;
+    if (b &#x3C; 0) y0 = -y0;
+    return true;
+}
+</code></pre>
+<h3>Aritmética Modular</h3>
+<ul>
+<li>
+<p>Em vários problemas precisamos operar com os restos de divisões de inteiros.</p>
+</li>
+<li>
+<p>A aritmética modular permite fazer cálculos com restos de divisões de modo eficiente, e é especialmente útil quando estamos trabalhando com números grandes (BigInteger).</p>
+</li>
+<li>
+<p>Na verdade, a Aritmética Modular pode nos ajudar a evitar ter que trabalhar com números muito grandes.</p>
+</li>
+<li>
+<p>A aritmética modular se baseia nas seguintes propriedades:</p>
+</li>
+</ul>
+<p>(𝑥 + 𝑦) % 𝑛 = ((𝑥 % 𝑛) + (𝑦 % 𝑛)) % 𝑛</p>
+<p>(𝑥 − 𝑦) % 𝑛 = ((𝑥 % 𝑛) − (𝑦 % 𝑛)) % 𝑛</p>
+<p>(𝑥 ∗ 𝑦) % 𝑛 = ((𝑥 % 𝑛) ∗ (𝑦 % 𝑛)) % 𝑛</p>
+<p>(𝑥 ^ 𝑦) % 𝑛 = ((𝑥 % 𝑛) ^ 𝑦) % 𝑛</p>
+<ul>
+<li>
+<p>UVa 374 - Big Mod</p>
+</li>
+<li>
+<p>Calcule 𝑅 = 𝐵𝑃 𝑚𝑜𝑑 𝑀</p>
+</li>
+<li>
+<p>0 ≤ 𝐵, 𝑃 ≤ 2147483647 e 1 ≤ 𝑀 ≤ 46340</p>
+</li>
+<li>
+<p>Parte da solução do problema UVA 374 – Big Mod</p>
+</li>
+</ul>
+<pre><code class="language-C++">long long pow(long long x, long long y, long long mod) {
+    if (y == 0)
+        return 1;
+    long long p = pow(x, y/2, mod);
+    if (y % 2 == 0)
+        return (p * p) % mod;
+    else
+        return (((p * p) % mod) * (x % mod)) % mod;
+}
+</code></pre>
+<h3>Inverso Modular</h3>
+<ul>
+<li>A aritmética modular não se aplica a divisão. Porém, temos o conceito de inverso multiplicativo modular.</li>
+<li>Lembre-se que um número multiplicado pelo seu inverso é igual a 1</li>
+<li>Da aritmética básica, sabemos que:</li>
+<li>O inverso de um número 𝐴 é 1</li>
+</ul>
+<p>𝐴</p>
+<ul>
+<li>Todos os reais diferentes de 0 têm um inverso</li>
+<li>Multiplicar um número pelo inverso de 𝐴 é o mesmo que dividir por 𝐴</li>
+</ul>
+<p>𝑋 ∗ 𝐴−1 = 𝑋 ∗ 1</p>
+<p>𝐴 = 𝑋</p>
+<p>𝐴</p>
+<ul>
+<li>
+<p>O inverso modular de 𝐴 (𝑚𝑜𝑑 𝐶) é 𝐴−1.</p>
+</li>
+<li>
+<p>𝐴 ∗ 𝐴−1 ≡ 1 (𝑚𝑜𝑑 𝐶) ou de modo equivalente 𝐴 ∗ 𝐴−1 𝑚𝑜𝑑 𝐶 = 1</p>
+</li>
+<li>
+<p>OBS: Apenas os números coprimos de C têm um inverso modular (mod C)o</p>
+</li>
+<li>
+<p>Exemplo: A=3 e C=7</p>
+</li>
+</ul>
+<p>3 ∗ 5 𝑚𝑜𝑑 7 = 15 𝑚𝑜𝑑 7 = 1</p>
+<p>∴ 3 ∗ 5 ≡ 1 (𝑚𝑜𝑑 7)</p>
+<ul>
+<li>
+<p>Logo, 5 é o inverso modular de 3 (mod 7) .</p>
+</li>
+<li>
+<p>Como encontrar um inverso multiplicativo?</p>
+</li>
+<li>
+<p>Determinar um 𝑥 ∈ ℤ tal que 𝐴𝑥 ≡ 1 𝑚𝑜𝑑 𝐶 ⇒ 𝑥 = 𝐴−1</p>
+</li>
+<li>
+<p>Da congruência, temos que</p>
+</li>
+<li>
+<p>C | (𝐴𝑥 − 1)</p>
+</li>
+<li>
+<p>Logo, ∃y ∈ ℤ| 𝐴𝑥 − 1 = 𝐶𝑦</p>
+</li>
+</ul>
+<p>𝐴𝑥 − 𝐶𝑦 = 1</p>
+<ul>
+<li>Equação diofantina!</li>
+</ul>
+<h3>Referências</h3>
+<p>Biblioteca de códigos de Thiago Alexandre Domingues de Souza.</p>
+<p>Matemática Discreta e Suas Aplicações. Kenneth H. Rosen.</p>
+<p>Programming Challenges: The Programming Contest Training Manual. Stevem S. Skiena e</p>
+<p>Miguel A. Revilla.</p>
+<p><a href="https://www.geeksforgeeks.org/sieve-of-eratosthenes/">https://www.geeksforgeeks.org/sieve-of-eratosthenes/</a></p>
+<p><a href="http://www.lcad.icmc.usp.br/~jbatista/scc210/AulaTeoriadosNumeros1.pdf">http://www.lcad.icmc.usp.br/~jbatista/scc210/AulaTeoriadosNumeros1.pdf</a></p>
+<p><a href="http://www.lcad.icmc.usp.br/~jbatista/scc210/AulaTeoriadosNumeros2.pdf">http://www.lcad.icmc.usp.br/~jbatista/scc210/AulaTeoriadosNumeros2.pdf</a></p>
+<p><a href="https://www.ufsj.edu.br/portal2-repositorio/File/comat/tcc_Ricardo.pdf">https://www.ufsj.edu.br/portal2-repositorio/File/comat/tcc_Ricardo.pdf</a></p>
+<p><a href="https://cp-algorithms.com/algebra/linear-diophantine-equation.html">https://cp-algorithms.com/algebra/linear-diophantine-equation.html</a></p>
+<p><a href="https://noic.com.br/materiais-informatica/curso/math-02/">https://noic.com.br/materiais-informatica/curso/math-02/</a></p>
+<p><a href="https://noic.com.br/materiais-informatica/curso/math-03/">https://noic.com.br/materiais-informatica/curso/math-03/</a></p>
+<p><a href="https://pt.khanacademy.org/computing/computer-">https://pt.khanacademy.org/computing/computer-</a></p>
+<p>science/cryptography/modarithmetic/pi/fast-modular-exponentiation</p>
+<p><a href="https://www.cin.ufpe.br/~gdcc/matdis/aulas/aritmeticaModular_parte2.pdf">https://www.cin.ufpe.br/~gdcc/matdis/aulas/aritmeticaModular_parte2.pdf</a></p></div></div><footer class="footer-module--footer--a2fe4"><div class="footer-module--footer-row--e766a"><div class="footer-module--footer-column--bc482"><h2>FUNDAÇÕES</h2><ul><li><a href="https://www.editoraunesp.com.br/">Editora Unesp</a></li><li><a href="https://www.fundunesp.org.br/">Fundunesp</a></li><li><a href="https://www.vunesp.com.br/">Fundação Vunesp</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>GOVERNO</h2><ul><li><a href="https://www.saopaulo.sp.gov.br/">Governo de São Paulo</a></li><li><a href="https://www.cruesp.sp.gov.br/">Conselhos de Reitores</a></li><li><a href="https://unesp.br/transparencia/">Transparência Unesp</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>SISTEMAS</h2><ul><li><a href="https://sistemas.unesp.br/">Sistemas Online</a></li><li><a href="https://www2.unesp.br/eduroam">EDUROAM</a></li><li><a href="https://www2.unesp.br/ai/grupos-de-trabalho/redes-de-computadores/conteudos/videoconferencia/">Videoconferência</a></li><li><a href="https://www2.unesp.br/vpn">VPN</a></li><li><a href="https://email.unesp.br/">Webmail</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>SAÚDE</h2><ul><li><a href="https://www.unesp.br/unespsaude/">Unesp Saúde</a></li><li><a href="https://www.ecaresentinela.com.br/">e-Care Sentinela</a></li><li><a href="https://www.unesp.br/numis">NUMIS</a></li></ul></div><div class="footer-module--footer-column--bc482"><h2>INFORMAÇÕES</h2><ul><li><a href="https://www2.unesp.br/secgeral/manuais/legislacao-unesp/">Legislação Unesp</a></li><li><a href="https://www2.unesp.br/secgeral/diplomas/revalidacao/">Revalidação de Diplomas</a></li><li><a href="https://www2.unesp.br/secgeral/diplomas/reconhecimento/">Reconhecimento de Diplomas</a></li><li><a href="#">Localização</a></li><li><a href="https://www.unesp.br/ouvidoria">Ouvidoria</a></li><li><a href="https://www2.unesp.br/politica-de-uso">Políticas de Uso</a></li></ul></div></div><div class="footer-module--footer-copy--4cd61"><p>2025<!-- --> Protiva</p></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/aprender/11-analise-combinatoria/teoria-dos-numeros/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-0597d7d3418de1955ef2.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-91630b4ba6e9242e18b4.js\"],\"component---src-pages-aprender-01-introducao-index-tsx\":[\"/component---src-pages-aprender-01-introducao-index-tsx-80cd18607060c585e9cc.js\"],\"component---src-pages-aprender-01-introducao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-01-introducao-markdown-remark-frontmatter-slug-tsx-4a00f5be70577610137f.js\"],\"component---src-pages-aprender-02-stl-index-tsx\":[\"/component---src-pages-aprender-02-stl-index-tsx-198ee80a815c376c3631.js\"],\"component---src-pages-aprender-02-stl-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-02-stl-markdown-remark-frontmatter-slug-tsx-8bbb10585265cc26cda7.js\"],\"component---src-pages-aprender-03-forca-bruta-recursao-backtracking-index-tsx\":[\"/component---src-pages-aprender-03-forca-bruta-recursao-backtracking-index-tsx-82fcffb4c22238875144.js\"],\"component---src-pages-aprender-03-forca-bruta-recursao-backtracking-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-03-forca-bruta-recursao-backtracking-markdown-remark-frontmatter-slug-tsx-3dea8c339d1b87489e22.js\"],\"component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-index-tsx\":[\"/component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-index-tsx-5b37929668fde2721274.js\"],\"component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-04-algoritmo-guloso-divisao-conquista-markdown-remark-frontmatter-slug-tsx-2d6741a68b855be10ab4.js\"],\"component---src-pages-aprender-05-programacao-dinamica-index-tsx\":[\"/component---src-pages-aprender-05-programacao-dinamica-index-tsx-f82753c2ed6a8ac806b7.js\"],\"component---src-pages-aprender-05-programacao-dinamica-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-05-programacao-dinamica-markdown-remark-frontmatter-slug-tsx-b472033dd73c6ac171f7.js\"],\"component---src-pages-aprender-06-arvores-index-tsx\":[\"/component---src-pages-aprender-06-arvores-index-tsx-d94cd261983ca8162c6b.js\"],\"component---src-pages-aprender-06-arvores-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-06-arvores-markdown-remark-frontmatter-slug-tsx-58c297498d4c5d3d9718.js\"],\"component---src-pages-aprender-07-disjoint-set-union-find-index-tsx\":[\"/component---src-pages-aprender-07-disjoint-set-union-find-index-tsx-6494bc2cf9868ecc66d8.js\"],\"component---src-pages-aprender-07-disjoint-set-union-find-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-07-disjoint-set-union-find-markdown-remark-frontmatter-slug-tsx-af9dd2bed1cc3c24d9d0.js\"],\"component---src-pages-aprender-08-grafos-index-tsx\":[\"/component---src-pages-aprender-08-grafos-index-tsx-c7f7d80cbb3bab1b9e12.js\"],\"component---src-pages-aprender-08-grafos-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-08-grafos-markdown-remark-frontmatter-slug-tsx-2ee0be0c88ebab8ca61d.js\"],\"component---src-pages-aprender-09-kmp-string-hashing-index-tsx\":[\"/component---src-pages-aprender-09-kmp-string-hashing-index-tsx-25ff8a3abe46700f69aa.js\"],\"component---src-pages-aprender-09-kmp-string-hashing-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-09-kmp-string-hashing-markdown-remark-frontmatter-slug-tsx-1d5d488cfede94c15268.js\"],\"component---src-pages-aprender-10-teoria-dos-numeros-index-tsx\":[\"/component---src-pages-aprender-10-teoria-dos-numeros-index-tsx-d192b515102e90aa0a15.js\"],\"component---src-pages-aprender-10-teoria-dos-numeros-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-10-teoria-dos-numeros-markdown-remark-frontmatter-slug-tsx-3df868af0a6ff085ffd9.js\"],\"component---src-pages-aprender-11-analise-combinatoria-index-tsx\":[\"/component---src-pages-aprender-11-analise-combinatoria-index-tsx-2a788e0275faaab4769d.js\"],\"component---src-pages-aprender-11-analise-combinatoria-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-aprender-11-analise-combinatoria-markdown-remark-frontmatter-slug-tsx-989c46a7968aebb1b798.js\"],\"component---src-pages-aprender-index-tsx\":[\"/component---src-pages-aprender-index-tsx-bd664371dbfd4b1c8bfa.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-7c227276dd208b01dea0.js\"],\"component---src-pages-introducao-a-programacao-deducao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-deducao-index-tsx-8d6eb837d5dab806da72.js\"],\"component---src-pages-introducao-a-programacao-deducao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-introducao-a-programacao-deducao-markdown-remark-frontmatter-slug-tsx-2a5a107d785c2a66caba.js\"],\"component---src-pages-introducao-a-programacao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-index-tsx-1a95b0534658661c5ac2.js\"],\"component---src-pages-introducao-a-programacao-ordenacao-index-tsx\":[\"/component---src-pages-introducao-a-programacao-ordenacao-index-tsx-793999e9f569b2afaf41.js\"],\"component---src-pages-introducao-a-programacao-ordenacao-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-introducao-a-programacao-ordenacao-markdown-remark-frontmatter-slug-tsx-e461bec7eae9522e6173.js\"],\"component---src-pages-provas-anteriores-index-tsx\":[\"/component---src-pages-provas-anteriores-index-tsx-254c25403af1314de207.js\"],\"component---src-pages-provas-anteriores-markdown-remark-frontmatter-slug-tsx\":[\"/component---src-pages-provas-anteriores-markdown-remark-frontmatter-slug-tsx-ad0e0f0dafb7f8e230bf.js\"],\"component---src-pages-sobre-tsx\":[\"/component---src-pages-sobre-tsx-433bb418ff50c41da4bb.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="cc670d79800359f88f19";</script><script src="/webpack-runtime-105fc78d825956d32b4b.js" async></script><script src="/framework-8156c71e4f6907919132.js" async></script><script src="/app-0597d7d3418de1955ef2.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
