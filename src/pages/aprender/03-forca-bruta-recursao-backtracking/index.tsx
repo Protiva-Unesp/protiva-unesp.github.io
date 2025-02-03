@@ -8,7 +8,7 @@ const BlogPage = ({ data }) => {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen bg-gradient-to-br from-blue-700 to-blue-400 flex flex-col items-center justify-center p-6">
+            <div className="bg-gradient-to-br from-blue-700 to-blue-400">
                 <section className="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
                     <div className="flex flex-wrap items-center justify-between mb-8">
                         <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl text-white">
@@ -23,7 +23,7 @@ const BlogPage = ({ data }) => {
                                     <div className="flex flex-col justify-between p-6 bg-red-500 border border-gray-400 text-white w-full h-full min-h-[250px]">
                                         <div>
                                             <Link
-                                                to={`/aprender/08-grafos/${node.frontmatter.slug}`}
+                                                to={`/aprender/03-forca-bruta-recursao-backtracking/${node.frontmatter.slug}`}
                                                 className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300"
                                             >
                                                 {node.frontmatter.title}
