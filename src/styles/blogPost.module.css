@@ -7,6 +7,18 @@
     text-justify: inter-word;
 }
 
+.blogContainer a {
+    color: blue;
+}
+
+.blogContainer a:hover {
+    text-decoration: underline;
+}
+
+.blogContainer a:visited {
+    color: purple;
+}
+
 .blogContainer h1
 .blogContainer h2, 
 .blogContainer h3 {
