@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
         <>
             <NavBar />
             <div className="bg-gradient-to-br from-blue-700 to-blue-400">
-                <section className="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
+                <section className="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6 pt-20">
                     <div className="flex flex-wrap items-center justify-between mb-8">
                         <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl text-white">
                             Disjoint-set (Union-find)
