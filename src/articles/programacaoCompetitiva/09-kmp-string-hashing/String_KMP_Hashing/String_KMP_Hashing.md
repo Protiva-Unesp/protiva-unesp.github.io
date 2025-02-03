@@ -34,7 +34,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida
 - Ocorrências: 0, 9 e 12
 
 - Algoritmo ingênuo
-``` C++
+``` cpp
 int search(string S, string P) {
     int i, j;
     for(i = 0; i <= S.size() - P.size(); i++) {
@@ -74,7 +74,7 @@ int search(string S, string P) {
 
 ![img1-img11](gif1.gif)
 
-``` C++
+``` cpp
 int a[MAX], n, m;
 char S[MAX], P[MAX];
 void calculatePrefix(){
@@ -193,7 +193,7 @@ vector<int> KMP2(){ //retorna todas as ocorrências da substring
 - Consulta: 𝑂(1)
 
 ### Implementação
-``` C++
+``` cpp
 mt19937 rng((int) chrono::steady_clock::now().time_since_epoch().count());
 const ll P = 1e18+9;
 const ll b = uniform_int_distribution<ll>(0, P-1)(rng);
@@ -229,7 +229,7 @@ struct hash_str
 - Dada uma string 𝑆, de tamanho 𝑛, como determinados se a string 𝑃, de tamanho 𝑚, está presente em 𝑆?
 - Calculamos o hash das duas strings, e então comparamos 𝑃 com todas as substrings de tamanho 𝑚 de 𝑆. A ideia é semelhante a força bruta, porém se torna eficiente devido ao uso do hashing.
 - Algoritmo de Rabin-Karp
-``` C++
+``` cpp
 hash_str hs(s), hp(p);
 int ans = 0;
 vector<int> pos;

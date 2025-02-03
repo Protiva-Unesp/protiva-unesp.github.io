@@ -30,7 +30,7 @@ k variando de 0 até a[j] / b[j].
 ```
 
 - Onde o índice i são todos as possíveis quantidades de massa até N, j são todos os tipos de donuts e k a quantidade de donuts i que podem ser feitas com o recheio disponível.
-``` C++
+``` cpp
 int main() {
     int c0, d0;
     cin >> n >> m >> c0 >> d0;
@@ -45,12 +45,12 @@ int main() {
     return 0;
 }
 ```
-``` C++
+``` cpp
 a[0] = INF;
 b[0] = 1;
 ```
 - Essas duas linhas permitem que sejam criadas grandes quantidades de donuts sem recheio.
-``` C++
+``` cpp
 int knapsack() {
     vi dp(n + 1);
     for (int j = 0; j <= m; j++) {
@@ -85,7 +85,7 @@ A -> recheio disponível
 
 ![img26-img49](gif2.gif)
 
-``` C++
+``` cpp
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -122,7 +122,7 @@ else cout << ma << " " << cont << "\n";
 ### I - Road Optimization
 - O Governo de Marte está interessado em otimizar o sistema de rodovia!
 - Dado o sistema de uma rodovia de tamanho l, que possui uma sequência de n placas sendo di sua posição e ai o limite de velocidade (min), sendo possível remover até k placas, qual o tempo mínimo para se deslocar do ponto 0 até l.
-``` C++
+``` cpp
 d.push_back(l);
 a.push_back(0);
 dp[0][0] = 0;

@@ -15,7 +15,7 @@ slug: "exercicios-3"
 ![img5](img5.png)
 
 - Solução: O(q*n*log^2(min(n,m)))
-``` C++
+``` cpp
 while (cin >> n >> m){
     if (n == 0 && m == 0) break;
     v = vector<vector<ll>>(n, vector<ll>(m));
@@ -63,7 +63,7 @@ ll busca_binaria(ll &l, ll &u)
 ```
 
 • Solução: O(q * n * log(min(n,m)))
-``` C++
+``` cpp
 ll u = max(n, m);
 vector<vector<ll>> v (n, vector<ll> (m));
 vector<vector<ll>> diag (2*u + 1);

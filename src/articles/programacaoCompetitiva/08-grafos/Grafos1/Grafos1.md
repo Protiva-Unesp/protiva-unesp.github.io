@@ -139,7 +139,7 @@ em que
 
 ![img16-img18](gif2.gif)
 
-``` C++
+``` cpp
 typedef struct{
     int v; //vértice adjacente
     int w; //peso
@@ -187,7 +187,7 @@ Para cada vértice 𝑢 adjacente à 𝑣
         DFS(𝑢)
 ```
 
-``` C++
+``` cpp
 int visitado[MAX_V];
 int p[MAX_V];
 int ordemVis;
@@ -228,7 +228,7 @@ Enquanto 𝑄 não estiver vazia
                 Enfileirar 𝑤 na fila Q
 ```
 
-``` C++
+``` cpp
 int d[MAX_V]; //armazena a distância do nó inicial até cada nó i
 void bfs(int inicio)
 {

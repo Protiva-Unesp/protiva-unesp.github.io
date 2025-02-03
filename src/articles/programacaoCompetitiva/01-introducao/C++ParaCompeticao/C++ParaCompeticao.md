@@ -1,11 +1,11 @@
 ---
-title: "02 - C++ para competição"
+title: "02 - cpp para competição"
 description: "descricao"
 slug: "cpp-para-competicao"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 ---
 ### Código base
-``` C++
+``` cpp
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -16,7 +16,7 @@ int main()
 ```
 
 ### Entrada padrão - cin
-``` C++
+``` cpp
 int numA, numB;
 double numC;
 string name;
@@ -24,7 +24,7 @@ cin >> numA >> numB >> numC >> name;
 ``` 
 
 ### Saída padrão - cout
-``` C++
+``` cpp
 int a;
 float c;
 ...
@@ -45,7 +45,7 @@ cout << “C: ” << setprecision(3) << c << endl;
 
 ### Situações comuns
 Ler até acabar o arquivo de entrada
-``` C++
+``` cpp
 int a, b, c;
 while(cin >> a >> b)
 {
@@ -68,7 +68,7 @@ while(cin >> a >> b)
 ```
 
 Número de casos de teste predeterminado (Opção 1)
-``` C++
+``` cpp
 int t, a, b, c;
 cin >> t;
 for(int i = 0; i < t; i++)
@@ -95,7 +95,7 @@ for(int i = 0; i < t; i++)
 ```
 
 Número de casos de teste predeterminado (Opção 2)
-``` C++
+``` cpp
 int t, a, b, c;
 cin >> t;
 while(t--)
@@ -122,7 +122,7 @@ while(t--)
 ```
 
 Última entrada é marcada por zeros
-``` C++
+``` cpp
 int a, b, c;
 while(1)
 {

@@ -35,7 +35,7 @@ slug: "exercicios-9"
 
 ![img17-img33](gif2.gif)
 
-``` C++
+``` cpp
 int main() {
     int n, m;
     while (cin >> n >> m) {

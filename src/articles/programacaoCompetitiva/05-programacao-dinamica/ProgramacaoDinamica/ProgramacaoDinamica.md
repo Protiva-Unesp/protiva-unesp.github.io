@@ -17,7 +17,7 @@ imaginar como ele se sentia então, sobre o termo 'matemática'."* (Richard Bell
 
 ### Programação Dinâmica
 - Tomemos como exemplo um algoritmo recursivo para solucionar o problema de encontrar o i-ésimo termo da sequência de Fibonacci.
-``` C++
+``` cpp
 int fib(int i) {
     if (i == 0 || i == 1)
         return 1;
@@ -47,7 +47,7 @@ int fib(int i) {
     - Quando um subproblema é resolvido, o resultado é armazenado para possíveis utilizações no futuro (memoization).
 
 - Fibonacci:
-``` C++
+``` cpp
 int memo[] = {1, 1, -1, -1, -1, -1, …} //-1 = não calculado
 int fib(int i){
     if (memo[i] == -1)
@@ -67,7 +67,7 @@ int fib(int i){
     - Quando um subproblema é resolvido, o resultado é armazenado para resolver subproblemas futuros, até alcançar o problema original.
 
 - Fibonacci
-``` C++
+``` cpp
 int memo[MAXN];
 void preprocess(int n){
     memo[0] = memo[1] = 1;
@@ -186,7 +186,7 @@ fib(0) = 1 e fib(1) = 1
 ![img8](img8.png)
 
 - Implementação (Top-down):
-``` C++
+``` cpp
 int troco(int x){
     if (x == 0)
         return 0;
@@ -244,7 +244,7 @@ int minCoins(vector<int>& moedas, int w) {
 ![img12](img12.png)
 ![img13](img13.png)
 
-``` C++
+``` cpp
 int rodCutter(int p[], int n){
     int rod[n+1];
     rod[0] = 0;

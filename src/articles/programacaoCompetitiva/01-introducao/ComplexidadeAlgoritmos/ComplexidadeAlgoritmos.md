@@ -63,7 +63,7 @@ resto de a dividido por b for maior que zero
 Etapa 5: mdc = b
 Etapa 6: Fim
 
-``` C++
+``` cpp
 int mdc(int a,int b) {
     int R;
     while ((a % b) > 0) {

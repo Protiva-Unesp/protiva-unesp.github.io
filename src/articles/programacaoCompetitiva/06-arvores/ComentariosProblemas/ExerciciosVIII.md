@@ -11,7 +11,7 @@ slug: "exercicios-8"
     - Um grafo não direcionado que pode ser representado como um conjunto de uma árvore ou mais árvores que estão conectadas por um círculo simples Na entrada é garantido que não existem múltiplas arestas nem self-loops
 
 Solução:
-``` C++
+``` cpp
 if (conexo == true && num_arestas == num_vertices)
     cout << “FHTAGN !”;
 else
@@ -67,7 +67,7 @@ else
 - Confira na GIF abaixo:
 
 ![img9-img23](gif2.gif)
-``` C++
+``` cpp
 int main() {
     cin >> n;
     adj = vector<vi>(n + 1);

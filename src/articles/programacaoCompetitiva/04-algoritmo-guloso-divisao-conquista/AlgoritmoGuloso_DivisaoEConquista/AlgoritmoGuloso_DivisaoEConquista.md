@@ -27,7 +27,7 @@ author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa, Arissa Yoshida
 - Podemos tentar adicionar na solução parcial sempre a moeda de maior valor possível. Com isso caminharemos mais rapidamente para a solução que usa o menor número de moedas.
 - Já tendo encontrado uma solução que utiliza k moedas, qualquer solução parcial que utilize mais que k moedas pode ser cortada.
 
-``` C++
+``` cpp
 vector<int> moedas = {50, 25, 10, 5, 1};
 vector<int> melhorSolucao;
 int qtdeMoedas = INT_MAX;
@@ -239,7 +239,7 @@ Escalona(T, s, f, n)
 
 ### Divisão e Conquista - Exponenciação
 - Exponenciação por força bruta em O(n):
-``` C++
+``` cpp
 int potencia(int x, int n) {
     int y = 1;
     for(int i = 0; i < n; i++)

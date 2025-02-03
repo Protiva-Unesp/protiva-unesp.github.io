@@ -28,7 +28,7 @@ cdbbaaaa
 ![img2](img2.png)
 ![img3](img3.png)
 
-``` C++
+``` cpp
 ll merge(string &s, char a, ll ini, ll fim){
     if(ini == fim){
         if(s[ini] != a)return 1;
@@ -84,7 +84,7 @@ O banco irá usar duas moedas de 40 e duas de 2
 
 ![img18-img25](gif2.gif)
 
-``` C++
+``` cpp
 while(t--){
     ll n; cin >> n;
     vector<ll> v(n);
@@ -127,7 +127,7 @@ img26 - img37 (montar gif)
 - Confira a GIF abaixo:
 
 ![img38-img56](gif4.gif)
-``` C++
+``` cpp
 int main(){
     ll n;
     cin >> n >> l >> r;

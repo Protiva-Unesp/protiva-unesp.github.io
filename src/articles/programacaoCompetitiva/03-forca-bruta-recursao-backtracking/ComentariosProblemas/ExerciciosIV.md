@@ -45,7 +45,7 @@ Solução: 2
 
 - Situação 1: Soma somente de valores potências de dois.
     - Esse é nosso limite inferior de k, podemos calcular contando quais são os bits ativos de n.
-``` C++
+``` cpp
 ll bits_ativos(ll n){
     ll x = 0, pot = 1, k = 0;
     while (n > x){
@@ -60,7 +60,7 @@ ll bits_ativos(ll n){
 ```
 
 - Equivalente com complexidade O(numero_de_bits) :
-``` C++
+``` cpp
 ll bits_ativos(ll n){
 return __builtin_popcountll(n);
 }
@@ -69,7 +69,7 @@ return __builtin_popcountll(n);
 
 - Situação 2: Soma somente de valores que são fatoriais.
  - Primeiro, precisamos saber quais são os fatoriais possíveis. No problema é descrito que n <= 10¹² , logo, precisamos apenas pré-calcular até o fatorial 14!, já que 15! = 1.307.674.368.000 > 10¹².
-``` C++
+``` cpp
 #define MAX_FAC 14
 fac = vector<ll>(MAX_FAC + 1);
 void pre_processar_fatoriais(){
@@ -88,7 +88,7 @@ Fatoriais (14) = {1, 2, 6, 24, 120, 720, 5040,
 
 - Situação 2: Soma somente de valores que são fatoriais.
     - Como o número de fatoriais possíveis é 14, conseguimos pré-calcular todas as somas possíveis entre esses fatoriais. Ou seja, gerar todos subsets de soma possíveis para os 14 números. O(2¹⁴ ), como 2¹⁴ = 16.384, passa tranquilo no problema.
-``` C++
+``` cpp
 void subset_sum_fac(ll x){
 if (x == MAX_FAC+1){
     ll sum = 0;
@@ -111,7 +111,7 @@ else{
 
 - Situação 3: Soma de potências de dois com soma de fatoriais
     - Como todas as somas de todos possíveis fatoriais podem ser salvas em um map, podemos passar por cada uma das somas que encontramos na Situação 2 e calcular um número x que diz quanto falta para a soma da Situação 2 chegar em n. Assim, conseguimos calcular para x a Situação 1.
-``` C++
+``` cpp
 for (map<ll, ll>:: iterator itr =
 fac_sub.begin();itr!=fac_sub.end();++itr)
 {
@@ -139,7 +139,7 @@ k_minimo = min (Sit_1(n) , Sit_3 )
 - Confira na GIF abaixo:
 
 ![img2 - img44](gif1.gif)
-``` C++
+``` cpp
 int main() {
     // leitura do tamanho do tabuleiro e alocação da matriz do Sudoku
     while (cin >> n) {

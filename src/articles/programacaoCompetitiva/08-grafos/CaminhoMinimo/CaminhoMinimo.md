@@ -47,7 +47,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 
 ![img1-img12](gif1.gif)
 
-``` C++
+``` cpp
 int d[MAX_V]; //d[i] armazena a distância até o vértice i, e as
 //estimativas durante as iterações
 int p[MAX_V]; //armazena o predecessor de cada vértice
@@ -141,7 +141,7 @@ BellmanFord(G, origem)
     retorna TRUE
 ```
 
-``` C++
+``` cpp
 bool bellmanFord(int inicial, int n){
     memset(p, -1, sizeof(p));
     for(int i=0; i<n; i++)

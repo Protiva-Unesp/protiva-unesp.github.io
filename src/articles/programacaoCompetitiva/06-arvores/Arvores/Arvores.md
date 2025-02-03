@@ -74,7 +74,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Toki Yoshida, 
 - Qual a melhor representação depende muito do contexto em que a árvore será aplicada;
 - Para as árvores enraizadas, a implementação é feita através de uma lista de adjacência, semelhante a implementação de grafos e aplicável na maioria dos casos.
 
-``` C++
+``` cpp
 vector<vector<int>> adj(qtd_vertices);
 vector<int> parent(qtd_vertices);
 
@@ -96,7 +96,7 @@ void add_edge(int u, int v) {
 3. Para sua implementação, utilizamos de ponteiros e alocação dinâmica de memória;
 
 - Implementação:
-``` C++
+``` cpp
 struct Node {
     int val;
     Node *left, *right;
@@ -138,7 +138,7 @@ void insert(Tree &tree, const int &val) {
 ![img19-img27](gif3.gif)
 
 - Implementação Recursiva:
-``` C++
+``` cpp
 void dfs(int u, int parent) {
     // processa o nó atual
     for (int i = 0; i < adj[u].size(); i++) {
@@ -167,7 +167,7 @@ void dfs(Tree tree) {
 ```
 
 - Implementação Iterativa:
-``` C++
+``` cpp
 void dfs(int root) {
     stack<int> s;
     s.push(root);
@@ -193,7 +193,7 @@ void dfs(int root) {
 ![img28-img36](gif4.gif)
 
 - Implementação:
-``` C++
+``` cpp
 void bfs(int root) {
     queue<int> q;
     q.push(root);
@@ -229,7 +229,7 @@ void bfs(int root) {
 ![img39](img39.png)
 
 - Quantidade de nós na sub-árvore u:
-``` C++
+``` cpp
 int dfs(int u) {
     counter[u] = 1;
 

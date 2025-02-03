@@ -14,9 +14,26 @@ const config: GatsbyConfig = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-                plugins: [`gatsby-remark-images`,
-                          `gatsby-remark-static-images`,
+                plugins: [
+                    `gatsby-remark-images`,
+                    `gatsby-remark-static-images`,
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            classPrefix: "language-",
+                            inlineCodeMarker: null,
+                            aliases: { sh: "bash", cpp: "cpp" },
+                            showLineNumbers: true,
+                            noInlineHighlight: true,
+                        },
+                    },          
                 ],
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                icon: `src/images/icon.png`,
             },
         },
         {

@@ -7,7 +7,7 @@ author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ### set
 - Armazenam elementos únicos seguindo uma ordem.
 - um critério de comparação precisa ser definido
-``` C++
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -30,7 +30,7 @@ int main() {
 - Veja também hash_set
 
 ### set - Formas de Ordenação
-``` C++
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -75,7 +75,7 @@ int main() {
 ### map
 - Mantém pares chave-valor, sendo cada chave única
 - Precisa de um critério de comparação entre as chaves.
-``` C++
+``` cpp
 #include <cstdio>
 #include <map>
 #include <string>
@@ -112,7 +112,7 @@ int main () {
 - Um iterator pode ser incrementado, para indicar o próximo elemento
 
 ### Iterator Mimetiza Aritmética de Ponteiros
-``` C++
+``` cpp
 #include <vector>
 #include <cstdio>
 using namespace std;
@@ -140,7 +140,7 @@ printf("\n");
 }
 
 float f: vect => range-based for
-a partir do C++11
+a partir do cpp11
 ```
 
 Obtém-se:
@@ -152,7 +152,7 @@ Obtém-se:
 ```
 
 ### Iterator com set
-``` C++
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -181,7 +181,7 @@ pedro
 ```
 
 ### Iterator com set
-``` C++
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -220,7 +220,7 @@ Obtém-se:
 ```
 
 ### Iterator com multiset
-``` C++
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -258,7 +258,7 @@ Obtém-se:
 ```
 
 ### Iterator com map
-``` C++
+``` cpp
 #include <cstdio>
 #include <map>
 #include <string>
@@ -283,8 +283,8 @@ Maria, 7.500000
 Pedro, 10.000000
 ```
 
-### Iterator com Variáveis auto C++11
-``` C++
+### Iterator com Variáveis auto cpp11
+``` cpp
 #include <string>
 #include <set>
 using namespace std;
@@ -304,7 +304,7 @@ int main() {
 
 ### Iterator com strings
 - Os iterators podem ser usados considerando os caracteres separadamente.
-``` C++
+``` cpp
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -332,7 +332,7 @@ int main () {
 - Lista em http://www.cplusplus.com/reference/algorithm/
 
 ### stable_sort
-``` C++
+``` cpp
 #include <cstdio>
 #include <vector>
 #include <algorithm>
@@ -373,7 +373,7 @@ int main() {
     - Use a função stable_sort() que ordenar as palavras.
 
 ### replace_if
-``` C++
+``` cpp
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -397,7 +397,7 @@ Obtém-se:
 ```
 
 ### replace_if
-``` C++
+``` cpp
 #include <deque>
 #include <algorithm>
 #include <string>
@@ -437,7 +437,7 @@ XXXX Maria Pedro XXXX Antonio
 - Insert_iterators são iteradores de saída desenvolvidos para permitir que algoritmos que normalmente escrevam elementos possam ser usados para inserir elementos em containers. set_difference(conj1Entra.begin(), conj1Entra.end(), conj2Entra.begin(), conj2Entra.end(), inserter(conjSaida, conjSaida.begin()));
 - Veja também: back_inserter, front_inserter e insert_iterator
 - Tipos diferentes de destinos podem ser usados, desde que o insert iterator utilize a rotina de inserção correspondente ao container destino
-``` C++
+``` cpp
 #include <algorithm>
 #include <list>
 #include <string>
@@ -463,7 +463,7 @@ int main() {
 - Na omissão de um functor, o less é normalmente usado
 
 ### Functores - greater
-``` C++
+``` cpp
 #include <vector>
 #include <algorithm>
 #include <string>

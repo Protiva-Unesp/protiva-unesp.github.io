@@ -6,7 +6,7 @@ author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---
 ## Sequenciais e Adaptadores
 ### Introdução
-- O STL é uma biblioteca frequentemente incluída nos compiladores C++.
+- O STL é uma biblioteca frequentemente incluída nos compiladores cpp.
 - Ela fornece elementos do tipo containers, iteradores, algoritmos e functores (funções objetos)
 - Eles podem ser usados com praticamente qualquer tipo de dado
 
@@ -42,8 +42,7 @@ http://www.tantalon.com/pete/cppopt/appendix.htm
 
 ### vector
 - Sequência contígua de dados com tamanho variável.
-
-``` C++
+```cpp
 #include <cstdio>
 #include <vector>
 using namespace std;
@@ -52,14 +51,14 @@ int main() {
     vf.push_back(1.23);
     vf.push_back(9.87);
     vf.push_back(6.45);
-    printf("%f, %f, %f, %f, %d\n", vf[0], vf[1], vf[2], vf[10], vf.size());
+    printf("%f, %f, %f, %f, %d\n", 
+    vf[0], vf[1], vf[2], vf[10], vf.size());
     printf("%f\n", vf.back());
     vf.pop_back();
     printf("%f, %f, %f, %d\n", vf[0], vf[1], vf[2], vf.size());
     return 0;
 }
 ```
-
 Obtém-se:
 ```
 1.230000, 9.870000, 6.450000, 0.000000 (lixo), 3
@@ -69,7 +68,7 @@ Obtém-se:
 
 ### list
 - Lista sequencial de dados com tamanho variável.
-``` C++
+``` cpp
 #include <cstdio>
 #include <list>
 using namespace std;
@@ -107,7 +106,7 @@ Obtém-se:
 
 ### Ordenação (estável) em list
 - list pode se ordenar usando a função membro sort()
-``` C++
+``` cpp
 #include <cstdio>
 #include <list>
 using namespace std;
@@ -145,7 +144,7 @@ Obtém-se:
 ```
 
 - list pode se ordenar usando a ordem natural
-``` C++
+``` cpp
 #include <cstdio>
 #include <list>
 using namespace std;
@@ -231,7 +230,7 @@ Obtém-se:
     - ``pop` Apaga o primeiro elemento da fila
 
 ### Uso de queue
-``` C++
+``` cpp
 #include <cstdio>
 #include <queue>
 #include <cstring>
@@ -274,7 +273,7 @@ int main () {
 ### priority_queue – Fila com Prioridade
 - Fila com critério de prioridade
     - se o critério for igual, vale a ordem de entrada
-``` C++
+``` cpp
 #include <cstdio>
 #include <queue>
 #include <string>

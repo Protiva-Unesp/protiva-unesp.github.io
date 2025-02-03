@@ -18,7 +18,7 @@ slug: "exercicios-10"
 
 ![img8-img18](gif2.gif)
 
-``` C++
+``` cpp
 void bfs(const vector<int> &sources) {
     queue<int> q;
     vector<int> dist;
@@ -55,7 +55,7 @@ img19 - img33 (montar gif)
 - Confira a GIF abaixo
 ![img34-img46](gif4.gif)
 
-``` C++
+``` cpp
 int main() {
     int T;
     cin >> T;

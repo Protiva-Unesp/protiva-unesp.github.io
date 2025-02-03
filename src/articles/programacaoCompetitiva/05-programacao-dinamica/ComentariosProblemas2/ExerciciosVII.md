@@ -20,7 +20,7 @@ slug: "exercicios-7"
 - Recursão
     - Quando o player 1 joga eu tenho o máximo daquela jogada.
     - Quando o player 2 joga eu fico com o mínimo dessa jogada.
-``` C++
+``` cpp
 // Jogada do Player 1:
 max(
     item[início] + Recursiva(inicio+1, fim, !flag),
@@ -84,7 +84,7 @@ Seq_nova = 1, 4, 6, 3, 5, 7
 - Utilizando a ordem inicial da Seq_2, realiza uma busca binária da sequência ordenada e salva a posição em relação à posição inicial da Seq_1
 - Podemos então perceber que através da nova sequência gerada, podemos calcular a maior rota que ambos podem fazer utilizando o algoritmos de LIS (Longest Increasing Subsequence)
 
-``` C++
+``` cpp
 vector<ll>seq_1(p),seq_2(q),seq_3;
 map<int,int>posicao_inicial;
 cin >> seq_1 >> seq_2;

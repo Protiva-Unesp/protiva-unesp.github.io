@@ -73,7 +73,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 
 ![img3](img3.png)
 
-``` C++
+``` cpp
 int PermutationCoeff(int n, int k)
 {
     int Fn = 1, Fk;
@@ -90,7 +90,7 @@ int PermutationCoeff(int n, int k)
 
 ![img4](img4.png)
 
-``` C++
+``` cpp
 int PermutationCoeff(int n, int k)
 {
     int coeff = 1;
@@ -109,7 +109,7 @@ int PermutationCoeff(int n, int k)
 
 ![img6](img6.png)
 
-``` C++
+``` cpp
 long long bin[MAXN][MAXR];
 void calcularCoefBin(int n, int k){ //Pré-calculando em O(n*k)
     int i, j;

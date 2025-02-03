@@ -32,7 +32,7 @@ author: "Toki Yoshida, Nick Barbosa Gomes, Xelson Henrique Morelli"
 - Confira a GIF abaixo:
 ![img1-img4](gif1.gif)
 
-``` C++
+``` cpp
 double euclidean(double x1, double y1, double x2, double y2) {
     return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
 }
@@ -102,7 +102,7 @@ int main() {
 - Confira a GIF abaixo:
 ![img13 - img42](gif2.gif)
 
-``` C++
+``` cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -146,7 +146,7 @@ void colocar_rainha(ll lin, ll col) {
 
 ![img45 - img72](gif3.gif)
 
-``` C++
+``` cpp
 #include <bits/stdc++.h>
 using namespace std;
 

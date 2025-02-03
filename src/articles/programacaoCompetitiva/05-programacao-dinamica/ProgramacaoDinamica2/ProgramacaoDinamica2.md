@@ -123,7 +123,7 @@ memo[estado] = solução do estado
 ![img11](img11.png)
 
 - Implementação (Top-down):
-``` C++
+``` cpp
 memo[] = {1, -1, -1, -1, …}
 int lis(int i){ //retorna a LIS que termina em a[i]
     if (memo[i] != -1)
@@ -137,7 +137,7 @@ int lis(int i){ //retorna a LIS que termina em a[i]
 ```
 
 - Implementação (Bottom-up):
-``` C++
+``` cpp
 int lis(int n){
     int memo[n], lisMax = 0;
     for(int i = 0; i < n; i++){
@@ -212,7 +212,7 @@ w = capacidade disponível, i = item atual
 ![img72-img83](gif3.gif)
 
 ### Problema da Mochila – Top Down
-``` C++
+``` cpp
 int knapsack(int w, int n){
     if(memo[w][n] != -1)
         return memo[w][n];
@@ -226,7 +226,7 @@ int knapsack(int w, int n){
 ```
 
 ### Problema da Mochila – Bottom Up
-``` C++
+``` cpp
 for(int i=0; i<=n; i++)
     dp[i][0] = 0;
 for(int j=0; j<=w; j++)
@@ -263,7 +263,7 @@ https://medium.com/@ThatOneKevin/knapsack-problems-part-1-8465fb2d53e9
 ![img84](img84.png)
 
 ### Mochila ilimitada (com repetição)
-``` C++
+``` cpp
 int knapsack(int n, int w){
     memset(dp, 0, sizeof(dp));
     for(int j=1; j<=w; j++){

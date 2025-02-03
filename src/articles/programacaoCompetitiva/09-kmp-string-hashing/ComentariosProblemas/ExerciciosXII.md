@@ -21,7 +21,7 @@ slug: "exercicios-xii"
 
 ![gif1](gif1.gif)
 
-``` C++
+``` cpp
 i clock1(n), clock2(n);
 for (int i = 0; i < n; i++)
     cin >> clock1[i];
@@ -59,7 +59,7 @@ return 0;
 ![img19](img19.png)
 ![img20](img20.png)
 
-``` C++
+``` cpp
 Hash hs(s); //Transformando a String em Hash
 map<ll,bool>mp;
 for(int i=0;i<n;i++){
@@ -84,7 +84,7 @@ cout << int(mp.size()) << "\n";
 ![img23](img23.png)
 ![img24](img24.png)
 
-``` C++
+``` cpp
 ll ini = 1, fim = n, tam = 0;
 while (ini <= fim){
     ll mid =(fim + ini) / 2;

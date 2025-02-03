@@ -21,7 +21,7 @@ buscar(vet, 3) = -1 //o elemento 3 não se encontra no vetor
     - Se o elemento for encontrado, retornamos a posição;
     - Senão, retornamos -1 (por exemplo) para indicar que o elemento não foi encontrado.
 - Exemplo de implementação
-``` C++
+``` cpp
 int buscaLinear(vector<int> vet, int x)
     {
     for(int i = 0; i < vet.size(); i++)
@@ -41,14 +41,14 @@ vetor, teremos que percorrer todas as n posições do vetor.
 - Agora suponha que os dados do vetor foram previamente ordenados.
 - Com isso conseguimos melhorar um pouco o algoritmo, pois ao buscar um elemento x, se passarmos por um y | y > x, podemos encerrar a busca.
 - Exemplo
-``` C++
+``` cpp
 vet = {0, 4, 6, 9, 10, … }
 /*Se buscarmos o número 7 nesse vetor (sabendo que ele está ordenado),
 assim que passarmos pela posição 3 vamos saber que ele não se encontra no
 vetor, mesmo que ele tenha mais 100000 elementos*/
 ```
 - Exemplo de implementação
-``` C++
+``` cpp
 int buscaLinearOrd(vector<int> vet, int x)
 {
     for(int i = 0; i < vet.size(); i++)
@@ -79,7 +79,7 @@ Se vet[centro] < x, então x só pode estar entre vet[centro + 1] e vet[fim]
 ![img1-img8](gif1.gif)
 
 - Exemplo de implementação – versão recursiva:
-``` C++
+``` cpp
 int buscaBinaria(int vet[], int esq, int dir, int x)
 {
     if (esq > dir)
@@ -94,7 +94,7 @@ int buscaBinaria(int vet[], int esq, int dir, int x)
 ```
 
 - Exemplo de implementação – versão iterativa:
-``` C++
+``` cpp
 int buscaBinaria2(int vet[], int n, int x)
 {
     int esq = 0, dir = n - 1, meio;
@@ -136,7 +136,7 @@ Pi = quantidade de pipocas no saco i
 - Para isso, basta percorrer o vetor e tentar atribuir o máximo de sacos de pipocas para um competidor (enquanto < x). Quando não for possível fazer isso, passamos para o próximo competidor.
 - Se conseguirmos chegar no final do vetor, respeitando o limite de competidores da equipe, então é possível comer as pipocas no tempo x.
 - Esse processo tem complexidade O(N)
-``` C++
+``` cpp
 bool ehPossivel(vector<int> &pip, int c, int x){
     int soma = 0, competidorAtual = 0;
     for(int i = 0; i < pip.size(); i++){
@@ -160,7 +160,7 @@ bool ehPossivel(vector<int> &pip, int c, int x){
 - Quando pensamos nos resultados da função compondo um vetor, é fácil ver que ela é não decrescente (f(x) <= f(x+1)).
 - Em suma, iremos aplicar uma busca binária com esq = 0 e dir = MAX, buscando o primeiro caso em que é possível comer todas as pipocas.
 - Complexidade: O(n.log MAX)
-``` C++
+``` cpp
 int solve(vector<int> &pip, int c, int t_ini, int t_fim){
     int x, k = t_fim;
     while(t_ini <= t_fim){
@@ -193,7 +193,7 @@ img10.png
 ![img11](img11.png)
 
 - Exemplo: cálculo de raiz quadrada
-``` C++
+``` cpp
 double raiz(double x, double eps=1e-3){
     double l = 0, r = x;
     double m;
@@ -209,7 +209,7 @@ double raiz(double x, double eps=1e-3){
 }
 ```
 - Exemplo: cálculo de raiz quadrada
-``` C++
+``` cpp
 sqrt(2) = 1.41421
     1 1.5 1.25 1.375 1.4375 1.40625 1.42188 1.41406 1.41797
     1.41602 1.41504 1.41455

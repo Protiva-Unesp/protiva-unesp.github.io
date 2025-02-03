@@ -18,7 +18,7 @@ slug: "exercicios-xi"
 
 ![img1-img23](gif1.gif)
 
-``` C++
+``` cpp
 ll q;
 cin >> q;
 vector<bool> used(n);
@@ -79,7 +79,7 @@ cout << "\n";
 - Achar uma árvore geradora T que contém um subconjunto das M arestas e maximize a expressão ∑i∈T ai / ∑i∈T bi, sendo i o índice da aresta inserida em T.
 - Escrever o termo resultante no formato de uma fração irredutível p / q.
 
-``` C++
+``` cpp
 bool cmp(tuple<ii, ll, ll> a, tuple<ii, ll, ll> b) {
     ii p, q;
     p = get<0>(a);
@@ -129,7 +129,7 @@ int main() {
 
 ![img24-img38](gif2.gif)
 
-``` C++
+``` cpp
 for(int i = 0; i < m; i++){
     cin >> a >> b >> c;
     arestas.push_back({c, a, b});

@@ -21,7 +21,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida
     - Uso de Aritmética Modular
 
 - 2ª Situação: se precisarmos fazer operações com esse número como soma, subtração, multiplicação e divisão, o problema se torna mais complexo.
-- Nesses casos, não recomendamos usar a linguagem C++. É possível trabalhar com BigInteger em C++ (a biblioteca do Thiago traz códigos para isso), porém a quantidade de código necessária é relativamente grande.
+- Nesses casos, não recomendamos usar a linguagem cpp. É possível trabalhar com BigInteger em cpp (a biblioteca do Thiago traz códigos para isso), porém a quantidade de código necessária é relativamente grande.
 - Sugestões: Java ou Python
 
 - Em Java podemos usar a classe BigInteger da biblioteca java.math
@@ -57,7 +57,7 @@ print(U % 3)
 - Recordando: números primos são números naturais que têm apenas dois divisores: 1 e ele mesmo.
 
 - Algoritmo ingênuo 𝑂(𝑛)
-``` C++
+``` cpp
 bool ehPrimo(int n)
 {
     for(int i = 2; i < n; i++)
@@ -74,7 +74,7 @@ bool ehPrimo(int n)
     - Mas se 𝒑 > sqrt(n) e 𝒏/𝒑 > sqrt(n) , então 𝒑 . 𝒏/𝒑 > 𝒏, o que é um absurdo!
 
 - Algoritmo 𝑂( sqrt(𝑛))
-``` C++
+``` cpp
 bool ehPrimo(int n)
 {
     for(int i = 2; i*i <= n; i++)
@@ -108,7 +108,7 @@ como compostos (não primos)
     - Então ele já foi marcado como composto, por ser múltiplo de 𝒑, assim como todos os seus múltiplos
 - Logo, todos os números 𝒊. 𝒋 | 𝟐 ≤ 𝒋 < 𝒊 já foram marcados
 
-``` C++
+``` cpp
 bool ehPrimo[MAX];
 vector<int> primos;
 void crivo(int n){
@@ -134,7 +134,7 @@ void crivo(int n){
 ### Fatoração
 - Fatoração em 𝑂(sqrt(𝑛))
 
-``` C++
+``` cpp
 vector<int> fatorar(int n) {
     vector<int> fator;
     for (int i = 2; i*i <= n; i++){
@@ -152,7 +152,7 @@ vector<int> fatorar(int n) {
 - Primeiramente, ao invés de utilizarmos o crivo para descobrirmos todos os primos, faremos uma pequena alteração para computar para cada número o seu Menor Fator Primo (Shortest Prime Factor - SPF).
 
 - Crivo para Fatoração
-``` C++
+``` cpp
 int spf[MAXN];
 void crivo(){
     for(int i=2; i < MAXN; i++){
@@ -175,7 +175,7 @@ n = n/spf[n]
 ```
 
 #### Fatoração em 𝑂(log 𝑛)
-``` C++
+``` cpp
 vector<int> fatorar(int n){
     vector<int> fator;
     while(n > 1){
@@ -189,7 +189,7 @@ vector<int> fatorar(int n){
 ### Look-up tables
 - Existem casos onde podemos gerar um vetor ou matriz de consulta manualmente (ou previamente por outro programa), e inseri-los prontos no nosso código. Dessa forma, economiza-se o tempo de gerar tal vetor/matriz.
 - Por exemplo, se para resolver um problema precisamos de todos os primos até 𝑁, podemos embutir um vetor de primos já dentro do código.
-``` C++
+``` cpp
 int primos[] = {2, 3, 5, 7, 11, 13, … }
 ```
 
@@ -206,7 +206,7 @@ int primos[] = {2, 3, 5, 7, 11, 13, … }
 ![img7](img7.png)
 
 #### MDC/GCD em 𝑂(log(𝑎 + 𝑏))
-``` C++
+``` cpp
 int gcd(int a, int b){
     if (a == 0)
         return b;
@@ -223,7 +223,7 @@ Ou seja:
 𝑚𝑚𝑐(𝑥, 𝑦) = 𝑥 ∗ 𝑦 / 𝑚𝑑𝑐(𝑥, 𝑦)
 
 #### MMC/LCM em 𝑂(log(𝑎 + 𝑏))
-``` C++
+``` cpp
 int lcm(int a, int b){
     return a * (b / gcd(a, b));
 }
@@ -330,7 +330,7 @@ Denotando 𝑞 = 𝐴𝑥0 + 𝐵𝑦0
 𝒂𝒙 + 𝒃𝒚 = 𝒅
 
 #### Implementação
-``` C++
+``` cpp
 int gcd(int a, int b, int &x, int &y){
     if (a == 0){
         x = 0;
@@ -377,7 +377,7 @@ bool solve(int a, int b, int c, int &x0, int &y0, int &g) {
 - 0 ≤ 𝐵, 𝑃 ≤ 2147483647 e 1 ≤ 𝑀 ≤ 46340
 
 - Parte da solução do problema UVA 374 – Big Mod
-``` C++
+``` cpp
 long long pow(long long x, long long y, long long mod) {
     if (y == 0)
         return 1;

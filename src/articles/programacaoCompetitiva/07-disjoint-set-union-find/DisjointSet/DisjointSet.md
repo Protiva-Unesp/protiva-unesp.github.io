@@ -28,7 +28,7 @@ author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Toki Yoshida, 
 
 - merge(x, y): conecta os líderes. Supondo que X seja líder de x e Y líder de y, vamos “eleger” Y como líder de X.
 
-``` C++
+``` cpp
 int pai[MAX_N + 1];
 void init(){
     for(int i = 1; i <= MAX_N; i++)
@@ -60,7 +60,7 @@ void merge(int u, int v){
 - Uma espécie de Programação Dinâmica.
 - Tempo por operação: O(log n) amortizado
 
-``` C++
+``` cpp
 int pai[MAX_N + 1];
 void init(){
     for(int i = 1; i <= MAX_N; i++)
@@ -86,7 +86,7 @@ void merge(int u, int v){
 - Estratégia “small-to-large”
 - Tempo por operação: O(log n)
 
-``` C++
+``` cpp
 int pai[MAX_N + 1];
 int tam[MAX_N + 1];
 
@@ -204,7 +204,7 @@ tam[j] = y;
     - Uma pilha para o vetor tam: < j, tam[j] >
 - Não permite usar path compression.
 
-``` C++
+``` cpp
 int pai[MAX_N + 1];
 int tam[MAX_N + 1];
 stack<pair<int, int> > old_pai;
@@ -256,7 +256,7 @@ void rollback()
     - find(x, t): retorna a qual conjunto x pertence no momento t
     - same(x, y, t): verifica se x e y pertencem ao mesmo conjunto no momento t
 
-``` C++
+``` cpp
 int pai[MAX_N + 1];
 int tam[MAX_N + 1];
 int his[MAX_N + 1];

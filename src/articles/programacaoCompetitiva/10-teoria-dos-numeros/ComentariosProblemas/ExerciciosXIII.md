@@ -31,7 +31,7 @@ Para x = 9,
 ```
 
 - Solução: Dado um número n:
-``` C++
+``` cpp
 if (n == 1) cout << “NO”;
 else if (quadrado_perfeito(n) && ehPrimo[sqrt(n)])
     cout << “YES”;
@@ -40,7 +40,7 @@ else
 ```
 
 - Para x = 16, 16 é um quadrado perfeito, mas como sqrt(16) = 4 e 4 não é um número primo, ficamos no final com mais de 3 divisores: 1,2,4,8,16
-``` C++
+``` cpp
 vector<bool> ehPrimo;
 ll MAXN = 1000000;
 void crivo()
@@ -154,7 +154,7 @@ Se x < 0, x = (x % mod + mod) % mod
 
 Senão, x = x % mod
 
-``` C++
+``` cpp
 vector<bool> is_prime;
 vector<int> primes;
 void crivo(const int &n) {
@@ -213,7 +213,7 @@ ll pow_mod(ll b, ll x, ll mod) {
 
 - Objetivo: Encontrar a maior DDF no intervalo dado.
 - Como o intervalo vai de 1 a 3000 no máximo e o tamanho de uma DDF é no máximo 1000, pode-se calcular todas as DDFs, de maneira offline, e pegar a maior.
-``` C++
+``` cpp
 ll soma_digitos(ll num){
     ll sum = 0;
     while(num){
