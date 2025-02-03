@@ -17,6 +17,7 @@ const config: GatsbyConfig = {
                 plugins: [
                     `gatsby-remark-images`,
                     `gatsby-remark-static-images`,
+                    `gatsby-remark-autolink-headers`,
                     {
                         resolve: `gatsby-remark-prismjs`,
                         options: {

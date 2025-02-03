@@ -1,8 +1,8 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2021) 1a Fase"
 description: "descricao"
-date: "2021-07-24"
 slug: "resolucao-2021-1a-fase"
+author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
 ## Cantoras (OBI 2021 - Fase I)
 

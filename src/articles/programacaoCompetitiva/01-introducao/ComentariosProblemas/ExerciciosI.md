@@ -1,5 +1,5 @@
 ---
-title: "04 - Exercícios"
+title: "05 - Exercícios"
 description: "Confira exercícios comentados"
 slug: "exercicios-1"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
