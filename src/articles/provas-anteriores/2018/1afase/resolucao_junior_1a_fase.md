@@ -1,8 +1,8 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 1a Fase"
 description: "descricao"
-date: "2021-07-24"
 slug: "resolucao-2018-1a-fase"
+author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
 ### 1 - Cerca de Madeira
 
@@ -29,7 +29,9 @@ O número de espaços disponíveis para adição de travas não é igual ao de p
 Observe que o número de traves limita o comprimento máximo da cerca:
 
 Se 17 postes, teríamos que ter 32 traves.
+
 Se 16 postes, teríamos que ter 30 traves.
+
 Se 15 postes, teríamos que ter 28 traves.
 
 Como temos 27 traves, a maior cerca que Maria pode ter é tem 14 postes, 26 traves, com 13 espaços e mede: 
@@ -41,6 +43,7 @@ Como temos 27 traves, a maior cerca que Maria pode ter é tem 14 postes, 26 trav
 Se a cerca tem 11 metros, 11 espaços e é composta por 12 postes.
 
 11 espaços x 2 travas x 5 = 110 
+
 12 postes x 10 = 120
 
 O custo de uma cerca com essas especificações é de R$ 230,00.
@@ -88,17 +91,25 @@ Cinco amigas, Ana, Bia, Cris, Duda e Eva querem ir ao cinema, mas a sessão já 
 - Qual das seguintes alternativas é uma distribuição correta das amigas no cinema, da cadeira 1 à cadeira 5? 
 
 A) Cris, Ana, Bia, Duda, Eva (Ana não senta ao lado de Bia)
+
 B) Duda, Bia, Ana, Eva, Cris (Ana não senta ao lado de Bia)
+
 C) Bia, Duda, Ana, Cris, Eva (Cris não está nas extremidades)
+
 **D) Cris, Eva, Ana, Duda, Bia **
+
 E) Eva, Cris, Ana, Duda, Bia (Cris não está nas extremidades)
 
 - Qual das seguintes alternativas é sempre verdadeira?
 
 **A) Ana ocupa uma cadeira vizinha à de Duda.**
+
 B) Bia ocupa uma cadeira vizinha à de Eva.
+
 C) Duda ocupa uma cadeira vizinha à de Eva.
+
 D) Eva ocupa a cadeira 1.
+
 E) Bia ocupa a cadeira 3. 
 
 Cris e Eva sempre sentam nas extremidades e Ana não senta ao lado de Bia, logo sentará ao lado de Duda.
@@ -106,9 +117,13 @@ Cris e Eva sempre sentam nas extremidades e Ana não senta ao lado de Bia, logo 
 Se Bia ocupa a cadeira 5, qual das seguintes alternativas é sempre falsa? 
 
 A) Eva ocupa a cadeira 2.
+
 B) Ana ocupa uma cadeira vizinha à cadeira de Eva.
+
 **C) Duda ocupa a cadeira 3.**
+
 D) Ana ocupa a cadeira 3.
+
 E) Bia ocupa uma cadeira vizinha à cadeira de Duda.
 
 Nesse caso, obrigatoriamente, a ordem seria:
@@ -126,10 +141,15 @@ No Brasil há notas de R$ 100, R$ 50, R$ 20, R$ 10, R$ 5 e R$ 2.
 Troco = 300 - 201 = 99
 
 99 - 50 = 49
+
 49 - 20 = 29
+
 29 - 20 = 9
+
 9 - 5 = 4
+
 4 - 2 = 2
+
 2 - 2 = 0
 
 Logo, é necessário 6 notas
@@ -137,12 +157,19 @@ Logo, é necessário 6 notas
 - Qual o menor número de notas que um cliente pode usar para pagar uma mercadoria que custa R$ 201, usando apenas notas? 
 
 201 - 100 = 101
+
 101 - 50 = 51
+
 51 - 20 = 31
+
 31 - 20 = 11
+
 11 - 2 = 9
+
 9 - 2 = 7
+
 7 - 2 = 5
+
 5 - 5 = 0
 
 Logo, é necessário 8 notas
@@ -152,11 +179,15 @@ Logo, é necessário 8 notas
 Uma cidade tem exatamente cinco bairros: Areias, Brejo, Centro, Delta e Embu. Existem exatamente seis linhas de ônibus ligando os bairros, com os seguintes preços de passagens (o preço é o mesmo para a ida ou a volta): 
 
 Centro – Brejo: R$ 9,00
+
 Centro – Embu: R$ 3,00
+
 Centro – Delta: R$ 1,00
 
 Delta – Embu: R$ 3,00
+
 Areias – Brejo: R$ 4,00
+
 Areias – Delta: R$ 2,00z
 
 ![img6](img6.png)

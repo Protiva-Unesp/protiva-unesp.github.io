@@ -1,8 +1,8 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 2a Fase"
 description: "descricao"
-date: "2021-07-24"
 slug: "resolucao-2018-2a-fase"
+author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
 ### Academia de Cachorros
 
@@ -16,9 +16,13 @@ A Academia de Polícia acabou de receber cinco novos cachorrinhos para treinar, 
 - Qual das opções abaixo é uma atribuição válida de cachorrinhos a treinadores?
 
 A) Bolinha: Guto, Careta: Júlia, Dengoso: Kevin, Pipoca: Ida, Xereta: Heitor.
+
 **B) Bolinha: Kevin, Careta: Guto, Dengoso: Ida, Pipoca: Heitor, Xereta: Júlia.**
+
 C) Bolinha: Heitor, Careta: Kevin, Dengoso: Guto, Pipoca: Ida, Xereta: Júlia
+
 D) Bolinha: Heitor, Careta: Kevin, Dengoso: Ida, Pipoca: Guto, Xereta: Júlia
+
 E) Bolinha: Heitor, Careta: Ida, Dengoso: Guto, Pipoca: Júlia, Xereta: Kevin 
 
 Se Guto treina Careta, Ida tem que treinar Dengoso, que não pode ser treinado por Júlia. O restante dos treinadores não têm nenhuma restrição logo a distribuição se encontra correta.
@@ -26,9 +30,13 @@ Se Guto treina Careta, Ida tem que treinar Dengoso, que não pode ser treinado p
 - Se Heitor treinar Bolinha, então qual das alternativas abaixo são cachorrinhos que Ida pode escolher para treinar?
 
 A) Careta e Xereta
+
 B) Somente Careta
+
 C) Dengoso e Pipoca
+
 **D) Somente Dengoso**
+
 E) Careta e Pipoca
 
 Se Heitor treina Bolinha, Kevin treina Careta o que deixa Ida com apenas uma de suas duas opções: Dengoso.
@@ -36,25 +44,37 @@ Se Heitor treina Bolinha, Kevin treina Careta o que deixa Ida com apenas uma de 
 - Se Kevin treinar Bolinha, então qual das alternativas abaixo são cachorrinhos que Ida pode escolher para treinar
 
 **A) Careta e Dengoso**
+
 B) Somente Dengoso
+
 C) Careta e Xereta
+
 D) Careta, Pipoca e Xereta
+
 E) Careta, Dengoso e Pipoca
 
 - Se Heitor treinar Dengoso, então qual das alternativas abaixo são cachorrinhos que Kevin pode escolher para treinar?
 
 **A) Bolinha e Pipoca**
+
 B) Somente Xereta
+
 C) Careta e Xereta
+
 D) Somente Careta
+
 E) Bolinha, Careta, Pipoca e Xereta
 
 - Se Kevin treinar Xereta, quem treinará Bolinha?
 
 A) Guto
+
 B) Heitor
+
 C) Ida
+
 **D) Júlia**
+
 E) Kevin
 
 ### 2 - Grafos
@@ -74,9 +94,13 @@ Na figura acima, o grafo à esquerda representa as divisas entre estados de qual
 Qual das alternativas seguintes é uma lista correta de cidades em que um ginásio de voleibol pode ser construído, considerando em cada cidade da lista será construído um ginásio de voleibol?
 
 A) A, F, H 
+
 B) A, C, E, H 
+
 **C) B, C, E, H (Não existem vizinhos)**
+
 D) B, C, F, G
+
 E) B, C, G 
 
 ![img2](img2.png)
@@ -84,6 +108,7 @@ E) B, C, G
 ### 03 - Montanha Russa
 
 Seis amigas – Alice, Bela, Cláudia, Dora, Eda e Flora – estão na fila da montanha-russa de um parque de diversões. O carrinho do brinquedo tem seis lugares, com três filas (frente, meio e trás) de duas cadeiras cada, com os lugares numerados como indicado na figura abaixo.
+
 Para sentar no carrinho as amigas irão obedecer às seguintes restrições.
 
 - Cláudia quer sentar na fila da frente.
@@ -96,33 +121,49 @@ Para sentar no carrinho as amigas irão obedecer às seguintes restrições.
 - Qual das seguintes alternativas é um arranjo correto de lugares para as amigas, da cadeira 1 à cadeira 6?
 
 A) Eda, Dora, Bela, Flora, Cláudia, Alice
+
 B) Cláudia, Eda, Bela, Dora, Flora, Alice
+
 **C) Cláudia, Dora, Bela, Flora, Eda, Alice**
+
 D) Dora, Cláudia, Eda, Alice, Bela, Flora
+
 E) Flora, Cláudia, Bela, Alice, Eda, Dora
 
 -  Qual das seguintes alternativas não pode ser verdadeira?
 
 A) Flora senta na cadeira 6
+
 B) Alice senta na cadeira 6.
+
 **C) Alice senta na fila do meio.**
+
 D) Alice senta na fila da frente.
+
 E) Alice senta na cadeira 2.
 
 - Se Flora senta na cadeira 2, qual das seguintes alternativas é sempre verdadeira?
 
 A) Alice senta na cadeira 5.
+
 B) Alice senta na cadeira 4.
+
 C) Alice senta na fila do meio.
+
 **D) Dora senta na fila do meio.**
+
 E) Dora senta na fila de trás.
 
 - Se Bia ocupa a cadeira 5, qual das seguintes alternativas é sempre falsa? 
 
 A) Eva ocupa a cadeira 2.
+
 B) Ana ocupa uma cadeira vizinha à cadeira de Eva.
+
 **C) Duda ocupa a cadeira 3.**
+
 D) Ana ocupa a cadeira 3.
+
 E) Bia ocupa uma cadeira vizinha à cadeira de Duda.
 
 Nesse caso, obrigatoriamente, a ordem seria:
@@ -149,9 +190,13 @@ Representa 4 + 2 = 6.
 Qual das seguintes expressões NÃO está correta? 
 
 A) ![img6](img6.png)
+
 B) ![img7](img7.png)
+
 C) ![img8](img8.png)
-D) ![img9](img9.png)
+
+**D)** ![img9](img9.png)
+
 E) ![img10](img10.png)
 
 ### 5 - Números Triangulares 
@@ -187,9 +232,13 @@ Em um Quadrado Mágico, a soma de qualquer coluna, linha ou diagonal tem sempre 
 - A figura abaixo mostra um Quadrado Mágico preenchido com exatamente um número errado. O que devemos fazer para consertar o Quadrado Mágico?
 
 **A) Colocar o valor 4 no lugar do valor 3. →**
+
 B) Colocar o valor 9 no lugar do valor 8.
+
 C) Colocar o valor 10 no lugar do valor 8.
+
 D) Colocar o valor 12 no lugar do valor 11.
+
 E) Colocar o valor 13 no lugar do valor 12. 
 
 **Coluna e linha somavam 23, com essa mudança somam 24 como as outras.**
@@ -203,57 +252,93 @@ Da nova rodoviária irão partir, diariamente, exatamente sete ônibus, identifi
 - Os ônibus D, F e G devem partir em horários consecutivos (ou seja, em sequência), nessa ordem.
 
 - Se o ônibus G partir às 9:00, a partida do ônibus E deve ser:
+
 A) 7:00
+
 B) 8:00
+
 C) 10:00
+
 D) 11:00
+
 E) 12:00
 
 - Se os ônibus C e D partirem respectivamente às 8:00 e 9:00, a partida do ônibus B deve ser:
+
 A) 6:00
+
 B) 7:00
+
 C) 10:00
+
 D) 11:00
+
 E) 12:00
 
 - Qual das seguintes alternativas lista três ônibus que podem ter suas partidas em horários consecutivos (ou seja, em sequência), na ordem dada?
+
 A) A, D, C
+
 B) B, C, F
+
 C) D, E, F
+
 D) F, G, C
+
 E) F, G, D
 
 - Se o ônibus F partir às 11:00, o ônibus E deve partir às:
+
 A) 7:00
+
 B) 8:00
+
 C) 9:00
+
 D) 10:00
+
 E) 11:00
 
 - Qual das seguintes afirmações é necessariamente verdadeira
+
 A) o ônibus C parte após o ônibus B.
+
 B) o ônibus D parte após o ônibus C.
+
 C) o ônibus E parte após o ônibus D.
+
 D) o ônibus F parte após o ônibus E.
+
 E) o ônibus G parte após o ônibus F. 
 
 - Qual das seguintes alternativas lista três ônibus que podem ter suas partidas em horários consecutivos (ou seja, em sequência), na ordem dada?
+
 A) 7:00
+
 B) 8:00
+
 C) 9:00
+
 D) 10:00
+
 E) 11:00
 
 ### 9 - Sequência comum
 
 - Observe estas duas sequências de números:
+
 8, 11, 14, 17, 20, … Continuando:  23, 26, **29**
+
 1, 5, 9, 13, 17, … Continuando:  21, 25, **29**
 
 O primeiro número que aparece nas duas sequências é 17. Qual é o segundo número que aparece nas duas sequências?
 
 A) 28
+
 **B) 29**
+
 C) 30
+
 D) 31
+
 E) 32

@@ -18,10 +18,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/01-introducao"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         01 - Introdução
                                     </Link>
                                     <p className="mb-4">
@@ -34,10 +34,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/02-stl"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         02 - STL
                                     </Link>
                                     <p className="mb-4">
@@ -50,10 +50,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/03-forca-bruta-recursao-backtracking"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         03 - Força bruta, recursão e backtracking
                                     </Link>
                                     <p className="mb-4">
@@ -66,10 +66,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/04-algoritmo-guloso-divisao-conquista"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         04 - Algoritmo Guloso, Divisão e Conquista
                                     </Link>
                                     <p className="mb-4">
@@ -82,10 +82,10 @@ const BlogPage = () => {
                      <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/05-programacao-dinamica"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         05 - Programação Dinâmica
                                     </Link>
                                     <p className="mb-4">
@@ -98,10 +98,10 @@ const BlogPage = () => {
                      <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/06-arvores"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         06 - Árvores
                                     </Link>
                                     <p className="mb-4">
@@ -114,10 +114,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/07-disjoint-set-union-find"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         07 - Disjoint-set (Union Find)
                                     </Link>
                                     <p className="mb-4">
@@ -130,10 +130,10 @@ const BlogPage = () => {
                      <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/08-grafos"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         08 - Grafos
                                     </Link>
                                     <p className="mb-4">
@@ -146,10 +146,10 @@ const BlogPage = () => {
                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/09-kmp-string-hashing"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         09 - KMP e String Hashing
                                     </Link>
                                     <p className="mb-4">
@@ -162,10 +162,10 @@ const BlogPage = () => {
                      <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/10-teoria-dos-numeros"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         10 - Teoria dos Números
                                     </Link>
                                     <p className="mb-4">
@@ -178,10 +178,10 @@ const BlogPage = () => {
                      <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                         <div className="flex flex-grow">
                             <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                            <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                 <div>
                                     <Link to="/aprender/11-analise-combinatoria"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                         11 - Análise Combinatória
                                     </Link>
                                     <p className="mb-4">

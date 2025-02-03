@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Seo from '../../components/seo'
 import NavBar from '../../components/navbar'
 import Footer from '../../components/footer'
 
-const BlogPage = () => {
+const BlogPage = ({ data }) => {
     return (
         <>
             <NavBar />
@@ -15,38 +15,26 @@ const BlogPage = () => {
                     </h2>
                 </div>
                 <div className="flex flex-wrap -mx-4">
-                    <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
-                        <div className="flex flex-grow">
-                            <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
-                                <div>
-                                    <Link to="/introducao-a-programacao/deducao"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
-                                        Dedução
-                                    </Link>
-                                    <p className="mb-4">
-                                        Aprenda sobre dedução
-                                    </p>
+                {
+                    data.allMarkdownRemark.nodes.map(node => (
+                        <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
+                            <div className="flex flex-grow">
+                                <div className="triangle"></div>
+                                <div className="flex flex-col justify-between px-4 py-6 bg-yellow-500 border border-gray-400 text-white">
+                                    <div>
+                                        <Link to={`/introducao-a-programacao/${node.frontmatter.slug}`}
+                                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                            {node.frontmatter.title}
+                                        </Link>
+                                        <p className="mb-4">
+                                            {node.frontmatter.description}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                     <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
-                        <div className="flex flex-grow">
-                            <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
-                                <div>
-                                    <Link to="/introducao-a-programacao/ordenacao"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
-                                        Ordenação
-                                    </Link>
-                                    <p className="mb-4">
-                                        Aprenda sobre ordenação
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))
+                }
                 </div>
             </section>
             <Footer />
@@ -54,6 +42,24 @@ const BlogPage = () => {
     )
 }
 
-export const Head = () => <Seo title="Introdução à Programação" />
+export const query = graphql`
+    query {
+        allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/introducao-a-programacao/" } }
+            sort: { frontmatter: { title: ASC } }
+        ) {
+            nodes {
+                frontmatter {
+                    title
+                    description
+                    slug
+                }
+                id
+            }
+        }
+    }
+`
+
+export const Head = () => <Seo title="Resolução de Provas Anteriores" />
 
 export default BlogPage

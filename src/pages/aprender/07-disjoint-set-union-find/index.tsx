@@ -20,10 +20,10 @@ const BlogPage = ({ data }) => {
                         <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
                             <div className="flex flex-grow">
                                 <div className="triangle"></div>
-                                <div className="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                                <div className="flex flex-col justify-between px-4 py-6 bg-red-500 border border-gray-400 text-white">
                                     <div>
                                         <Link to={`/aprender/07-disjoint-set-union-find/${node.frontmatter.slug}`}
-                                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
                                             {node.frontmatter.title}
                                         </Link>
                                         <p className="mb-4">

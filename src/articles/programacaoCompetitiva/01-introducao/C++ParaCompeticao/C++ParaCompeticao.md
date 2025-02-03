@@ -1,5 +1,5 @@
 ---
-title: "02 - cpp para competição"
+title: "02 - C++ para competição"
 description: "descricao"
 slug: "cpp-para-competicao"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
