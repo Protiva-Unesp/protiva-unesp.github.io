@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,14 +13,20 @@ const NavBar = () => {
         <nav className="bg-white shadow-lg">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
-                    {/* Logo */}
-                    <div className="flex-shrink-0">
-                        <Link to="/" className="text-2xl font-bold text-gray-900">
-                            ProTiva
-                        </Link>
+                    <div className="flex items-center">
+                        <StaticImage 
+                            src="../images/icon.png" 
+                            alt="ProTiva Logo" 
+                            height={30} // Set the height to match the text size
+                            className="mr-2" // Add margin to separate the image and text
+                        />
+                        <div className="flex-shrink-0">
+                            <Link to="/" className="text-2xl font-bold text-gray-900">
+                                ProTiva
+                            </Link>
+                        </div>
                     </div>
-
-                  {/* Navigation Links (Desktop) */}
+                    {/* Navigation Links (Desktop) */}
                     <div className="hidden md:flex space-x-8">
                         <Link to="/aprender" className="text-gray-700 hover:text-blue-600">
                             Aprender
@@ -31,7 +38,7 @@ const NavBar = () => {
                             Introdução à Programação
                         </Link>
                         <Link to="/sobre" className="text-gray-700 hover:text-blue-600">
-                            Sobre
+                            Sobre Nós
                         </Link>
                     </div>
 

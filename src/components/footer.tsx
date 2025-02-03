@@ -1,5 +1,6 @@
 import React from 'react';
 import * as styles from './footer.module.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Footer: React.FC = () => {
     return (
@@ -50,6 +51,15 @@ const Footer: React.FC = () => {
                         <li><a href="https://www2.unesp.br/politica-de-uso">Políticas de Uso</a></li>
                     </ul>
                 </div>
+            </div>
+            {/* Updated container for StaticImage */}
+            <div className={styles.imageContainer}>
+                <StaticImage 
+                    src="../images/unesp.svg" 
+                    alt="Unesp Logo" 
+                    width={150}
+                    className={styles.centerImage}
+                />
             </div>
             <div className={styles.footerCopy}>
                 <p>{new Date().getFullYear()} Protiva</p>
