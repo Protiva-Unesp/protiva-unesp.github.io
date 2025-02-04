@@ -2,7 +2,6 @@ import * as React from 'react'
 import Seo from '../components/seo'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutPage = () => {
     return (
@@ -47,6 +46,6 @@ const AboutPage = () => {
     )
 }
 
-export const Head = () => <Seo title="About Me" />
+export const Head = () => <Seo title="Sobre nós" />
 
 export default AboutPage
