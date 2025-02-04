@@ -2,7 +2,7 @@
 title: "01 - Força bruta, recursão e backtracking"
 description: "Tipos de algoritmos"
 slug: "forca-bruta-recursao-backtracking"
-author: "Toki Yoshida, Nick Barbosa Gomes, Xelson Henrique Morelli"
+author: "Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---
 ## Paradigmas de Projeto de Algoritmos
 - Determinados problemas requerem abordagens adequadas em suas resoluções;

@@ -48,6 +48,10 @@ const AboutPage = () => {
                             <div className="text-sm text-gray-500">Desenv. de material didático</div>
                         </div>
                         <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Arissa Yoshida</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
                             <div>Dayna Caroline Domiciano Do Prado</div>
                             <div className="text-sm text-gray-500">Desenv. de material didático</div>
                         </div>
@@ -66,6 +70,14 @@ const AboutPage = () => {
                         <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
                             <div>João Victor Fernandes Souza</div>
                             <div className="text-sm text-gray-500">Desenvolvimento do site</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Luis Henrique Morelli</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Nicolas Barbosa Gomes</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
                         </div>
                         <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
                             <div>Uriel Freitas de Campos</div>
