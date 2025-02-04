@@ -1,8 +1,8 @@
 ---
 title: "Dedução"
 description: "Aprenda sobre o método dedutivo!"
-date: "2021-07-24"
 slug: "deducao"
+author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
 ![img1](img1.png)
 

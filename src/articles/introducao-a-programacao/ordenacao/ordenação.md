@@ -1,8 +1,8 @@
 ---
 title: "Ordenação"
 description: "Aprenda sobre ordenação!"
-date: "2021-07-24"
 slug: "ordenacao"
+author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
 ![img1](img1.png)
 
