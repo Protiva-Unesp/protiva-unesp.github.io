@@ -23,7 +23,7 @@ const BlogPage = ({ data }) => {
                                     <div className="flex flex-col justify-between p-6 bg-blue-800 border border-gray-400 text-white w-full h-full min-h-[250px]">
                                         <div>
                                             <Link
-                                                to={`/aprender/08-grafos/${node.frontmatter.slug}`}
+                                                to={`/provas-anteriores//${node.frontmatter.slug}`}
                                                 className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-400"
                                             >
                                                 {node.frontmatter.title}

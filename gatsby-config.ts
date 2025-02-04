@@ -19,6 +19,19 @@ const config: GatsbyConfig = {
                     `gatsby-remark-static-images`,
                     `gatsby-remark-autolink-headers`,
                     {
+	                resolve: 'gatsby-remark-video',
+	                options: {
+	                	    width: 800,
+	                	    height: 'auto',
+	                	    preload: 'auto',
+	                	    muted: true,
+	                	    autoplay: true,
+	                	    playsinline: true,
+	                	    controls: true,
+	                	    loop: true
+	                    }
+                    },
+                    {
                         resolve: `gatsby-remark-prismjs`,
                         options: {
                             classPrefix: "language-",
@@ -126,6 +139,27 @@ const config: GatsbyConfig = {
             options: {
                 name: `ordenacao`,
                 path: `${__dirname}/src/articles/introducao-a-programacao/ordenacao`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `variaveis`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/variaveis`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `componentes-computador`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/componentes-computador`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `aventura-logica`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/aventura-logica`, 
             },
         },
         {
