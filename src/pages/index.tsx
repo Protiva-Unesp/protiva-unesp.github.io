@@ -4,7 +4,6 @@ import Seo from '../components/seo'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 import { StaticImage } from 'gatsby-plugin-image'
-import { imageContainer } from '../styles/home.module.css'
 
 const IndexPage = () => {
     return (
@@ -20,33 +19,36 @@ const IndexPage = () => {
                     </p>
                 </div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
-                    <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <Link to="/aprender"
-                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
-                            Aprenda
-                        </Link>
-                        <p className="text-gray-700">
-                            Se prepare para competições de programação
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <Link to="/provas-anteriores"
-                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
-                            Provas Anteriores
-                        </Link>
-                        <p className="text-gray-700">
-                            Se prepare com questões respondidas de provas anteriores
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <Link to="/introducao-a-programacao"
-                            className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300">
-                            Introdução à Programação
-                        </Link>
-                        <p className="text-gray-700">
-                            Dê o passo inicial para aprender programação
-                        </p>
-                    </div>
+                    <Link to="/aprender">
+                        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <p className="block mb-4 text-2xl font-black leading-tight">
+                                Aprenda
+                                </p>
+                            <p className="text-gray-700">
+                                Se prepare para competições de programação
+                            </p>
+                        </div>
+                    </Link>
+                    <Link to="/provas-anteriores">
+                        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                                <p className="block mb-4 text-2xl font-black leading-tight">
+                                Provas Anteriores
+                                </p>
+                            <p className="text-gray-700">
+                                Se prepare com questões respondidas de provas anteriores
+                            </p>
+                        </div>
+                    </Link>
+                    <Link to="/introducao-a-programacao">
+                        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p className="block mb-4 text-2xl font-black leading-tight">
+                                Introdução à Programação
+                                </p>
+                            <p className="text-gray-700">
+                                Dê o passo inicial para aprender programação
+                            </p>
+                        </div>
+                    </Link>
                 </div>
                 <div className="mt-20 max-w-6xl w-full p-8 rounded-lg">
                     <h2 className="text-3xl font-bold text-center text-white mb-6">

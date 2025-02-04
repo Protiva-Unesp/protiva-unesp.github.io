@@ -17,22 +17,18 @@ const BlogPage = ({ data }) => {
                     </div>
                     <div className="flex flex-wrap -mx-4">
                         {data.allMarkdownRemark.nodes.map((node, index) => (
-                            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 flex flex-col">
-                                <div className="flex flex-grow h-full">
-                                    <div className="triangle"></div>
-                                    <div className="flex flex-col justify-between p-6 bg-red-500 border border-gray-400 text-white w-full h-full min-h-[250px]">
-                                        <div>
-                                            <Link
-                                                to={`/aprender/08-grafos/${node.frontmatter.slug}`}
-                                                className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-300"
-                                            >
-                                                {node.frontmatter.title}
-                                            </Link>
-                                            <p className="mb-4">
-                                                {node.frontmatter.description}
-                                            </p>
+                            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 flex">
+                                <div className="flex flex-col flex-grow">
+                                    <Link to={`/aprender/08-grafos/${node.frontmatter.slug}`} className="flex flex-col flex-grow">
+                                        <div className="flex flex-col justify-between p-6 bg-red-500 border border-gray-400 text-white flex-grow">
+                                            <div>
+                                                <p className="block mb-4 text-2xl font-black leading-tight">{node.frontmatter.title}</p>
+                                                <p className="mb-4">
+                                                    {node.frontmatter.description}
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
