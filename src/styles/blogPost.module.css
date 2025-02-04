@@ -96,7 +96,7 @@
 .blogContainer pre {
     font-size: 16px;
     position: relative;
-    padding-top: 40px; /* Garante espaço para o botão */
+    padding-top: 40px;
 }
 
 :global(.preWrapper) {
@@ -122,8 +122,55 @@
     opacity: 1;
 }
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 1000px) {
     .blogContainer {
         max-width: 90%;
+        font-size: 10px;
+    }
+
+    .blogContainer h1 {
+        font-size: 20px;
+    }
+
+    .blogContainer h2 {
+        font-size: 16px;
+    }
+
+    .blogContainer h3 {
+        font-size: 14px;
+    }
+
+    .blogContainer h4 {
+        font-size: 12px;
+    }
+
+    .blogContainer pre {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .blogContainer {
+        font-size: 34px;
+    }
+
+    .blogContainer h1 {
+        font-size: 44px;
+    }
+
+    .blogContainer h2 {
+        font-size: 42px;
+    }
+
+    .blogContainer h3 {
+        font-size: 40px;
+    }
+
+    .blogContainer h4 {
+        font-size: 38px;
+    }
+
+    .blogContainer pre {
+        font-size: 34px;
     }
 }

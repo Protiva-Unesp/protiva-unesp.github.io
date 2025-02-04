@@ -38,6 +38,7 @@ author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ![img1](img1.png)
 
 C = amortized constant time
+
 http://www.tantalon.com/pete/cppopt/appendix.htm
 
 ### vector
