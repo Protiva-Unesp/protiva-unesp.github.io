@@ -1,6 +1,6 @@
 ---
 title: "03 - Introdução à Teoria dos Grafos - Parte II"
-description: "descricao"
+description: "Caminho Mínimo"
 date: "2021-07-24"
 slug: "grafos-2"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"

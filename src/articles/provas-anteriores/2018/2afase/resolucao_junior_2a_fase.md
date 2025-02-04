@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 2a Fase"
-description: "descricao"
+description: "Academia de Cachorros, Grafos, Montanha Russa, Números em Bitlândia, Números Triangulares, Pilha de Latas, Quadrado Mágico, Rodoviária, Sequência comum"
 slug: "resolucao-2018-2a-fase"
 author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---

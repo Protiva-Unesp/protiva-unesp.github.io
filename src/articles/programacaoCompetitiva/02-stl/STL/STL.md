@@ -1,6 +1,6 @@
 ---
 title: "01 - Standard Template Library"
-description: "descricao"
+description: "Biblioteca padrão do C++ que inclui diferentes estruturas de dados e algoritmos"
 slug: "stl"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---

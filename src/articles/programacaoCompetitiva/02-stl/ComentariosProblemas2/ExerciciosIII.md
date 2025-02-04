@@ -1,6 +1,6 @@
 ---
 title: "06 - Exercícios 2"
-description: "descricao"
+description: "Grapevine, Firecracker"
 slug: "exercicios-3"
 ---
 ## Resolução dos Exercícios
@@ -62,7 +62,7 @@ ll busca_binaria(ll &l, ll &u)
 }
 ```
 
-• Solução: O(q * n * log(min(n,m)))
+- Solução: O(q * n * log(min(n,m)))
 ``` cpp
 ll u = max(n, m);
 vector<vector<ll>> v (n, vector<ll> (m));
@@ -92,7 +92,11 @@ while(q--){
     }
     cout << tam << "\n";
 }
+```
 
+## E - Firecracker
+
+```cpp
 sort(begin(v), end(v));
 ll tempo = abs(a-b);
 vector<ll> res;

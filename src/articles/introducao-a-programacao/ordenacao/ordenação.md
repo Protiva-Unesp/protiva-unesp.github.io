@@ -1,6 +1,6 @@
 ---
 title: "Ordenação"
-description: "descricao"
+description: "Aprenda sobre ordenação!"
 date: "2021-07-24"
 slug: "ordenacao"
 ---

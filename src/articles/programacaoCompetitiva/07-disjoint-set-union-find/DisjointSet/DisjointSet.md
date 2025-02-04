@@ -1,6 +1,6 @@
 ---
 title: "01 - Disjoint-set (Union-find)"
-description: "descricao"
+description: "Conjuntos disjuntos"
 slug: "disjoint-set-union-find"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Toki Yoshida, Nick Papi Barbosa Gomes, Pseudo-Pedro Henrique Morelli"
 ---

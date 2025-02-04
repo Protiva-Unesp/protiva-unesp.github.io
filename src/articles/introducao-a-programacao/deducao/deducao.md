@@ -1,6 +1,6 @@
 ---
 title: "Dedução"
-description: "descricao"
+description: "Aprenda sobre o método dedutivo!"
 date: "2021-07-24"
 slug: "deducao"
 ---

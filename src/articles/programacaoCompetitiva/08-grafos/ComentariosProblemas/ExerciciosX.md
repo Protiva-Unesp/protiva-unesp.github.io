@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "Find the Treasure, Police Stations, Jane and the Frost Giants"
 slug: "exercicios-10"
 ---
 ## Explicação dos Exercícios de Grafo

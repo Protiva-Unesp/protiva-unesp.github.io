@@ -1,10 +1,10 @@
 ---
 title: "04 - Exercícios 2"
-description: "descricao"
+description: "Deque, Prince and Princess"
 slug: "exercicios-7"
 ---
 ## Resolução dos Exercícios
-## Exercícios A e D
+### Exercícios A e D
 
 ### A - Deque
 - É dada uma sequência com n valores.

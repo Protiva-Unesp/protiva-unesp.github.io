@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 import { StaticImage } from 'gatsby-plugin-image'
+import { imageContainer } from '../styles/home.module.css'
 
 const IndexPage = () => {
     return (
@@ -61,23 +62,23 @@ const IndexPage = () => {
                          em competições como a Olimpíada Brasileira de 
                          Informática, a Maratona SBC de Programação, entre outras.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <StaticImage 
-                            src="../images/icon.png" 
-                            alt="ProTiva Logo" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
-                        <StaticImage
-                            src="../images/dco.png" 
-                            alt="Imagem 2" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
-                        <StaticImage 
-                            src="../images/unesp.svg" 
-                            alt="Imagem 3" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
-                    </div>
+                        <div className={imageContainer}>
+                            <StaticImage 
+                                src="../images/dco.png" 
+                                alt="Departamendo de Computação Logo" 
+                                className="w-full h-auto max-w-full max-h-full object-contain"
+                            />
+                            <StaticImage
+                                src="../images/protiva.png" 
+                                alt="ProTiva Logo" 
+                                className="w-full h-auto max-w-full max-h-full object-contain"
+                            />
+                            <StaticImage 
+                                src="../images/unesp.svg" 
+                                alt="Unesp Logo" 
+                                className="w-full h-auto max-w-full max-h-full object-contain"
+                            />
+                        </div>
                 </div>
             </div>
             <Footer />

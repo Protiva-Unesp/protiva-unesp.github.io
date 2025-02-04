@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "T-Primes, RSA Attack, DDF"
 slug: "exercicios-xiii"
 ---
 ## Resolução Exercícios Teoria dos Números

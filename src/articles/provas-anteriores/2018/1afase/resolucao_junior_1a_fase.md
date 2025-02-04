@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 1a Fase"
-description: "descricao"
+description: "Cerca de Madeira, Corrida Robótica, Quadrados, Sessão de Cinema, Troco, Viagens de Ônibus"
 slug: "resolucao-2018-1a-fase"
 author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---

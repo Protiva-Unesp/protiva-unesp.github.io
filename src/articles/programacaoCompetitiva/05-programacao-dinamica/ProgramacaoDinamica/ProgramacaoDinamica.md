@@ -1,6 +1,6 @@
 ---
 title: "01 - Programação Dinâmica Parte I"
-description: "descricao"
+description: "Algoritmos com 'memória'"
 slug: "programacao-dinamica"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---

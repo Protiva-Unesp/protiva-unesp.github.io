@@ -1,6 +1,6 @@
 ---
 title: "01 - Introdução à Teoria dos Grafos"
-description: "descricao"
+description: "Estruturas matemáticas representadas por nós e vértices"
 slug: "grafos"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2020) 1a Fase - Turno A"
-description: "descricao"
+description: "Cobrindo o tabuleiro, Paciente Zero, Novas Estradas, Meu primeiro computador, Medalhas"
 slug: "resolucao-iniciacao-2020-turno-a"
 author: "Alexandre Selani"
 ---

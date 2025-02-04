@@ -1,11 +1,11 @@
 ---
 title: "02 - Exercicios"
-description: "descricao"
+description: "Buns, Longest Regular Bracket Sequence, Road Optimization"
 date: "2021-07-24"
 slug: "exercicios-6"
 ---
 ## Resolução dos Exercícios
-## Exercícios F, H, I
+### Exercícios F, H, I
 
 ### F - Buns
 - TokiDeBuns, uma chefe de renome, vai fazer vários pãezinhos doces com diferentes recheios;

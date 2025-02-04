@@ -1,6 +1,6 @@
 ---
 title: "01 - Introdução à Análise Combinatória"
-description: "descricao"
+description: "Estudo dos arranjos"
 slug: "analise-combinatoria"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 ---

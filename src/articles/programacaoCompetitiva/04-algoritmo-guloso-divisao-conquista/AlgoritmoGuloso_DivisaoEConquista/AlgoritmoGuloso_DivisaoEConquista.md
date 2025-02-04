@@ -1,6 +1,6 @@
 ---
 title: "01 - Algoritmos Gulosos (Greedy), Divisão e Conquista"
-description: "descricao"
+description: "Tipos de algoritmos"
 slug: "algoritmo-guloso-divisao-conquista"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---

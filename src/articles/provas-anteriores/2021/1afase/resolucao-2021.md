@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2021) 1a Fase"
-description: "descricao"
+description: "Cantoras, Pandemia, Pizza para os campeões"
 slug: "resolucao-2021-1a-fase"
 author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---

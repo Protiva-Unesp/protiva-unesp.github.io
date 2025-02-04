@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "Cthulhu, Journey, Longest Path of a Tree, Three Paths on a Tree"
 slug: "exercicios-8"
 ---
 ## Resolução dos Exercícios

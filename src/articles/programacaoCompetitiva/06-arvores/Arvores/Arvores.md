@@ -1,6 +1,6 @@
 ---
 title: "01 - Árvores"
-description: "descricao"
+description: "Vértices ligados entre si"
 slug: "arvores"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Toki Yoshida, Nick Papi Barbosa Gomes, Pseudo-Pedro Henrique Morelli"
 ---

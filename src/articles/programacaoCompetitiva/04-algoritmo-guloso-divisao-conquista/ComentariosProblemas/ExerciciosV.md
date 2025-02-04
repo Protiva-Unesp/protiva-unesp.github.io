@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "a-Good String, Expedition, Collection Coins, Code for 1"
 slug: "exercicios-5"
 ---
 ## Resolução dos Exercícios

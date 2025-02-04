@@ -1,9 +1,11 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "Ancient Berland Roads, Almost Union-find"
 slug: "exercicios-9"
 ---
 ## Resolução dos Exercícios
+### B e D
+
 ### B - Ancient Berland Roads
 - São dadas N cidades e M rotas bidirecionais
 - Com o passar do tempo existem queries que tiram estradas

@@ -1,6 +1,6 @@
 ---
 title: "03 - STL: associativos, iteratores e algoritmos"
-description: "descricao"
+description: "Estruturas de dados e algoritmos da STL"
 slug: "stl-2"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---

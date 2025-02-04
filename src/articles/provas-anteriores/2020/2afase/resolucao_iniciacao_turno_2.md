@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível 2 (2020) 2a Fase"
-description: "descricao"
+description: "Corrida na Floresta, Família Silva, Grafos, Os times mais queridos, Show de Mágica, Cantinas"
 slug: "resolucao-nivel-2-2020"
 author: "Alexandre Selani"
 ---
@@ -131,7 +131,6 @@ das seguintes alternativas é sempre verdadeira?
 
 Um mágico está preparando um show que vai apresentar na festa de final de ano da escola. Seis mágicas diferentes, A, B, C, D, E e F, serão apresentadas no show. Cada mágica vai ser apresentada uma única vez, e as seguintes condições serão obedecidas:
 
-\begin{itemize}
 - Pelo menos duas mágicas são apresentadas após F ser apresentada, mas antes de D ser apresentada (ou seja, pelo menos duas mágicas são apresentadas entre a apresentação de F e a apresentação de D).
 - Exatamente um mágica é apresentada após A, mas antes de E ser apresentada (ou seja, exatamente um mágica é apresentada entre a apresentação de A e a apresentação de E).
 - B é a primeira, a terceira ou a quinta mágica a ser apresentada.

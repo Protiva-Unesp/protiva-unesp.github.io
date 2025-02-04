@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "Factorials and Powers of Two, Sudoku"
 slug: "exercicios-4"
 ---
 ## Resolução dos Exercícios

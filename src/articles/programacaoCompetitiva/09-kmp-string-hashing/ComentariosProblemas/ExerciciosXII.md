@@ -1,6 +1,6 @@
 ---
 title: "02 - Exercícios"
-description: "descricao"
+description: "Maximum repetition substring, Clock Pictures, Ada and Spring Cleaning, Gattaca"
 slug: "exercicios-xii"
 ---
 ## Resolução Exercícios Strings

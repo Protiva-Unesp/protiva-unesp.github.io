@@ -1,6 +1,6 @@
 ---
 title: "01 - Força bruta, recursão e backtracking"
-description: "descricao"
+description: "Tipos de algoritmos"
 slug: "forca-bruta-recursao-backtracking"
 author: "Toki Yoshida, Nick Barbosa Gomes, Xelson Henrique Morelli"
 ---

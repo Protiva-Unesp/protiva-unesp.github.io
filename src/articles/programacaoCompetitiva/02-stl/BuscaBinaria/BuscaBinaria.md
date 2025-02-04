@@ -1,6 +1,6 @@
 ---
 title: "02 - Busca Binária"
-description: "descricao"
+description: "Algoritmo de busca em vetores baseado em divisão e conquista"
 slug: "busca-binaria"
 ---
 ## Problema da busca

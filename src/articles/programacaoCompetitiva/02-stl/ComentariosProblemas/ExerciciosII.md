@@ -1,6 +1,6 @@
 ---
 title: "05 - Exercícios"
-description: "descricao"
+description: "Larger Score, Escalator, Brackets Balanceados"
 slug: "exercicios-2"
 ---
 ## Resolução dos Exercícios
@@ -47,6 +47,65 @@ Ex:
 - Porque ela vai guardar os elementos de índice mais alto, ou seja, os mais próximos à sua posição atual.  
 - Observe que como os elementos estão ordenados, eu vou achar somente elementos maiores do que aqueles que eu já coloquei na priority, e isso traz a solução ótima do exercício.
 
+```cpp
+#include <bits/stdc++.h>
+
+#define MAX 1e18
+#define MOD
+#define INF
+
+using namespace std;
+
+typedef long long ll;
+typedef pair<ll, ll> ii;
+typedef tuple<ll, ll, ll> iii;
+typedef vector<ll> vi;
+typedef vector<ii> vii;
+typedef vector<iii> viii;
+
+bool cmp(const ii &a, const ii &b){
+    if(a.first == b.first)
+        return a.second > b.second;
+
+    return a.first < b.first;
+}
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    ll n, k;
+    cin >> n >> k;
+
+    vii arr(n);
+
+    for(ll i = 0; i < n; i++){
+        cin >> arr[i].first;
+        arr[i].second = i;
+    }
+
+    sort(begin(arr), end(arr), cmp);
+
+    ll mi = MAX;
+    priority_queue<ll> pq;
+        
+    for(int i = 0; i < n; i++){
+        int idx = arr[i].second;
+
+        if(idx >= k){
+            if(!pq.empty())
+                mi = min(mi, arr[i].second - pq.top());
+        }
+        else
+            pq.push(idx);
+    }
+
+    cout << (mi == MAX ? -1 : mi) << "\n";
+
+    return 0;
+}
+```
+
 ### Escalator
 - Descrição: uma escada rolante permite o deslocamento em ambas suas direções. O percurso para ir de uma ponta da escada até a outra leva 10 segundos, isto é, se uma pessoa entrar no tempo T, ela deixa a escada no tempo T + 10. As seguintes regras se aplicam:  
 - a escada está inicialmente parada;  
@@ -76,6 +135,63 @@ Ex:
 
 - O algoritmo se repete até que ambas as filas estejam vazias e tenhamos simulado todas as viagens de cada papi;  
 - Ao final das trajetórias, basta somar 10 ao T obtido, contabilizando a última viagem feita pelo último papi.
+
+```cpp
+#include <bits/stdc++.h>
+ 
+#define MAX
+#define MOD
+ 
+using namespace std;
+ 
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+ 
+void setIO(string s){
+    if (!s.empty()){
+        freopen((s + ".in").c_str(), "r", stdin);
+        freopen((s + ".out").c_str(), "w", stdout);
+    }
+}
+ 
+int main(){
+    setIO("");
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+ 
+    vector<queue<int>> q (2);
+    int n, time, ans = 0;
+	bool side, trip;
+    cin >> n >> time >> side;
+    q[side].push(time);
+	trip = side;
+ 
+    for(int i = 1; i < n; ++i){
+        cin >> time >> side;
+        q[side].push(time);
+    } 
+ 
+    while(!q[0].empty() || !q[1].empty()){
+		if(q[trip].empty() || (q[trip].front() > ans + 10 && 
+			(!q[!trip].empty() && q[!trip].front() < q[trip].front()))){
+			ans += 10;
+			trip = !trip;
+		}
+ 
+		if(q[trip].front() > ans)
+			ans = q[trip].front();
+ 
+		q[trip].pop();
+	}
+ 
+    cout << ans + 10 << "\n";
+ 
+    return 0;
+}
+```
 
 ### Brackets balanceados
 - Caracteres delimitadores como (, ), {, }, [ e ] podem ser chamados de brackets.  
@@ -108,6 +224,70 @@ Ex:
 
 - Confira na GIF abaixo:
 ![gif2](gif2.gif)
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+#define fast_io ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+
+int main(){
+    fast_io
+    ll t;
+    cin >> t;
+    while(t--){
+        ll n; cin >> n;
+        string s; cin >> s;
+        ll tam = s.size();
+
+        ll cont = 0;
+        int i = 0;
+        ll res = tam;
+        while(i <= tam-1){
+            bool f = false;
+            stack <char> st;
+            char c = s[i];
+            st.push(s[i]);
+            for(int j = i+1; j < tam; j++){
+                bool flag = false;
+                if(s[j] == c){
+                    int ini = i;
+                    bool at = true; 
+                    int fim = j;
+                    while(ini <= fim){
+                        if(s[ini++] != s[fim--]){
+                            at = false;
+                            break;
+                        }
+                    }
+                    if(at == true)flag = true;
+
+                }
+                if(!st.empty()){
+                    ll o = st.top();
+                    if(o == '(' && s[j] == ')')st.pop();
+                    else st.push(s[j]);
+                }
+                else st.push(s[j]);
+
+                if(flag || st.empty()){
+                    res -= (j - i + 1);
+                    cont++;
+                    i = j+1;
+                    f = true;
+                    break;
+                }
+                
+            }
+            if(!f)break; 
+        }
+        cout << cont << " " << res << "\n";
+
+    }
+    
+}
+```
 
 #### Sugestões de exercícios
 

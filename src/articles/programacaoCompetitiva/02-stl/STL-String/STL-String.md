@@ -1,6 +1,6 @@
 ---
 title: "04 - STL: String"
-description: "descricao"
+description: "Manipulação de String utilizando a STL"
 slug: "stl-string"
 author: "Rene Pegoraro, Pedro Henrique Paiola, Wilson M Yonezawa"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "04 - Complexidade de Algoritmos"
-description: "descricao"
+description: "Tipos de algoritmos e sua eficiência"
 slug: "complexidade-algoritmos"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M. Yonezawa"
 ---

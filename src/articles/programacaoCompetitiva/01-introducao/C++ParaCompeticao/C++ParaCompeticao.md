@@ -1,6 +1,6 @@
 ---
 title: "03 - C++ para competição"
-description: "descricao"
+description: "Leitura e escrita de dados em competições de programação, entrada/saída padrão, formatos de problemas e situações comuns"
 slug: "cpp-para-competicao"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "01 - Strings: KMP e String Hashing"
-description: "descricao"
+description: "Problemas utilizando Strings"
 slug: "kmp-string-hashing"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---

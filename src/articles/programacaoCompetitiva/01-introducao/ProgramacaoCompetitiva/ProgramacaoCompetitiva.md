@@ -1,6 +1,6 @@
 ---
 title: "01 - Competições de Programação"
-description: "descricao"
+description: "Saiba mais sobre o mundo da Programação Competitiva!"
 slug: "competicoes-de-programacao"
 ---
 - Competições de Programação são provas com duração pré-determinada onde os participantes são desafiados a resolver uma série de problemas, usando linguagens de programação específicas.

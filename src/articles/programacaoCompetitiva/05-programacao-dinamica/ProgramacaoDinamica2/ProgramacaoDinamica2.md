@@ -1,6 +1,6 @@
 ---
 title: "02 - Programação Dinâmica Parte II"
-description: "descricao"
+description: "Continuação"
 slug: "programacao-dinamica-2"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---

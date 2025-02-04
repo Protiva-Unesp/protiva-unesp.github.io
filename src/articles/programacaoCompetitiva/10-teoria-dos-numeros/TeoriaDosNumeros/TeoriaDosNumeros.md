@@ -1,6 +1,6 @@
 ---
 title: "01 - Introdução à Teoria dos Números"
-description: "descricao"
+description: "Propriedades dos números"
 slug: "teoria-dos-numeros"
 author: "Pedro Henrique Paiola, Rene Pegoraro, Wilson M Yonezawa, Arissa Yoshida, Nicolas Barbosa Gomes, Luis Henrique Morelli"
 ---

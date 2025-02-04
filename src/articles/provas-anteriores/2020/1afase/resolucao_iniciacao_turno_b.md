@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2020) 1a Fase - Turno B"
-description: "descricao"
+description: "Coleção de Selos, Jantar, Não-amigos independentes, Flores, Rua do Parque"
 slug: "resolucao-iniciacao-2020-turno-b"
 author: "Alexandre Selani"
 ---

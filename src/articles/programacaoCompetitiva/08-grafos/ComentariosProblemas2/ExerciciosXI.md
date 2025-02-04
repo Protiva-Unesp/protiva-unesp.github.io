@@ -1,10 +1,10 @@
 ---
 title: "04 - Exercícios 2"
-description: "descricao"
+description: "Roads of NITT, Spanning Tree Fraction, Airports"
 slug: "exercicios-xi"
 ---
 ## Explicação dos Exercícios de Grafo
-### Exercícios B, D, E e F
+### Exercícios B, E e F
 
 ### B - Roads of NITT
 - Existem N hotels conectados entre si por N - 1 arestas.
