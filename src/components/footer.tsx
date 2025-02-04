@@ -55,6 +55,18 @@ const Footer: React.FC = () => {
             {/* Updated container for StaticImage */}
             <div className={styles.imageContainer}>
                 <StaticImage 
+                    src="../images/dco.png" 
+                    alt="Unesp Logo" 
+                    width={150}
+                    className={styles.centerImage}
+                />
+                <StaticImage 
+                    src="../images/protiva.png" 
+                    alt="Unesp Logo" 
+                    width={150}
+                    className={styles.centerImage}
+                />
+                <StaticImage 
                     src="../images/unesp.svg" 
                     alt="Unesp Logo" 
                     width={150}

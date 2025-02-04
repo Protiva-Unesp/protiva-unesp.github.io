@@ -52,33 +52,26 @@ const IndexPage = () => {
                     <h2 className="text-3xl font-bold text-center text-white mb-6">
                         Sobre a ProTiva 
                     </h2>
-                    <p className="text-lg text-white text-center mb-8">
-                         Projeto de extensão da Unesp Bauru que tem como 
-                         objetivo disponibilizar material didático produzido 
-                         por alunos dos cursos de Ciência da Computação e 
-                         Sistemas de Informação, em conjunto com professores 
-                         do Departamento de Computação, sobre Programação 
-                         Competitiva. O conteúdo é voltado para o treinamento 
-                         em competições como a Olimpíada Brasileira de 
-                         Informática, a Maratona SBC de Programação, entre outras.
-                    </p>
-                        <div className={imageContainer}>
-                            <StaticImage 
-                                src="../images/dco.png" 
-                                alt="Departamendo de Computação Logo" 
-                                className="w-full h-auto max-w-full max-h-full object-contain"
-                            />
+                    <div className="flex flex-row items-start">
+                        <div className="flex-shrink-0 mr-8" style={{ width: '200px' }}> 
                             <StaticImage
-                                src="../images/protiva.png" 
+                                src="../images/protiva3.png" 
                                 alt="ProTiva Logo" 
-                                className="w-full h-auto max-w-full max-h-full object-contain"
-                            />
-                            <StaticImage 
-                                src="../images/unesp.svg" 
-                                alt="Unesp Logo" 
-                                className="w-full h-auto max-w-full max-h-full object-contain"
+                                className="w-full h-auto" 
                             />
                         </div>
+                        <p className="text-lg text-white text-justify">
+                            Projeto de extensão da Unesp Bauru que tem como 
+                            objetivo disponibilizar material didático produzido 
+                            por alunos dos cursos de Ciência da Computação e 
+                            Sistemas de Informação, em conjunto com professores 
+                            do Departamento de Computação da Faculdade de 
+                            Ciências, sobre Programação Competitiva. 
+                            O conteúdo é voltado para o treinamento 
+                            em competições como a Olimpíada Brasileira de 
+                            Informática, a Maratona SBC de Programação, entre outras.
+                        </p>
+                    </div>
                 </div>
             </div>
             <Footer />

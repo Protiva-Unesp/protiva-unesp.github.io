@@ -1,46 +1,90 @@
 import * as React from 'react'
 import Seo from '../components/seo'
 import NavBar from '../components/navbar'
+import { aboutContainer } from '../styles/about.module.css'
 import Footer from '../components/footer'
 
 const AboutPage = () => {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen bg-gradient-to-br from-blue-700 to-blue-400 flex flex-col items-center justify-center p-6">
-                <div className="mt-20 max-w-6xl w-full p-8 rounded-lg">
-                    <h2 className="text-3xl font-bold text-center text-white mb-6">
-                        Sobre a ProTiva 
-                    </h2>
-                    <p className="text-lg text-white text-center mb-8">
-                        Projeto de extensão da Unesp Bauru que tem como objetivo
-                        disponibilizar material didático produzido por alunos e
-                        professores sobre Programação Competitiva, com 
-                        conteúdos voltados para treinamento para competições 
-                        como a Olimpíada Brasileira de Informática, a 
-                        Maratona SBC de Programação, entre outras.                      
-                    </p>
-                    {/*
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <StaticImage 
-                            src="../images/icon.png" 
-                            alt="ProTiva Logo" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
-                        <StaticImage
-                            src="../images/dco.png" 
-                            alt="Imagem 2" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
-                        <StaticImage 
-                            src="../images/unesp.svg" 
-                            alt="Imagem 3" 
-                            className="rounded-lg shadow-md w-full h-48 object-cover"
-                        />
+                <div className={aboutContainer}>
+                    <h1>Sobre nós</h1>
+                    <h2>Coordenadores</h2>
+                    <div className="flex flex-wrap gap-4">
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Profa. Roberta Spolon</div>
+                            <div className="text-sm text-gray-500">Coordenadora</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Profa. Andrea Carla Goncalves Vianna</div>
+                            <div className="text-sm text-gray-500">Coordenadora</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Prof. Higor Amario de Souza</div>
+                            <div className="text-sm text-gray-500">Coordenador</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Prof. Pedro Henrique Paiola</div>
+                            <div className="text-sm text-gray-500">Coordenador e desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Profa. Renata Spolon Lobato</div>
+                            <div className="text-sm text-gray-500">Coordenadora</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Prof. Rene Pegoraro</div>
+                            <div className="text-sm text-gray-500">Coordenador e desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Prof. Wilson Massashiro Yonezawa</div>
+                            <div className="text-sm text-gray-500">Coordenador e desenv. de material didático</div>
+                        </div>
                     </div>
-                    */}
+                    <h2>Colaboradores</h2>
+                    <div className="flex flex-wrap gap-4">
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Alexandre Selani</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Dayna Caroline Domiciano Do Prado</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Eduardo Rodrigues Teixeira</div>
+                            <div className="text-sm text-gray-500">Desenv. do site e organização do material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Gabriel Rasi Ferre</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Jairo Kapta Berniger Litman</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>João Victor Fernandes Souza</div>
+                            <div className="text-sm text-gray-500">Desenvolvimento do site</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Uriel Freitas de Campos</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Vinicius Bolandini Lima</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                        <div className="flex-1 min-w-[calc(25%-1rem)] text-center p-4">
+                            <div>Yasmin Rodrigues Sobrinho</div>
+                            <div className="text-sm text-gray-500">Desenv. de material didático</div>
+                        </div>
+                    </div>
+                    <h2>Programação Competitiva da Unesp na mídia</h2>
+                    <a href="https://www.fc.unesp.br/#!/noticia/1241/maratona-de-programacao-garantiu-o-segundo-lugar-ao-bcc-da-fc">- Maratona de Programação garantiu o segundo lugar ao BCC da FC (05/09/2024)</a>
+                    <a href="https://www.fc.unesp.br/#!/noticia/630/alunos-da-fc-participam-da-xxiv-maratona-sbc-de-programacao/">- Alunos da FC participam da XXIV Maratona SBC de Programação (05/12/2019)</a>
+                    <a href="https://www.fc.unesp.br/?ar=a%5D6%5D%23w..#!/noticia/262/bauru-vence-maratona-de-programacao-2016/">- Bauru vence maratona de programação 2016 (12/09/2016)</a>
                 </div>
-            </div>
             <Footer />
         </>
     )

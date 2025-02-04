@@ -7,6 +7,7 @@
     padding: 20px;
     gap: 80px;
     background-color: white;
+    border-radius: 30px;
 }
 
 .image-container img {

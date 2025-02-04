@@ -18,6 +18,7 @@ const config: GatsbyConfig = {
                     `gatsby-remark-images`,
                     `gatsby-remark-static-images`,
                     `gatsby-remark-autolink-headers`,
+                    `gatsby-remark-responsive-iframe`,
                     {
 	                resolve: 'gatsby-remark-video',
 	                options: {
@@ -153,6 +154,13 @@ const config: GatsbyConfig = {
             options: {
                 name: `componentes-computador`,
                 path: `${__dirname}/src/articles/introducao-a-programacao/componentes-computador`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `scratch-cofre`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/scratch-cofre`, 
             },
         },
         {

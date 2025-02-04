@@ -17,7 +17,7 @@ const NavBar = () => {
                         {/* Wrap StaticImage in a Link */}
                         <Link to="/">
                             <StaticImage 
-                                src="../images/icon.png" 
+                                src="../images/protiva-nav.png" 
                                 alt="ProTiva Logo" 
                                 height={30} // Set the height to match the text size
                                 className="mr-2 cursor-pointer" // Add margin and cursor pointer
