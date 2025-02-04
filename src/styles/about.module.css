@@ -98,3 +98,10 @@
     position: relative;
     padding-top: 40px; /* Garante espaço para o botão */
 }
+
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .aboutContainer{
+        max-width: 90%;
+    }
+}

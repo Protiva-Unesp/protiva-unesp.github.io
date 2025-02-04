@@ -121,3 +121,9 @@
 :global(.copyButton:hover) {
     opacity: 1;
 }
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .blogContainer {
+        max-width: 90%;
+    }
+}
