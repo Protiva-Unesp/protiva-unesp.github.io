@@ -10,9 +10,8 @@ const AboutPage = () => {
             <NavBar />
                 <div className={aboutContainer}>
                     <h1>Sobre nós</h1>
-                    <h2>Coordenadores</h2>
+                    <h2 className="mt-8 mb-4 text-2xl font-bold text-center">Coordenadores</h2>
                     <div className="flex flex-wrap gap-4">
-                        {/* Coordenadores */}
                         <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] text-center p-4">
                             <div>Profa. Roberta Spolon</div>
                             <div className="text-sm text-gray-500">Coordenadora</div>
@@ -42,11 +41,8 @@ const AboutPage = () => {
                             <div className="text-sm text-gray-500">Coordenador e desenv. de material didático</div>
                         </div>
                     </div>
-                    
                     <h2 className="mt-8 mb-4 text-2xl font-bold text-center">Colaboradores</h2>
-                    
                     <div className="flex flex-wrap gap-4">
-                        {/* Colaboradores */}
                         <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] text-center p-4">
                             <div>Alexandre Selani</div>
                             <div className="text-sm text-gray-500">Desenv. de material didático</div>
