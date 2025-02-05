@@ -74,6 +74,41 @@ const IndexPage = () => {
                                 Informática, a Maratona SBC de Programação, entre outras.
                             </p>
                         </div>
+                        <div className="items-center justify-center mt-16">
+                            <p className="text-center text-white mb-6 text-2xl">
+                                Acesso nosso canal no Youtube para ter acesso às video-aulas.
+                                Aproveite e nos siga nas redes sociais
+                            </p>
+                            <div className="flex space-x-12 items-center justify-center ">
+                                <a href="https://www.youtube.com/@protiva_unesp" target="_blank">
+                                    <div className="w-16 h-16">
+                                        <StaticImage
+                                            src="../images/youtube.png"
+                                            alt="youtube logo"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
+                                <a href="https://www.instagram.com/protiva_unesp/" target="_blank">
+                                    <div className="w-16 h-16">
+                                        <StaticImage
+                                            src="../images/instagram.svg"
+                                            alt="instagram logo"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
+                                <a href="hhttps://www.facebook.com/protivaunesp" target="_blank">
+                                    <div className="w-16 h-16">
+                                        <StaticImage
+                                            src="../images/facebook.svg"
+                                            alt="facebook logo"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <Footer />
