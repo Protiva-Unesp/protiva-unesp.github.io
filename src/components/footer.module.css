@@ -107,14 +107,9 @@ footer a:hover {
 
     .imageContainer {
         width: 70%;
+        gap: 50px;
     }
-
-    .imageContainer img {
-        width: 70%;
-    }
-
 }
-
 
 @media (min-width: 1920px) {
     .imageContainer {
