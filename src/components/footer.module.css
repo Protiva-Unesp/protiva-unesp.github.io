@@ -105,8 +105,12 @@ footer a:hover {
         font-size: 24px;
     }
 
+    .imageContainer {
+        width: 70%;
+    }
+
     .imageContainer img {
-        width: 80%;
+        width: 70%;
     }
 
 }
