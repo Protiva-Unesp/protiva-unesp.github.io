@@ -98,7 +98,7 @@ const IndexPage = () => {
                                         />
                                     </div>
                                 </a>
-                                <a href="hhttps://www.facebook.com/protivaunesp" target="_blank">
+                                <a href="https://www.facebook.com/protivaunesp" target="_blank">
                                     <div className="w-16 h-16">
                                         <StaticImage
                                             src="../images/facebook.svg"
