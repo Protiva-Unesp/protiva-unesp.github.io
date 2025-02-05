@@ -75,12 +75,17 @@ footer a:hover {
     width: 50%;
 }
 
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
 .centerImage {
     display: block;
     margin: 0 auto; 
 }
 
-@media (min-width: 320px) and (max-width: 900px) {
+@media (min-width: 100px) and (max-width: 900px) {
     .footer-row {
         flex-direction: column;
         align-items: left;
@@ -99,62 +104,16 @@ footer a:hover {
     .footer-copy p {
         font-size: 24px;
     }
-}
 
-/*
-@media (max-width: 768px) {
-    .footer img {
-        width: 40%;
+    .imageContainer img {
+        width: 80%;
     }
 
-    .footer p {
-        font-size: 12px;
-        margin-top: 15px;
-    }
-
-    .footer-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-column {
-        min-width: 150px;
-        padding: 5px;
-    }
-
-    .socialRow {
-        justify-content: center;
-    }
-
-    .socialRow img {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 
-@media (min-width: 1440px) {
-    .footer img {
+@media (min-width: 1920px) {
+    .imageContainer {
         width: 20%;
     }
-
-    .footer p {
-        font-size: 16px;
-        margin-top: 25px;
-    }
-
-    .footer-row {
-        justify-content: space-between;
-    }
-
-    .footer-column {
-        min-width: 180px;
-        padding: 15px;
-    }
-
-    .socialRow img {
-        width: 50px;
-        height: 50px;
-    }
 }
-*/

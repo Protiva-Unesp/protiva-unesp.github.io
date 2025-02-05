@@ -61,12 +61,6 @@ const Footer: React.FC = () => {
                     className={styles.centerImage}
                 />
                 <StaticImage 
-                    src="../images/protiva.png" 
-                    alt="Unesp Logo" 
-                    width={150}
-                    className={styles.centerImage}
-                />
-                <StaticImage 
                     src="../images/unesp.svg" 
                     alt="Unesp Logo" 
                     width={150}
