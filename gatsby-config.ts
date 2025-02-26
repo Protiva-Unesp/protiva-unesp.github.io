@@ -159,6 +159,34 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
+                name: `condicionais`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/estruturas-condicionais`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `repeticao`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/estruturas-repeticao`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `leitura-impressao`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/leitura-impressao`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `operadores-logicos`,
+                path: `${__dirname}/src/articles/introducao-a-programacao/operadores-logicos`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
                 name: `scratch-cofre`,
                 path: `${__dirname}/src/articles/introducao-a-programacao/scratch-cofre`, 
             },

@@ -63,7 +63,7 @@ const IndexPage = () => {
                                 />
                             </div>
                             <p className="text-lg text-white text-justify">
-                                Projeto de extensão da Unesp Bauru que tem como
+                                Projeto de extensão da UNESP - Bauru que tem como
                                 objetivo disponibilizar material didático produzido
                                 por alunos dos cursos de Ciência da Computação e
                                 Sistemas de Informação, em conjunto com professores
