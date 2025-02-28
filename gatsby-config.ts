@@ -233,6 +233,13 @@ const config: GatsbyConfig = {
                 path: `${__dirname}/src/articles/provas-anteriores/2021/1afase`, 
             },
         },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2023-2a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2023/2afase`, 
+            },
+        },
     ],
 }
 
