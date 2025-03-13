@@ -194,13 +194,6 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
-                name: `aventura-logica`,
-                path: `${__dirname}/src/articles/introducao-a-programacao/aventura-logica`, 
-            },
-        },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
                 name: `resolucao-2018-1a-fase`,
                 path: `${__dirname}/src/articles/provas-anteriores/2018/1afase`, 
             },
