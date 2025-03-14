@@ -107,6 +107,15 @@ const IndexPage = () => {
                                         />
                                     </div>
                                 </a>
+                                <a href="https://github.com/pedropaiola/unesp-progcomp" target="_blank">
+                                    <div className="w-16 h-16">
+                                        <StaticImage
+                                            src="../images/github-mark-white.svg"
+                                            alt="facebook logo"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
