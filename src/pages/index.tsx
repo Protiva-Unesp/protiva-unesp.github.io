@@ -8,6 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
     return (
         <>
+        <meta name="google-site-verification" content="tM0N0sXv94lwFqiW0ewv1nLCbL5wQOuU8bZ7YlC70v4" />
             <NavBar/>
             <div className="min-h-screen bg-gradient-to-br from-blue-700 to-blue-400 flex flex-col items-center justify-center p-6">
                     <div className="text-center max-w-2xl mt-12 pt-12">
