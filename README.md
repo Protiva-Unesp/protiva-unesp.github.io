@@ -36,7 +36,7 @@ edite o "index.tsx" na raiz do diretório escolhido e adicione o novo card que r
 
 Acesso o diretório (ou crie um novo) onde está o novo arquivo .md
 
-Edite a linha 22, ajeitando a rota correta dentro da tag "<Link to>"
+Edite a linha 22, ajeitando a rota correta dentro da tag "Link to"
 
 Edite a query do GraphQL encontrada a partir da linha 43 do arquivo e coloque o regex para o diretório onde está o arquivo .md:
 
