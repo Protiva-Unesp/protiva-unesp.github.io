@@ -1,5 +1,5 @@
 # Protiva - Programação Competitiva
-#### ATENÇÃO: UTILIZE A VERSÃO DO NODE 20.18.1, UMA VERSÂO MAIS RODA GERA PROBLEMAS
+#### ATENÇÃO: UTILIZE A VERSÃO DO NODE 20.18.1, UMA VERSÂO MAIS NOVA GERA PROBLEMAS
 
 ## Instalando 
 Para instalar o projeto:
