@@ -43,6 +43,9 @@ const NavBar = () => {
                         <Link to="/estruturas-dados" className="text-gray-700 hover:text-blue-600">
                             Estruturas de dados
                         </Link>
+                        <Link to="https://dayna-caroline.github.io/OBIQuiz_ProtivaUnespBauru/" className="text-gray-700 hover:text-blue-600">
+                            Quiz
+                        </Link>
                         <Link to="/sobre" className="text-gray-700 hover:text-blue-600">
                             Sobre Nós
                         </Link>
