@@ -369,3 +369,124 @@ function solve () {
 
 solve();
 ```
+
+---
+title: "OBI - Modalidade Programação (Nível 1) - Fase 1 - 2018"
+description: "Escadinha (Contagem de Progressões Aritméticas Máximas)"
+slug: "obi-2018-fase1-programacao-nivel1-escadinha"
+author: "Dayna Prado"
+---
+### Escadinha
+
+Dizemos que uma sequência de números é uma **Escadinha** se a diferença entre números consecutivos é sempre a mesma (uma Progressão Aritmética - PA). Neste problema, o objetivo é determinar quantas escadinhas existem em uma sequência maior, considerando sempre as **escadinhas mais longas possíveis**.
+
+**Exemplo:**
+Sequência: `1, 1, 1, 3, 5, 4, 8, 12`
+1.  `1, 1, 1` (Diferença 0)
+2.  `1, 3, 5` (Diferença 2)
+3.  `5, 4` (Diferença -1)
+4.  `4, 8, 12` (Diferença 4)
+
+Total: **4** escadinhas.
+
+**Entrada**
+
+A primeira linha contém um inteiro $N$ indicando o tamanho da sequência. A segunda linha contém $N$ inteiros definindo a sequência.
+
+**Saída**
+
+Imprima uma linha contendo um inteiro representando quantas escadinhas existem.
+
+**Restrições**
+
+* $1 \leq N \leq 1000$
+* Valores entre $-10^6$ e $10^6$.
+
+**Exemplos**
+
+| Entrada | Saída |
+| :--- | :--- |
+| 8<br>1 1 1 3 5 4 8 12 | 4 |
+| 1<br>112 | 1 |
+| 5<br>11 -106 -223 -340 -457 | 1 |
+
+---
+### Solução
+
+Para resolver o problema de forma eficiente ($O(N)$), basta percorrer a sequência a partir do terceiro elemento, verificando se a diferença entre o número atual e o anterior mudou em relação à **diferença que define a escadinha atual**.
+
+#### Algoritmo (Percurso Único)
+
+1.  **Casos Base:** Se $N < 3$, a resposta é sempre 1, pois qualquer sequência de 1 ou 2 números é trivialmente uma escadinha (a diferença é zero ou é determinada por um único par).
+2.  **Inicialização:** Inicializamos o contador de escadinhas (`count`) com 1, pois a primeira escadinha (que inclui os dois primeiros elementos) sempre existe.
+3.  **Diferença Base:** Calculamos a diferença inicial que define a primeira escadinha: $D_{\text{atual}} = V[1] - V[0]$.
+4.  **Iteração:** Percorremos o vetor a partir do índice $i = 2$ (o terceiro elemento) até $N-1$:
+    * Calculamos a nova diferença: $D_{\text{nova}} = V[i] - V[i-1]$.
+    * **Se $D_{\text{nova}} \neq D_{\text{atual}}$:** A escadinha anterior terminou e uma nova começou no elemento $V[i-1]$. Incrementamos o contador (`count++`) e atualizamos a diferença base: $D_{\text{atual}} = D_{\text{nova}}$.
+    * **Se $D_{\text{nova}} = D_{\text{atual}}$:** A escadinha atual continua.
+
+
+
+**Código em JavaScript (com Fast I/O):**
+
+```javascript
+const fs = require('fs');
+
+// --- FAST I/O para leitura eficiente de grandes inputs (incluindo negativos) ---
+const buffer = fs.readFileSync(0);
+let bufferIdx = 0;
+
+function readInt() {
+    let res = 0, sign = 1;
+    while (bufferIdx < buffer.length && buffer[bufferIdx] <= 32) bufferIdx++;
+    if (bufferIdx >= buffer.length) return null;
+
+    if (buffer[bufferIdx] === 45) { // Se for negativo '-' (ASCII 45)
+        sign = -1;
+        bufferIdx++;
+    }
+
+    while (bufferIdx < buffer.length && buffer[bufferIdx] > 32) {
+        res = res * 10 + (buffer[bufferIdx++] - 48);
+    }
+    return res * sign;
+}
+
+function solve() {
+    const N = readInt();
+    if (N === null) return;
+
+    // Le a sequencia para um array
+    const seq = new Int32Array(N);
+    for (let i = 0; i < N; i++) {
+        seq[i] = readInt();
+    }
+
+    // Casos base: N=1 ou N=2 sao sempre 1 escadinha
+    if (N < 3) {
+        console.log(1);
+        return;
+    }
+
+    let count = 1;
+    // Diferenca da primeira escadinha (entre o segundo e o primeiro elemento)
+    let currentDiff = seq[1] - seq[0];
+
+    // Comecamos a checar do terceiro elemento (indice 2)
+    for (let i = 2; i < N; i++) {
+        const newDiff = seq[i] - seq[i - 1];
+
+        if (newDiff !== currentDiff) {
+            // A sequencia aritmetica quebrou, uma nova escadinha comeca.
+            count++;
+            // Atualiza a diferenca base para a nova escadinha.
+            currentDiff = newDiff;
+        }
+        // Se newDiff === currentDiff, a escadinha continua.
+    }
+
+    console.log(count);
+}
+
+solve();
+```

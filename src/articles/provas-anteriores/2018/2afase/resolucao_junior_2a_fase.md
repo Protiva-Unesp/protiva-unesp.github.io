@@ -342,3 +342,135 @@ C) 30
 D) 31
 
 E) 32
+
+
+---
+title: "OBI - Modalidade Programação (Nível 1) - Fase 2 - 2018"
+description: "Cápsulas (Busca Binária na Resposta)"
+slug: "obi-2018-fase2-programacao-nivel1-capsulas"
+author: "Dayna Prado"
+---
+### Cápsulas
+
+Fan Chi'ih possui $N$ cápsulas mágicas que produzem moedas de ouro. Cada cápsula $i$ tem um ciclo de produção $C_i$. Isso significa que a cada $C_i$ dias, ela produz uma moeda.
+
+Fan Chi'ih quer acumular pelo menos $F$ moedas. Ele ativa todas as cápsulas simultaneamente no dia 0. Você deve determinar o **número mínimo de dias** necessário para atingir ou superar a meta $F$.
+
+**Exemplo de Cálculo:**
+Se temos ciclos 3, 7 e 2:
+* **Em $D$ dias**, uma cápsula de ciclo $C_i$ produz: $\lfloor \frac{D}{C_i} \rfloor$ moedas.
+* Em **14 dias**: $\lfloor \frac{14}{3} \rfloor + \lfloor \frac{14}{7} \rfloor + \lfloor \frac{14}{2} \rfloor = 4 + 2 + 7 = 13$ moedas.
+
+**Entrada**
+
+A primeira linha contém dois inteiros $N$ (número de cápsulas) e $F$ (meta de moedas). A segunda linha contém $N$ inteiros $C_i$ representando o ciclo de cada cápsula.
+
+**Saída**
+
+Um único inteiro representando o número mínimo de dias.
+
+**Restrições**
+
+* $1 \leq N \leq 10^5$
+* $1 \leq F \leq 10^9$
+* $1 \leq C_i \leq 10^6$
+* A resposta é garantida ser menor ou igual a $10^8$.
+
+**Exemplos**
+
+| Entrada | Saída |
+| :--- | :--- |
+| 3 12<br>3 7 2 | 14 |
+| 10 100<br>17 13 20 10 12 16 10 13 13 10 | 130 |
+
+---
+### Solução
+
+A simulação dia a dia até atingir a meta $F$ é inviável, pois a complexidade seria $O(\text{Dias} \times N)$, podendo chegar a $10^8 \times 10^5$, excedendo o limite de tempo.
+
+A solução eficiente reside na **Busca Binária na Resposta**.
+
+#### Busca Binária na Resposta
+
+O problema busca um valor mínimo dentro de um intervalo conhecido (1 a $10^8$). A chave é que a função de verificação (a quantidade total de moedas produzidas) é **monotônica**: se $D$ dias são suficientes, qualquer número de dias maior que $D$ também será suficiente.
+
+1.  **Intervalo de Busca:** Definimos o intervalo de busca, $\text{low} = 1$ e $\text{high} = 10^8$.
+2.  **Função de Verificação (Check):** Para um determinado número de dias $D$ (o valor `mid` da busca binária), calculamos rapidamente o total de moedas produzidas.
+    $$\text{Total Moedas}(D) = \sum_{i=1}^{N} \lfloor \frac{D}{C_i} \rfloor$$
+3.  **Ajuste do Intervalo:**
+    * **Se $\text{Total Moedas}(D) \geq F$:** Encontramos uma resposta possível (D dias são suficientes). Tentamos um valor menor para encontrar o mínimo: $\text{ans} = D$, $\text{high} = D - 1$.
+    * **Se $\text{Total Moedas}(D) < F$:** Precisamos de mais dias. Buscamos na metade superior: $\text{low} = D + 1$.
+
+A complexidade final é $O(N \cdot \log(\text{Max Dias}))$, ou seja, $O(N \cdot \log(10^8))$, o que é extremamente rápido e atende às restrições.
+
+
+
+**Código em JavaScript (com Fast I/O):**
+
+```javascript
+const fs = require('fs');
+
+// --- FAST I/O para leitura eficiente de grandes inputs ---
+const buffer = fs.readFileSync(0);
+let bufferIdx = 0;
+
+function readInt() {
+    let res = 0;
+    while (bufferIdx < buffer.length && buffer[bufferIdx] <= 32) bufferIdx++;
+    if (bufferIdx >= buffer.length) return null;
+    while (bufferIdx < buffer.length && buffer[bufferIdx] > 32) {
+        res = res * 10 + (buffer[bufferIdx++] - 48);
+    }
+    return res;
+}
+
+function solve() {
+    const N = readInt(); // Numero de capsulas
+    const F = readInt(); // Meta de moedas (ate 10^9)
+
+    if (N === null) return;
+
+    // Leitura dos ciclos das capsulas
+    const cycles = new Int32Array(N);
+    for (let i = 0; i < N; i++) {
+        cycles[i] = readInt();
+    }
+
+    // Busca Binaria
+    // Intervalo de resposta: [1, 10^8]
+    let low = 1;
+    let high = 100000000; 
+    let ans = high;
+
+    while (low <= high) {
+        // Meio do intervalo
+        const mid = Math.floor((low + high) / 2);
+        
+        // Verifica quantas moedas sao produzidas em 'mid' dias
+        let coins = 0;
+        
+        for (let i = 0; i < N; i++) {
+            // Cada capsula produz floor(dias / ciclo) moedas
+            coins += Math.floor(mid / cycles[i]);
+            
+            // Otimizacao: se ja atingimos a meta, podemos parar de somar
+            if (coins >= F) break;
+        }
+        
+        if (coins >= F) {
+            // Conseguimos a meta. Registra 'mid' como melhor resposta
+            // e tenta com menos dias.
+            ans = mid;
+            high = mid - 1;
+        } else {
+            // Nao conseguimos. Precisamos de mais dias.
+            low = mid + 1;
+        }
+    }
+
+    console.log(ans);
+}
+
+solve();
+
+```

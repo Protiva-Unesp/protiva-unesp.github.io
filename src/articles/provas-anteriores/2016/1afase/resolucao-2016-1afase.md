@@ -101,3 +101,106 @@ for ( var i = 1; i <= C ; i ++) {
 
 console . log ( fabricados ) ;
 ```
+
+---
+title: "OBI - Modalidade Programação (Nível 1) - Fase 1 - 2016"
+description: "Clube dos Cinco (Teoria de Conjuntos)"
+slug: "obi-2016-fase1-programacao-nivel1-clube-cinco"
+author: "Dayna Prado"
+---
+### Clube dos Cinco
+
+No Clube dos Cinco são oferecidos três esportes aos associados: **tiro com arco (A)**, **badminton (B)** e **canoagem (C)**. Cada associado pode participar de no **máximo dois esportes**. A tarefa é descobrir se há alguma pessoa ultrapassando esse limite, ou seja, se existe alguém que pratica os três esportes simultaneamente.
+
+Os dados fornecidos são:
+
+* $N$: Número total de associados.
+* $A$: Pessoas que praticam tiro com arco.
+* $B$: Pessoas que praticam badminton.
+* $C$: Pessoas que praticam canoagem.
+* $D$: Pessoas que praticam tiro com arco e badminton ($\text{A} \cap \text{B}$).
+* $E$: Pessoas que praticam tiro com arco e canoagem ($\text{A} \cap \text{C}$).
+* $F$: Pessoas que praticam badminton e canoagem ($\text{B} \cap \text{C}$).
+* $G$: Pessoas que não praticam nenhum esporte.
+
+Você deve descobrir se o número de pessoas que praticam os três esportes, $T = (\text{A} \cap \text{B} \cap \text{C})$, é maior que zero.
+
+**Entrada**
+
+A primeira linha contém um inteiro $N$. A segunda linha contém sete inteiros $A, B, C, D, E, F$ e $G$.
+
+**Saída**
+
+Uma única letra: **"S"** se algum associado participa de três esportes, e **"N"**, caso contrário.
+
+**Restrições**
+
+* $1 \leq N \leq 10^4$
+* $0 \leq A, B, C, D, E, F, G \leq N$
+
+**Exemplos**
+
+| Entrada | Saída |
+| :--- | :--- |
+| 7<br>4 4 4 1 1 2 0 | S |
+| 8<br>4 4 4 1 1 2 0 | N |
+| 10<br>4 4 4 1 1 1 1 | N |
+| 7<br>4 4 4 1 1 1 1 | S |
+| 10<br>4 4 4 0 0 0 1 | S |
+
+---
+### Solução (Teoria de Conjuntos)
+
+Este problema pode ser resolvido usando o **Princípio da Inclusão-Exclusão** em Teoria de Conjuntos, adaptado para detectar inconsistências nos dados que só podem ser explicadas pela existência de participantes triplos.
+
+A fórmula completa da união de três conjuntos é:
+$$\text{Total Participantes} = (A + B + C) - (D + E + F) + (\text{A} \cap \text{B} \cap \text{C})$$
+
+Onde $T = (\text{A} \cap \text{B} \cap \text{C})$ é o número de pessoas que praticam os três esportes.
+
+Como sabemos que o número total de associados $N$ deve ser igual ao total de participantes mais o total de não participantes ($G$):
+$$N = \text{Total Participantes} + G$$
+
+Substituindo a fórmula da união e isolando $T$:
+$$N = (A + B + C) - (D + E + F) + T + G$$
+$$T = N + (D + E + F) - (A + B + C + G)$$
+
+#### Condição Lógica Simplificada
+
+Se houver alguém praticando os três esportes ($T > 0$), isso significa que a soma das contagens individuais excede o número total de slots disponíveis (o universo $N$ mais as contagens duplas que precisam ser "descontadas" duas vezes).
+
+A condição lógica para verificar se $T > 0$ é:
+$$(A + B + C + G) > (N + D + E + F)$$
+
+Se essa condição for verdadeira, a resposta é **"S"** (existe $T > 0$). Caso contrário, a resposta é **"N"**.
+
+
+
+[Image of Venn diagram with three intersecting sets]
+
+
+**Código em JavaScript:**
+
+```javascript
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.trim().split(/\s+/);
+
+// Leitura das variaveis
+var N = parseInt(lines[0]); // Total de Associados
+var A = parseInt(lines[1]); // Tiro com arco
+var B = parseInt(lines[2]); // Badminton
+var C = parseInt(lines[3]); // Canoagem
+var D = parseInt(lines[4]); // A e B
+var E = parseInt(lines[5]); // A e C
+var F = parseInt(lines[6]); // B e C
+var G = parseInt(lines[7]); // Nenhum
+
+// Logica de Conjuntos:
+// Se a soma dos participantes individuais + nao participantes (A+B+C+G)
+// excede o total ajustado (N + D+E+F), o excedente só pode ser o T (triplo).
+if (A + B + C + G > N + D + E + F) {
+    console.log("S");
+} else {
+    console.log("N");
+}
+```
