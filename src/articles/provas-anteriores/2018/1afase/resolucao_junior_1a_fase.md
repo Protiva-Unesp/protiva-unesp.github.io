@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 1a Fase"
-description: "Cerca de Madeira, Corrida Robótica, Quadrados, Sessão de Cinema, Troco, Viagens de Ônibus"
+description: "Cerca de Madeira, Corrida Robótica, Quadrados, Sessão de Cinema, Troco, Viagens de Ônibus, Pirâmide"
 slug: "resolucao-2018-1a-fase"
 author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
@@ -199,3 +199,173 @@ E – D – A – B = **R$ 9,00**
 - Aos domingos o preço da passagem Centro – Brejo é promocional e custa metade do preço normal. Nesse caso, qual o menor valor em passagens para ir de ônibus de Brejo para Delta?
 
 B - C - D = **R$ 5,50**
+
+### Pirâmide
+No dep ́osito da f ́abrica, existe uma matriz de N × N caixas, cada uma com um peso. O inspetor
+precisa retirar caixas para deixar uma pirˆamide que satisfa ̧ca:
+
+1. Se uma caixa est ́a na pirˆamide, a caixa imediatamente abaixo dela tamb ́em deve estar (gravi-
+dade).
+
+2. A linha i (contando de cima para baixo, come ̧cando em 1) deve ter exatamente i caixas con-
+secutivas.
+
+Isso implica que a pirˆamide tem largura 1 na primeira linha, largura 2 na segunda, ..., e largura
+N na  ́ultima linha. Al ́em disso, o intervalo de caixas na linha i deve estar ”apoiado” sobre o intervalo
+da linha i + 1. Ou, visto de outra forma, o intervalo da linha i deve conter o intervalo da linha i − 1.
+
+O objetivo  ́e encontrar o **peso total m ́ınimo** de tal pirˆamide.
+
+### Entrada
+A primeira linha cont ́em um inteiro N (1 ≤ N ≤ 100). As N linhas seguintes contˆem N inteiros
+cada, representando os pesos.
+
+### Sa ́ıda
+Um inteiro indicando o peso total m ́ınimo.
+
+#### Restri ̧c ̃oes
+
+- 1 ≤ N ≤ 100
+- Pesos entre 1 e 100.
+
+### Entrada
+3
+5 2 4
+3 6 7
+10 5 10
+
+### Saída
+36
+
+### Entrada
+4
+45 8 3 1
+1 10 5 67
+4 4 3 18
+10 4 7 12
+
+### Saída
+62
+
+### Solu ̧c ̃ao
+Para resolver este problema de forma otimizada e evitar o ”Time Limit Exceeded” (TLE), utilizamos
+Programa ̧c ̃ao Dinˆamica com otimiza ̧c ̃ao de mem ́oria e ”Sliding Window” (Janela Deslizante).
+
+Defini ̧c ̃ao da DP: Seja DP[j] o menor custo para construir uma pirˆamide cuja base est ́a na
+linha atual e come ̧ca na coluna j. Para calcular a linha i (que tem largura i + 1), usamos os valores
+da linha anterior (i − 1, que tinha largura i).
+
+A recorrˆencia  ́e:
+
+- DPatual[j] = SomaIntervalo(i, j) + min(DPanterior[j], DPanterior[j + 1])
+
+Isso porque a base na linha i (intervalo [j, j + i]) deve sustentar a pirˆamide de cima, que pode
+estar deslocada para a esquerda ([j, j + i − 1]) ou direita ([j + 1, j + i]).
+
+Otimiza ̧c ̃oes de Performance:
+
+1. Janela Deslizante: N ̃ao recalculamos a soma do intervalo do zero. Ao mover de j para j + 1,
+subtra ́ımos o elemento que saiu da janela (M[i][j − 1]) e somamos o que entrou (M[i][j +
+largura − 1]).
+
+2. Arrays Planos: Usamos Int32Array unidimensionais para evitar o overhead de objetos Array
+do JavaScript.
+
+### C ́odigo em JavaScript (Ultra Otimizado):
+```js
+const fs = require (’fs ’) ;
+
+// Leitura otimizada do buffer
+const buffer = fs . readFileSync (0) ;
+let bufferIdx = 0;
+
+function readInt () {
+    let res = 0;
+    // Pula espacos
+    while ( bufferIdx < buffer . length && buffer [ bufferIdx ] <= 32) bufferIdx ++;
+    if ( bufferIdx >= buffer . length ) return null ;
+    // Le numero
+    while ( bufferIdx < buffer . length && buffer [ bufferIdx ] > 32) {
+        res = res * 10 + ( buffer [ bufferIdx ++] - 48) ;
+    }
+    return res ;
+}
+
+function solve () {
+    const valN = readInt () ;
+    if ( valN === null ) return ;
+    const N = valN ;
+    
+    // 1. Armazenar a matriz em um array plano ( flat )
+    // Acesso : matrix [row * N + col ]
+    const matrix = new Int32Array ( N * N ) ;
+    for ( let k = 0; k < N * N ; k ++) {
+        matrix [ k ] = readInt () ;
+    }
+
+    // 2. Arrays para DP
+    // Precisamos apenas da linha anterior e da atual
+    let prevDP = new Int32Array ( N ) ;
+    let currDP = new Int32Array ( N ) ;
+
+    // Caso base : Linha 0 ( Topo da piramide )
+    // Na linha 0 , a largura eh 1. O custo eh o proprio valor .
+    // Copiamos a primeira linha da matriz para o prevDP
+    for ( let j = 0; j < N ; j ++) {
+        prevDP [ j ] = matrix [ j ]; // matrix [0 * N + j]
+    }
+
+    // 3. Iteracao de baixo para cima (ou melhor , crescendo a piramide descendo
+    linhas )
+    // i = indice da linha atual ( comecando da 1 ate N -1)
+    // width = largura da piramide nessa linha (i + 1)
+    for ( let i = 1; i < N ; i ++) {
+        const width = i + 1;
+        const rowOffset = i * N ;
+        const limit = N - width ; // Ate onde o ’j’ pode ir
+        
+        // Inicializa a soma da primeira janela deslizante (j=0)
+        // Intervalo [0 , width -1] na linha atual
+        let currentSum = 0;
+        for ( let k = 0; k < width ; k ++) {
+            currentSum += matrix [ rowOffset + k ];
+        }
+
+        // Calcula DP para j=0
+        // min( prevDP [0] , prevDP [1])
+        const minTopFirst = ( prevDP [0] < prevDP [1]) ? prevDP [0] : prevDP [1];
+        currDP [0] = currentSum + minTopFirst ;
+
+        // Desliza a janela para os proximos j
+        for ( let j = 1; j <= limit ; j ++) {
+            // Atualiza soma : Tira o elemento anterior (j -1) , poe o novo (j +
+            th - 1)
+            const valOut = matrix [ rowOffset + ( j - 1) ];
+            const valIn = matrix [ rowOffset + ( j + width - 1) ];
+            currentSum = currentSum - valOut + valIn ;
+            
+            // Encontra o minimo da linha anterior
+            // O topo pode estar em ’j’ ou ’j+1 ’
+            const p1 = prevDP [ j ];
+            const p2 = prevDP [ j +1];
+            const minTop = ( p1 < p2 ) ? p1 : p2 ;
+            
+            currDP [ j ] = currentSum + minTop ;
+        }
+
+        // Troca os arrays ( prev vira curr ) para a proxima iteracao
+        // Em vez de criar novo array , apenas trocamos as referencias e
+        tilizamos
+        const temp = prevDP ;
+        prevDP = currDP ;
+        currDP = temp ;
+    }
+
+    // O resultado final eh a unica posicao possivel na ultima linha
+    // Na ultima linha (N -1) , width = N, entao so cabe em j=0.
+    // O valor esta em prevDP [0] ( pois trocamos no final do loop )
+    console . log ( prevDP [0]) ;
+}
+
+solve();
+```

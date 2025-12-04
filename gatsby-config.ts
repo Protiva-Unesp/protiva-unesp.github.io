@@ -194,6 +194,62 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
+                name: `resolucao-2016-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2016/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2016-2a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2016/2afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2017-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2017/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2017-2a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2017/2afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2011-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2011/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2011-2a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2011/2afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2012-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2012/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2012-2a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2012/2afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
                 name: `resolucao-2018-1a-fase`,
                 path: `${__dirname}/src/articles/provas-anteriores/2018/1afase`, 
             },
