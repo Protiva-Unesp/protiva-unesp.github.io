@@ -168,3 +168,85 @@ console . log ( result . join (’ ’) ) ;
 
 solve () ;
 ```
+
+### Telef ́erico
+A turma do col ́egio vai fazer uma excurs ̃ao na serra e todos os alunos e monitores v ̃ao tomar um
+telef ́erico para subir at ́e o pico de uma montanha. A cabine do telef ́erico pode levar C pessoas no
+m ́aximo, contando alunos e monitores.
+
+Por quest ̃ao de seguran ̧ca, tem que ter pelo menos um monitor dentro da cabine junto com
+os alunos. Por exemplo, se cabem C = 10 pessoas e a turma tem A = 20 alunos:
+
+- A capacidade efetiva para alunos  ́e 10 − 1 = 9.
+- 1a viagem: 9 alunos + 1 monitor. (Restam 11 alunos)
+- 2a viagem: 9 alunos + 1 monitor. (Restam 2 alunos)
+- 3a viagem: 2 alunos + 1 monitor.
+- Total: 3 viagens.
+
+Dados a capacidade C da cabine e o n ́umero total A de alunos, calcule o n ́umero m ́ınimo de
+viagens.
+
+### Entrada
+A primeira linha cont ́em um inteiro C, a capacidade da cabine. A segunda linha cont ́em um inteiro A, o n ́umero total de alunos.
+
+### Sa ́ıda
+Imprima uma linha contendo um n ́umero inteiro representando o n ́umero m ́ınimo de viagens.
+
+### Restri ̧c ̃oes
+- 2 ≤ C ≤ 100
+- 1 ≤ A ≤ 1000
+
+### Exemplos
+### Entrada
+10
+20
+
+### Saída
+3
+
+### Entrada
+12
+55
+
+### Saída
+5
+
+### Entrada
+100
+87
+
+### Saída
+1
+
+### Solução
+O problema se resume a uma divis ̃ao arredondada para cima (fun ̧c ̃ao teto ou ceil). Sabemos que em
+cada viagem um lugar  ́e obrigatoriamente do monitor. Logo, a capacidade de transporte de alunos
+por viagem  ́e:
+
+Capacidade Efetiva = C − 1
+
+O n ́umero de viagens necess ́arias  ́e quantos grupos de tamanho (C − 1) conseguimos formar com
+
+A alunos. Se sobrar qualquer resto, precisamos de uma viagem extra. Matematicamente:
+
+Viagens = 
+A
+C − 1
+
+### C ́odigo em JavaScript:
+```javascript
+var input = require (’fs ’) . readFileSync (’/dev / stdin ’, ’utf8 ’) ;
+var lines = input . trim () . split (/\ s +/) ;
+
+var C = parseInt ( lines [0]) ;
+var A = parseInt ( lines [1]) ;
+
+// Capacidade real para alunos ( tira o lugar do monitor )
+var capacidadeAlunos = C - 1;
+
+// Calculamos a divisao arredondada para cima ( Ceil )
+// Ex: 20 / 9 = 2.22 -> Math . ceil (2.22) = 3
+var viagens = Math . ceil ( A / capacidadeAlunos ) ;
+
+console . log ( viagens ) ;
+```
