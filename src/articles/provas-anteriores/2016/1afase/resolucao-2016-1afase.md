@@ -1,7 +1,7 @@
 ---
 title: "OBI: Iniciação - Nível 1 (2016) 1a Fase"
-description: "Jogo de tabuleiro"
-slug: "resolucao-nivel-1-2011"
+description: "Tacos de bilhar, Clube dos cinco"
+slug: "resolucao-nivel-1-2016"
 author: "Dayna"
 ---
 ### Tacos de Bilhar
@@ -102,12 +102,6 @@ for ( var i = 1; i <= C ; i ++) {
 console . log ( fabricados ) ;
 ```
 
----
-title: "OBI - Modalidade Programação (Nível 1) - Fase 1 - 2016"
-description: "Clube dos Cinco (Teoria de Conjuntos)"
-slug: "obi-2016-fase1-programacao-nivel1-clube-cinco"
-author: "Dayna Prado"
----
 ### Clube dos Cinco
 
 No Clube dos Cinco são oferecidos três esportes aos associados: **tiro com arco (A)**, **badminton (B)** e **canoagem (C)**. Cada associado pode participar de no **máximo dois esportes**. A tarefa é descobrir se há alguma pessoa ultrapassando esse limite, ou seja, se existe alguém que pratica os três esportes simultaneamente.

@@ -1,7 +1,7 @@
 ---
 title: "OBI: Iniciação - Nível 1 (2012) 1a Fase"
-description: "Jogo de tabuleiro"
-slug: "resolucao-nivel-1-2011"
+description: "Vice-campeão, Consecutivos"
+slug: "resolucao-nivel-1-2012"
 author: "Dayna"
 ---
 ### Vice-campe ̃ao
@@ -92,12 +92,6 @@ function solve () {
 solve () ;
 ```
 
----
-title: "OBI - Modalidade Programação (Nível 1) - Fase 1 - 2012"
-description: "Consecutivos (Maior Sequência de Valores Iguais)"
-slug: "obi-2012-fase1-programacao-nivel1-consecutivos"
-author: "Vinicius Lima"
----
 ### Consecutivos
 
 Em um sorteio, um participante recebe $N$ valores. A pontuação é definida pelo tamanho da **maior sequência de valores consecutivos iguais**.

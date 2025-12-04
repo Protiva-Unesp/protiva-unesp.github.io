@@ -1,6 +1,6 @@
 ---
 title: "OBI: Iniciação - Nível Júnior (2018) 1a Fase"
-description: "Cerca de Madeira, Corrida Robótica, Quadrados, Sessão de Cinema, Troco, Viagens de Ônibus, Pirâmide"
+description: "Cerca de Madeira, Corrida Robótica, Quadrados, Sessão de Cinema, Troco, Viagens de Ônibus, Pirâmide, Escadinha"
 slug: "resolucao-2018-1a-fase"
 author: "Dayna Caroline Domiciano Do Prado, Yasmin Rodrigues Sobrinho"
 ---
@@ -370,12 +370,6 @@ function solve () {
 solve();
 ```
 
----
-title: "OBI - Modalidade Programação (Nível 1) - Fase 1 - 2018"
-description: "Escadinha (Contagem de Progressões Aritméticas Máximas)"
-slug: "obi-2018-fase1-programacao-nivel1-escadinha"
-author: "Dayna Prado"
----
 ### Escadinha
 
 Dizemos que uma sequência de números é uma **Escadinha** se a diferença entre números consecutivos é sempre a mesma (uma Progressão Aritmética - PA). Neste problema, o objetivo é determinar quantas escadinhas existem em uma sequência maior, considerando sempre as **escadinhas mais longas possíveis**.

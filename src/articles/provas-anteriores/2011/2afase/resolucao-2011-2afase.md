@@ -1,7 +1,7 @@
 ---
 title: "OBI - Modalidade Programação (Nível 1) - Fase 2 - 2011"
 description: "Balé (Contagem de Inversões)"
-slug: "obi-2011-fase2-programacao-nivel1"
+slug: "resolucao-nivel-2-2011"
 author: "Vinicius Lima"
 ---
 ### Balé (Contagem de Inversões)

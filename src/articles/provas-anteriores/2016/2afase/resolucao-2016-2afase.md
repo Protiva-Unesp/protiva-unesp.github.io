@@ -1,7 +1,7 @@
 ---
 title: "OBI - Modalidade Programação (Nível 1) - Fase 2 - 2016"
 description: "Tacos de Bilhar"
-slug: "obi-2016-fase2-programacao-nivel1"
+slug: "resolucao-nivel-2-2016"
 author: "Dayna Prado"
 ---
 ### Tacos de Bilhar

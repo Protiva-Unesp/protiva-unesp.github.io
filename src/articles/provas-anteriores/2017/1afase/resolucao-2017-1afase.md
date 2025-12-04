@@ -1,7 +1,7 @@
 ---
 title: "OBI: Iniciação - Nível 1 (2017) 1a Fase"
-description: "Jogo de tabuleiro"
-slug: "resolucao-nivel-1-2011"
+description: "Segredo do cofre, Teleférico"
+slug: "resolucao-nivel-1-2017"
 author: "Dayna"
 ---
 ### Segredo do cofre

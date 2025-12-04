@@ -1,7 +1,7 @@
 ---
 title: "OBI - Modalidade Programação (Nível 1) - Fase 2 - 2012"
 description: "Guerra por Território (Soma de Prefixos e Sufixos)"
-slug: "obi-2012-fase2-programacao-nivel1-guerra-territorio"
+slug: "resolucao-nivel-2-2012"
 author: "Vinicius Lima"
 ---
 ### Guerra por Território
