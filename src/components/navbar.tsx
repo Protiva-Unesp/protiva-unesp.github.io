@@ -40,6 +40,9 @@ const NavBar = () => {
                         <Link to="/introducao-a-programacao" className="text-gray-700 hover:text-blue-600">
                             Introdução à Programação
                         </Link>
+                        <Link to="/estruturas-dados" className="text-gray-700 hover:text-blue-600">
+                            Estruturas de dados
+                        </Link>
                         <Link to="/sobre" className="text-gray-700 hover:text-blue-600">
                             Sobre Nós
                         </Link>

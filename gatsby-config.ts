@@ -229,8 +229,29 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
+                name: `resolucao-2021-nivel1`,
+                path: `${__dirname}/src/articles/provas-anteriores/2021/nivel1`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2020-nivel1`,
+                path: `${__dirname}/src/articles/provas-anteriores/2020/nivel1`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
                 name: `resolucao-2023-2a-fase`,
                 path: `${__dirname}/src/articles/provas-anteriores/2023/2afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `introducao-es`,
+                path: `${__dirname}/src/articles/estruturas-dados`, 
             },
         },
     ],
