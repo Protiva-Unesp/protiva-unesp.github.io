@@ -310,6 +310,27 @@ const config: GatsbyConfig = {
                 path: `${__dirname}/src/articles/estruturas-dados`, 
             },
         },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2025-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2025/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2024-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2024/1afase`, 
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `resolucao-2007-1a-fase`,
+                path: `${__dirname}/src/articles/provas-anteriores/2007/1afase`, 
+            },
+        },
     ],
 }
 
